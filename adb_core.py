@@ -117,6 +117,26 @@ class ADB:
         self.run(["shell", "input", "swipe", str(int(x1)), str(int(y1)),
                   str(int(x2)), str(int(y2)), str(int(ms))])
 
+    def drag_row(self, y: int, x1: int, x2: int, ms: int = 700, jiggle_px: int = 0):
+        """Vuốt kéo ngang qua một hàng ruộng (giữ ngón tay, không nhấc).
+
+        Giữ NGUYÊN chiều (x1 -> x2) do caller quyết định để tạo zigzag.
+        Jiggle nhỏ giúp quét trọn từng ô như kỹ thuật drag của InfiniFarm
+        (h8d13/HayDay): quét chính -> lệch nhẹ lên -> quét ngược -> lệch nhẹ xuống.
+        """
+        self.swipe(x1, y, x2, y, ms)
+        if jiggle_px > 0:
+            self.swipe(x2, y - jiggle_px, x1, y - jiggle_px, ms)
+            self.swipe(x1, y + jiggle_px, x2, y + jiggle_px, ms)
+
+    def drag_rows(self, rows, ms: int = 700, jiggle_px: int = 0, pause: float = 0.4):
+        """Vuốt lần lượt từng hàng, đổi chiều mỗi hàng (zigzag)."""
+        for i, (y, x1, x2) in enumerate(rows):
+            if i % 2 == 1:
+                x1, x2 = x2, x1
+            self.drag_row(y, x1, x2, ms=ms, jiggle_px=jiggle_px)
+            time.sleep(pause)
+
     def drag_fraction(self, fx1: float, fy1: float, fx2: float, fy2: float, ms: int = 500):
         """Vuốt theo tỉ lệ khung hình (0.0-1.0)."""
         w, h = self.screen_size()

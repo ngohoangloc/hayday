@@ -25,15 +25,25 @@ class TemplateStore:
         if not os.path.isdir(directory):
             os.makedirs(directory, exist_ok=True)
 
+    _EXTS = (".png", ".jpg", ".jpeg")
+
     def exists(self, name: str) -> bool:
-        return os.path.isfile(os.path.join(self.directory, name + ".png"))
+        return any(os.path.isfile(os.path.join(self.directory, name + ext))
+                   for ext in self._EXTS)
 
     def get(self, name: str) -> np.ndarray:
         if name not in self._cache:
-            path = os.path.join(self.directory, name + ".png")
+            path = None
+            for ext in self._EXTS:
+                p = os.path.join(self.directory, name + ext)
+                if os.path.isfile(p):
+                    path = p
+                    break
+            if path is None:
+                raise FileNotFoundError(f"Thiếu template: {name}.png trong {self.directory}")
             tpl = cv2.imread(path, cv2.IMREAD_COLOR)
             if tpl is None:
-                raise FileNotFoundError(f"Thiếu template: {path}")
+                raise FileNotFoundError(f"Không đọc được template: {path}")
             self._cache[name] = tpl
         return self._cache[name]
 

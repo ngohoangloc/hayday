@@ -1,10 +1,19 @@
 """
 modules/farming.py - Plant Rotation: thu hoạch và gieo trồng tự động.
 
-Template cần thiết (đặt trong templates/):
-  crop_ready_<crop>.png  - biểu tượng cây chín phía trên ô ruộng
-  field_empty.png        - ô ruộng trống (chưa trồng)
+Hai chiến lược:
+- "drag" (mặc định, kỹ thuật InfiniFarm - h8d13/HayDay): nhận diện vùng đất
+  theo màu -> chọn hạt/cây -> VUỐT KÉO qua từng hàng ruộng. Nhanh, phủ toàn bộ
+  ruộng, ít phụ thuộc template.
+- "tap": tìm từng ô bằng template (cây chín / ô trống) và tap lần lượt.
+
+Tự động chuyển sang "tap" nếu không nhận diện được đất.
+
+Template cần thiết:
+  crop_ready_<crop>.png  - biểu tượng cây chín (tuỳ chọn, giúp xác định điểm bắt đầu)
+  field_empty.png        - ô ruộng trống (chỉ cần cho chiến lược tap)
   seed_<crop>.png        - hạt giống trên thanh chọn hạt giống
+  soil.jpg               - ảnh mẫu đất cày (cho chiến lược drag)
 """
 
 import time
@@ -16,26 +25,94 @@ from vision import center
 class FarmingModule(BaseModule):
     name = "farming"
 
+    def __init__(self, *args, soil_detector=None, market_module=None, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.soil = soil_detector
+        self.market = market_module
+
     def run_cycle(self, cycle: int):
         cfg = self.config.get("plant_rotation", {})
         if not cfg.get("enabled"):
             return
         crops = [c for c in cfg.get("crops", []) if c.get("enabled")]
-
         if not crops:
             self.log("[farming] Không có loại cây nào được bật.")
             return
 
-        self._harvest(crops)
-        self._replant(crops)
+        strategy = cfg.get("strategy", "drag")
+        planted = False
+        if strategy == "drag" and self.soil is not None:
+            planted = self._cycle_drag(crops)
+        if not planted:
+            self._cycle_tap(crops)
 
         if cfg.get("wait_for_crop_growth"):
-            # Chờ đủ thời gian cây ngắn nhất để chín rồi mới sang chu kỳ khác
             shortest = min(c.get("grow_seconds", 120) for c in crops)
-            self.log(f"[farming] Chờ {shortest}s cho cây chín...")
-            self._sleep_interruptible(shortest)
+            # Bán bớt kho trong thời gian chờ (kỹ thuật "sell during growth")
+            if cfg.get("sell_during_growth") and self.market is not None:
+                self.log(f"[farming] Chờ {shortest}s - tranh thủ bán hàng ở chợ...")
+                try:
+                    self.market.sell_items(cycle)
+                except Exception as exc:
+                    self.log(f"[farming] Bán hàng khi chờ bị lỗi: {exc}")
+            self.log(f"[farming] Chờ cây lớn...")
+            self._sleep_interruptible(max(5, shortest - 20))
 
     # ------------------------------------------------------------------ #
+    # Chiến lược drag (InfiniFarm)
+    # ------------------------------------------------------------------ #
+
+    def _cycle_drag(self, crops) -> bool:
+        img = self.shot()
+        soil = self.soil.detect(img)
+        if not soil:
+            self.log("[farming] Không nhận diện được đất bằng màu - chuyển sang tap.")
+            return False
+        cx, cy = soil["centroid"]
+        rows = soil["rows"]
+        self.log(f"[farming] Thấy vùng ruộng {soil['rect']}, centroid ({cx},{cy}), "
+                 f"{len(rows)} hàng.")
+
+        sweep_ms = int(self.config.get("soil_detection", {}).get("row_sweep_duration_ms", 700))
+        jiggle = int(self.config.get("soil_detection", {}).get("jiggle_pixels", 15))
+
+        # 1) THU HOẠCH: tap một cây chín (nếu có template) để "cầm liềm",
+        #    rồi kéo qua toàn bộ ruộng
+        start = None
+        for crop in crops:
+            m = self.find_one(img, f"crop_ready_{crop['name']}", 0.78, "field_area")
+            if m:
+                start = center(m)
+                break
+        if start is None:
+            start = (cx, cy)
+        self.adb.tap(*start)
+        time.sleep(1.0)                      # chờ công cụ liềm xuất hiện
+        self.adb.drag_rows(rows, ms=sweep_ms, jiggle_px=jiggle)
+        self.log("[farming] Đã kéo thu hoạch toàn ruộng.")
+
+        # 2) GIEO HẠT: chọn hạt trên thanh giống -> tap tâm ruộng -> kéo qua ruộng
+        crop = crops[0]
+        seed = self.find_one(self.shot(), f"seed_{crop['name']}", 0.80, "seed_bar")
+        if not seed:
+            self.log(f"[farming] Không tìm thấy hạt {crop['name']} trên thanh chọn.")
+            return True
+        self.adb.tap(*center(seed))
+        time.sleep(0.6)
+        self.adb.tap(cx, cy)                 # bắt đầu gieo tại tâm ruộng
+        time.sleep(0.8)
+        self.adb.drag_rows(rows, ms=sweep_ms, jiggle_px=jiggle)
+        self.log(f"[farming] Đã kéo gieo {crop['name']} toàn ruộng.")
+        self.save_debug(img, "drag")
+        return True
+
+    # ------------------------------------------------------------------ #
+    # Chiến lược tap (dự phòng)
+    # ------------------------------------------------------------------ #
+
+    def _cycle_tap(self, crops):
+        self._harvest(crops)
+        self._replant(crops)
 
     def _harvest(self, crops):
         img = self.shot()
@@ -48,7 +125,7 @@ class FarmingModule(BaseModule):
                 self.tap_matches(matches, pause=0.30)
                 total += len(matches)
                 time.sleep(1.0)
-                img = self.shot()  # màn hình thay đổi sau khi thu hoạch
+                img = self.shot()
         self.save_debug(img, "harvest")
         if total == 0:
             self.log("[farming] Không thấy cây nào chín.")
@@ -60,24 +137,18 @@ class FarmingModule(BaseModule):
         if not empty:
             self.log("[farming] Không còn ô ruộng trống.")
             return 0
-
-        # Chọn hạt giống đầu tiên trong danh sách cây được bật
         crop = crops[0]
-        seed_tpl = f"seed_{crop['name']}"
-        seed = self.find_one(self.shot(), seed_tpl, 0.80, "seed_bar")
+        seed = self.find_one(self.shot(), f"seed_{crop['name']}", 0.80, "seed_bar")
         if not seed:
-            self.log(f"[farming] Không tìm thấy hạt {crop['name']} trên thanh chọn - bỏ qua gieo trồng.")
+            self.log(f"[farming] Không tìm thấy hạt {crop['name']} trên thanh chọn.")
             return 0
-
         self.log(f"[farming] Gieo {crop['name']} vào {len(empty)} ô trống")
-        x, y = center(seed)
-        self.adb.tap(x, y)          # chọn loại hạt
+        self.adb.tap(*center(seed))
         time.sleep(0.5)
         self.tap_matches(empty, pause=0.22)
         return len(empty)
 
     def _sleep_interruptible(self, seconds: float):
-        """Ngủ dài nhưng chia nhỏ để log tiến trình."""
         end = time.time() + seconds
         while time.time() < end:
             remain = end - time.time()

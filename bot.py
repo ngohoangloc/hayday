@@ -30,10 +30,26 @@ class HayDayBot:
         )
         self.templates = TemplateStore(self.config.get("templates_dir", "templates"))
 
-        self.farming = FarmingModule(self.adb, self.templates, self.config, log=self.log)
+        # SoilDetector (kỹ thuật h8d13/HayDay): chỉ tạo nếu đủ điều kiện
+        self.soil_detector = None
+        sdcfg = self.config.get("soil_detection", {})
+        if sdcfg.get("enabled") and self.templates.exists(
+                os.path.splitext(sdcfg.get("template", "soil.jpg"))[0]):
+            from soil import SoilDetector
+            self.soil_detector = SoilDetector(
+                os.path.join(self.config.get("templates_dir", "templates"),
+                             sdcfg.get("template", "soil.jpg")),
+                color_threshold=float(sdcfg.get("color_threshold", 18)),
+                min_area_ratio=float(sdcfg.get("min_area_ratio", 0.01)),
+                step_ratio=float(sdcfg.get("sweep_step_ratio", 0.12)),
+            )
+            self.log("SoilDetector sẵn sàng (nhận diện ruộng theo màu).")
+
+        self.market = MarketModule(self.adb, self.templates, self.config, log=self.log)
+        self.farming = FarmingModule(self.adb, self.templates, self.config, log=self.log,
+                                     soil_detector=self.soil_detector, market_module=self.market)
         self.animals = AnimalsModule(self.adb, self.templates, self.config, log=self.log)
         self.production = ProductionModule(self.adb, self.templates, self.config, log=self.log)
-        self.market = MarketModule(self.adb, self.templates, self.config, log=self.log)
         self.modules = [self.farming, self.animals, self.production, self.market]
 
         self.cycle = 0

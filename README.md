@@ -12,6 +12,23 @@ Tính năng (giống bảng Farm Config trong bản bot desktop):
 | `production` | Bakery / Dairy / Sugar Mill — thu thành phẩm, đặt lô sản xuất |
 | `market` | Bán đồ ở chợ, chọn giá Thấp/Cao, quản lý quảng cáo, bán vật liệu |
 
+### Nhận diện ruộng theo màu + drag-plant (kỹ thuật InfiniFarm)
+
+Lấy ý tưởng từ [h8d13/HayDay](https://github.com/h8d13/HayDay):
+
+- **SoilDetector** ([soil.py](soil.py)): tính màu trung bình của ảnh mẫu đất cày
+  `templates/soil.jpg` → mask các pixel sai khác < `color_threshold` → contour
+  lớn nhất → centroid bằng `cv2.moments` → sinh các **đường quét ngang** phủ
+  toàn thửa ruộng.
+- **Drag-plant / drag-harvest**: thay vì tap từng ô, bot tap 1 điểm để "cầm
+  liềm"/chọn hạt rồi **vuốt kéo zigzag qua từng hàng** (kèm jiggle ±`jiggle_pixels`)
+  — một lượt phủ toàn bộ ruộng, nhanh và ổn định hơn nhiều.
+- **Sell during growth**: trong ~100s chờ lúa mì lớn, bot tự mở chợ bán bớt
+  (`sell_during_growth: true`), đúng lối chơi "trồng → bán khi chờ → thu hoạch".
+
+Không nhận diện được đất (màu lạ, giao diện chặn...) thì tự chuyển về chiến lược
+`tap` từng ô bằng template.
+
 ---
 
 ## 1. Cài đặt (Windows)
@@ -81,6 +98,11 @@ chạy `python run_bot.py --check` để biết chính xác thiếu cái nào.
 
 - `regions`: các vùng màn hình theo **tỉ lệ 0.0–1.0** (độc lập độ phân giải) —
   xem `debug_regions.png` từ `calibrate.py --grid` để chỉnh.
+- `soil_detection`: ngưỡng màu (`color_threshold`), mật độ đường quét
+  (`sweep_step_ratio`), biên độ jiggle. Nếu ruộng của máy bạn có màu khác,
+  chụp lại `templates/soil.jpg` bằng `capture_templates.py`.
+- `plant_rotation.strategy`: `drag` (mặc định, dùng SoilDetector) hoặc `tap`.
+- `plant_rotation.sell_during_growth`: bán hàng trong thời gian chờ cây lớn.
 - `plant_rotation.crops[]`: bật/tắt từng loại cây, thời gian lớn.
 - `animals.types[]`, `production.machines[]`, `market.sell_items[]`: bật/tắt từng mục,
   `run_every_cycles` để giãn chu kỳ (giống "Run Every: 5 cycles" trong bot desktop).
@@ -110,14 +132,15 @@ hayday/
 ├── requirements.txt
 ├── modules/
 │   ├── base.py           # lớp cơ sở chung
-│   ├── farming.py        # trồng & thu hoạch
+│   ├── farming.py        # trồng & thu hoạch (drag hoặc tap)
 │   ├── animals.py        # chăn nuôi
 │   ├── production.py     # máy chế biến
 │   └── market.py         # chợ & quảng cáo
+├── soil.py               # SoilDetector: nhận diện ruộng theo màu (h8d13/HayDay)
 ├── tools/
 │   ├── capture_templates.py  # chụp template tương tác
 │   └── calibrate.py          # kiểm tra thiết bị / vùng / toạ độ
-└── templates/            # (tự tạo) ảnh mẫu .png của bạn
+└── templates/            # ảnh mẫu .png/.jpg (đã có sẵn soil.jpg)
 ```
 
 ## 7. Lưu ý

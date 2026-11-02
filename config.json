@@ -25,9 +25,21 @@
     "save_debug_screens": false
   },
 
+  "soil_detection": {
+    "enabled": true,
+    "template": "soil.jpg",
+    "color_threshold": 18,
+    "min_area_ratio": 0.01,
+    "row_sweep_duration_ms": 700,
+    "sweep_step_ratio": 0.12,
+    "jiggle_pixels": 15
+  },
+
   "plant_rotation": {
     "enabled": true,
+    "strategy": "drag",
     "wait_for_crop_growth": true,
+    "sell_during_growth": true,
     "quit_feature": false,
     "crops": [
       { "name": "wheat",     "enabled": true,  "grow_seconds": 120,  "count": 1 },
