@@ -1,0 +1,135 @@
+{
+  "adb": {
+    "adb_path": "adb",
+    "serial": null,
+    "package": "com.supercell.hayday",
+    "activity": null
+  },
+
+  "templates_dir": "templates",
+
+  "regions": {
+    "_comment": "Mọi vùng tính theo TỈ LỆ khung hình [x1, y1, x2, y2] với giá trị 0.0-1.0 => độc lập độ phân giải.",
+    "field_area":    [0.05, 0.40, 0.95, 0.95],
+    "seed_bar":      [0.25, 0.80, 0.75, 1.00],
+    "animal_area":   [0.05, 0.35, 0.95, 0.95],
+    "machine_area":  [0.05, 0.35, 0.95, 0.95],
+    "shop_area":     [0.10, 0.10, 0.90, 0.90]
+  },
+
+  "general": {
+    "cycle_interval_seconds": 30,
+    "max_cycles": 0,
+    "random_delay_max_ms": 250,
+    "screenshot_debug_dir": "debug",
+    "save_debug_screens": false
+  },
+
+  "plant_rotation": {
+    "enabled": true,
+    "wait_for_crop_growth": true,
+    "quit_feature": false,
+    "crops": [
+      { "name": "wheat",     "enabled": true,  "grow_seconds": 120,  "count": 1 },
+      { "name": "corn",      "enabled": false, "grow_seconds": 300,  "count": 1 },
+      { "name": "carrot",    "enabled": false, "grow_seconds": 600,  "count": 1 },
+      { "name": "soybean",   "enabled": false, "grow_seconds": 1200, "count": 1 },
+      { "name": "sugarcane", "enabled": false, "grow_seconds": 1800, "count": 1 }
+    ]
+  },
+
+  "animals": {
+    "enabled": true,
+    "run_every_cycles": 5,
+    "types": [
+      { "name": "chicken", "enabled": false, "run_every_cycles": 5, "feed_count": 2 },
+      { "name": "cow",     "enabled": false, "run_every_cycles": 5, "feed_count": 0 },
+      { "name": "pig",     "enabled": false, "run_every_cycles": 5, "feed_count": 0 },
+      { "name": "sheep",   "enabled": false, "run_every_cycles": 5, "feed_count": 0 }
+    ]
+  },
+
+  "production": {
+    "enabled": true,
+    "run_every_cycles": 5,
+    "machines": [
+      {
+        "name": "bakery",
+        "enabled": false,
+        "run_every_cycles": 5,
+        "recipes": [
+          { "name": "bread",     "count": 2 },
+          { "name": "corn_bread","count": 0 },
+          { "name": "cookie",    "count": 0 }
+        ]
+      },
+      {
+        "name": "dairy",
+        "enabled": false,
+        "run_every_cycles": 5,
+        "recipes": [
+          { "name": "cream",     "count": 2 },
+          { "name": "butter",    "count": 0 },
+          { "name": "cheese",    "count": 0 },
+          { "name": "goat_cheese","count": 0 }
+        ]
+      },
+      {
+        "name": "sugar_mill",
+        "enabled": false,
+        "run_every_cycles": 5,
+        "recipes": [
+          { "name": "brown_sugar", "count": 2 },
+          { "name": "white_sugar", "count": 0 },
+          { "name": "syrup",       "count": 0 }
+        ]
+      }
+    ]
+  },
+
+  "market": {
+    "enabled": true,
+    "price_option": "low",
+    "sell_every_cycles": 1,
+    "force_last_plant_sell": false,
+    "use_min_amount": true,
+    "manage_advertisements": true,
+    "advert_only_when_full": true,
+    "only_when_silo_full": false,
+    "periodic_market_check": true,
+    "slots_per_cycle": 10,
+    "sell_items": [
+      { "name": "wheat",     "enabled": true },
+      { "name": "corn",      "enabled": false },
+      { "name": "carrot",    "enabled": false },
+      { "name": "soybean",   "enabled": false },
+      { "name": "sugarcane", "enabled": false },
+      { "name": "bread",     "enabled": false },
+      { "name": "cream",     "enabled": false },
+      { "name": "brown_sugar","enabled": false }
+    ],
+    "material_selling": {
+      "enabled": false,
+      "price_option": "high",
+      "sell_every_cycles": 10,
+      "materials": [
+        { "name": "bolt",       "enabled": false },
+        { "name": "plank",      "enabled": false },
+        { "name": "duct_tape",  "enabled": false },
+        { "name": "nail",       "enabled": false },
+        { "name": "screws",     "enabled": false },
+        { "name": "wood_panel", "enabled": false },
+        { "name": "land_deed",  "enabled": false },
+        { "name": "mallet",     "enabled": false },
+        { "name": "marker_stake","enabled": false }
+      ]
+    }
+  },
+
+  "advanced": {
+    "game_off_wait_seconds": 10,
+    "market_retries": 3,
+    "market_cycle_seconds": 30,
+    "game_open_wait_seconds": 120
+  }
+}
