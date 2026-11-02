@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=HayDay Auto Bot
+Comment=Treo máy Hay Day tự động qua ADB (PC điều khiển Android)
+Exec=hayday-bot
+Icon=hayday-bot
+Terminal=true
+Categories=Game;Utility;

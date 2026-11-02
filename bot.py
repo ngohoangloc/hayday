@@ -3,6 +3,7 @@ bot.py - Bộ máy chính: vòng lặp treo máy, gọi các module theo chu k�
 """
 
 import os
+import sys
 import json
 import time
 import traceback
@@ -10,25 +11,88 @@ import traceback
 from adb_core import ADB, ADBError
 from vision import TemplateStore
 
+
+def app_dir() -> str:
+    """Thư mục ghi được bên cạnh chương trình (exe/AppImage/script)."""
+    if getattr(sys, "frozen", False):
+        return os.path.dirname(os.path.abspath(sys.executable))
+    return os.path.dirname(os.path.abspath(__file__))
+
+
+def bundle_dir() -> str:
+    """Thư mục tài nguyên đọc-only nhúng trong binary (PyInstaller)."""
+    if getattr(sys, "frozen", False):
+        return getattr(sys, "_MEIPASS", app_dir())
+    return os.path.dirname(os.path.abspath(__file__))
+
+
+def resolve_config_path(config_path: str) -> str:
+    if os.path.isfile(config_path):
+        return config_path
+    for base in (app_dir(), bundle_dir()):
+        cand = os.path.join(base, config_path)
+        if os.path.isfile(cand):
+            return cand
+    return config_path
+
+
+def resolve_templates_dir(td: str) -> str:
+    """Ưu tiên thư mục templates ghi được cạnh chương trình (người dùng bổ sung
+    template), nếu trống thì dùng templates nhúng trong binary."""
+    if os.path.isabs(td):
+        return td
+    app = os.path.join(app_dir(), td)
+    if os.path.isdir(app) and any(
+            f.lower().endswith((".png", ".jpg", ".jpeg"))
+            for f in os.listdir(app)):
+        return app
+    bundled = os.path.join(bundle_dir(), td)
+    if os.path.isdir(bundled):
+        return bundled
+    return app
+
 from modules.farming import FarmingModule
 from modules.animals import AnimalsModule
 from modules.production import ProductionModule
 from modules.market import MarketModule
+from modules.orders import OrdersModule
+from modules.achievements import AchievementsModule
+from modules.miner import MinerModule
+from modules.followers import FollowersModule
 
 
 class HayDayBot:
-    def __init__(self, config_path: str = "config.json"):
-        self.config_path = config_path
-        with open(config_path, "r", encoding="utf-8") as f:
+    def __init__(self, config_path: str = "config.json", use_sim: bool = False):
+        self.config_path = resolve_config_path(config_path)
+        with open(self.config_path, "r", encoding="utf-8") as f:
             self.config = json.load(f)
+        self.use_sim = use_sim
 
-        self.adb = ADB(
-            adb_path=self.config["adb"].get("adb_path", "adb"),
-            serial=self.config["adb"].get("serial"),
-            package=self.config["adb"].get("package", "com.supercell.hayday"),
-            activity=self.config["adb"].get("activity"),
-        )
-        self.templates = TemplateStore(self.config.get("templates_dir", "templates"))
+        # resolve thư mục template TRƯỚC khi tạo SimADB (nó cần ghi template vào đó)
+        td = resolve_templates_dir(self.config.get("templates_dir", "templates"))
+        self.config["templates_dir"] = td
+
+        if use_sim:
+            from sim import SimADB
+            td = resolve_templates_dir("templates_sim")   # sim luôn dùng thư mục riêng
+            self.config["templates_dir"] = td
+            # vùng màn hình riêng của thế giới mô phỏng (máy thật chỉnh regions phía trên)
+            self.config["regions"] = {
+                "field_area":   [0.03, 0.55, 0.97, 0.72],
+                "seed_bar":     [0.25, 0.90, 0.75, 1.00],
+                "animal_area":  [0.03, 0.32, 0.95, 0.52],
+                "machine_area": [0.03, 0.68, 0.97, 0.75],
+                "shop_area":    [0.10, 0.10, 0.90, 0.90],
+            }
+            self.adb = SimADB(self.config, templates_dir=td)
+        else:
+            self.adb = ADB(
+                adb_path=self.config["adb"].get("adb_path", "adb"),
+                serial=self.config["adb"].get("serial"),
+                package=self.config["adb"].get("package", "com.supercell.hayday"),
+                activity=self.config["adb"].get("activity"),
+            )
+        self.templates = TemplateStore(td)
 
         # SoilDetector (kỹ thuật h8d13/HayDay): chỉ tạo nếu đủ điều kiện
         self.soil_detector = None
@@ -50,7 +114,12 @@ class HayDayBot:
                                      soil_detector=self.soil_detector, market_module=self.market)
         self.animals = AnimalsModule(self.adb, self.templates, self.config, log=self.log)
         self.production = ProductionModule(self.adb, self.templates, self.config, log=self.log)
-        self.modules = [self.farming, self.animals, self.production, self.market]
+        self.orders = OrdersModule(self.adb, self.templates, self.config, log=self.log)
+        self.achievements = AchievementsModule(self.adb, self.templates, self.config, log=self.log)
+        self.miner = MinerModule(self.adb, self.templates, self.config, log=self.log)
+        self.followers = FollowersModule(self.adb, self.templates, self.config, log=self.log)
+        self.modules = [self.farming, self.animals, self.production, self.market,
+                        self.orders, self.achievements, self.miner, self.followers]
 
         self.cycle = 0
         self.running = False
@@ -62,6 +131,9 @@ class HayDayBot:
         print(time.strftime("[%H:%M:%S]"), msg, flush=True)
 
     def check_device(self) -> str:
+        if self.use_sim:
+            self.log("CHẾ ĐỘ MÔ PHỎNG - không cần thiết bị Android.")
+            return "sim"
         serials = ADB.list_devices(self.config["adb"].get("adb_path", "adb"))
         if not serials:
             raise ADBError(
@@ -78,6 +150,8 @@ class HayDayBot:
         return self.adb.serial
 
     def ensure_game(self):
+        if self.use_sim:
+            return
         if not self.adb.is_package_running():
             wait = int(self.config.get("advanced", {}).get("game_open_wait_seconds", 120))
             self.log(f"Game chưa chạy - mở {self.adb.package}, chờ {wait}s...")

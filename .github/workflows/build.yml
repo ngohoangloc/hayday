@@ -1,0 +1,74 @@
+name: build
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+jobs:
+  windows-exe:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cài dependencies
+        run: pip install -r requirements.txt pyinstaller
+
+      - name: Build hayday-bot.exe
+        run: pyinstaller --noconfirm --clean hayday-bot.spec
+
+      - name: Smoke test (sim mode)
+        run: python tools/test_sim.py 2
+
+      - name: Upload exe
+        uses: actions/upload-artifact@v4
+        with:
+          name: hayday-bot-windows-x64
+          path: dist/hayday-bot.exe
+
+  linux-appimage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cài dependencies
+        run: pip install -r requirements.txt pyinstaller
+
+      - name: Build binary
+        run: pyinstaller --noconfirm --clean hayday-bot.spec
+
+      - name: Smoke test (sim mode)
+        run: python tools/test_sim.py 2
+
+      - name: Đóng gói AppImage
+        run: |
+          mkdir -p packaging/AppDir/usr/bin packaging/out
+          cp dist/hayday-bot packaging/AppDir/usr/bin/
+          cp packaging/hayday-bot.desktop packaging/AppDir/
+          cp packaging/hayday-bot.png packaging/AppDir/
+          curl -sL -o linuxdeploy.AppImage \
+            "https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage"
+          chmod +x linuxdeploy.AppImage
+          VERSION="${GITHUB_REF_NAME#v}"
+          VERSION="${VERSION:-1.1.0}"
+          OUTPUT="hayday-bot-${VERSION}-x86_64.AppImage" \
+          ./linuxdeploy.AppImage --appimage-extract-and-run \
+            --appdir packaging/AppDir \
+            -d packaging/AppDir/hayday-bot.desktop \
+            -i packaging/AppDir/hayday-bot.png \
+            --output appimage
+          mv hayday-bot-*.AppImage packaging/out/
+
+      - name: Upload AppImage
+        uses: actions/upload-artifact@v4
+        with:
+          name: hayday-bot-linux-x64
+          path: packaging/out/hayday-bot-*.AppImage

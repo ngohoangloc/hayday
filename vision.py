@@ -89,18 +89,21 @@ def find_all(image: np.ndarray, template: np.ndarray,
              scales: tuple[float, ...] | None = None,
              max_matches: int = 80,
              region: tuple[int, int, int, int] | None = None,
-             nms_overlap: float = 0.4) -> list[tuple[int, int, int, int, float]]:
+             nms_overlap: float = 0.4,
+             per_scale_top: int = 60) -> list[tuple[int, int, int, int, float]]:
     """Tìm TẤT CẢ vị trí khớp template trong ảnh.
 
-    scales: danh sách hệ số thu phóng template (mặc định tự sinh quanh 1.0
-            để hỗ trợ nhiều độ phân giải màn hình).
+    scales: danh sách hệ số thu phóng template (mặc định bắt đầu bằng 1.0 —
+            tỉ lệ gốc luôn xét trước, rồi mới tới các scale khác).
     region: (x, y, w, h) giới hạn vùng tìm - giúp nhanh hơn.
+    per_scale_top: chỉ giữ N match điểm cao nhất mỗi scale (chống dội bịa
+            khi template gần màu đồng nhất).
 
     Trả về danh sách (x, y, w, h, score) đã qua NMS, sắp xếp theo score giảm dần.
     Toạ độ là tương đối với ảnh gốc (kể cả khi dùng region).
     """
     if scales is None:
-        scales = (0.7, 0.8, 0.9, 1.0, 1.1, 1.25, 1.5)
+        scales = (1.0, 0.8, 0.9, 1.1, 0.7, 1.25, 1.5)
 
     ox, oy = 0, 0
     if region is not None:
@@ -116,10 +119,13 @@ def find_all(image: np.ndarray, template: np.ndarray,
         th, tw = tpl.shape[:2]
         if th >= gray.shape[0] or tw >= gray.shape[1]:
             continue
+        res = cv2.matchTemplate(gray, cv2.cvtColor(tpl, cv2.COLOR_BGR2GRAY),
+                                cv2.TM_CCOEFF_NORMED)
+        ys, xs = np.where(res >= threshold)
+        cand = sorted(((float(res[y, x]), int(x), int(y))
+                       for x, y in zip(xs, ys)), reverse=True)[:per_scale_top]
         results.extend((x + ox, y + oy, tw, th, sc)
-                       for x, y, _, _, sc in _match_single(gray, cv2.cvtColor(tpl, cv2.COLOR_BGR2GRAY), threshold))
-        if len(results) > max_matches * 4:
-            break
+                       for sc, x, y in cand)
 
     kept = _nms(results, nms_overlap)[:max_matches]
     return kept

@@ -11,6 +11,24 @@ Tính năng (giống bảng Farm Config trong bản bot desktop):
 | `animals` | Chăn nuôi — thu sản phẩm (trứng/sữa/len...) và cho con đói ăn |
 | `production` | Bakery / Dairy / Sugar Mill — thu thành phẩm, đặt lô sản xuất |
 | `market` | Bán đồ ở chợ, chọn giá Thấp/Cao, quản lý quảng cáo, bán vật liệu |
+| `orders` | Bảng đơn hàng — gửi đơn (Send Orders), xoá đơn, xin giúp |
+| `achievements` | Collect Achievements — nhận thưởng thành tựu |
+| `miner` | Auto Miner — dùng Dynamite/TNT lấy quặng |
+| `followers` | Remove Followers — dọn danh sách người theo dõi |
+
+### Chạy thử không cần điện thoại (mô phỏng)
+
+Repo kèm **máy ảo game Hay Day** ([sim.py](sim.py)) — render màn hình game ảo
+1080×2340 + trạng thái (ruộng, kho, gia súc, máy, chợ, đơn hàng...) và tự sinh
+template nhận diện. Dùng để phát triển/test trên Linux/PC:
+
+```bash
+python run_bot.py --sim --cycles 5      # bot tự canh tác thế giới ảo
+python tools/test_sim.py 5              # test end-to-end 8 module, in PASS
+```
+
+Mọi tính năng đều chạy qua cùng một đường code với máy thật, chỉ thay
+`adb_core.ADB` bằng `SimADB`.
 
 ### Nhận diện ruộng theo màu + drag-plant (kỹ thuật InfiniFarm)
 
@@ -120,26 +138,54 @@ Bot sẽ: kiểm tra game mở chưa (không thì mở) → chạy chuỗi
 **farming → animals → production → market** → nghỉ `cycle_interval_seconds`
 và lặp lại. Ctrl+C để dừng an toàn.
 
-## 6. Cấu trúc thư mục
+## 6. Đóng gói: AppImage (Linux) và .exe (Windows)
+
+```bash
+# Linux: binary + AppImage
+bash build.sh                       # -> dist/hayday-bot + packaging/hayday-bot-<ver>-x86_64.AppImage
+# Windows: exe
+build.bat                           # -> dist\hayday-bot.exe
+```
+
+Hoặc để GitHub Actions build cả hai (tab **Actions → build → Run workflow**,
+hoặc đẩy tag `v1.2.0`): workflow [.github/workflows/build.yml](.github/workflows/build.yml)
+chạy smoke test sim rồi upload artifact `hayday-bot-windows-x64` (exe) và
+`hayday-bot-linux-x64` (AppImage).
+
+Chạy sau khi tải về:
+- **AppImage**: `chmod +x hayday-bot-*.AppImage && ./hayday-bot-*.AppImage --sim --cycles 2`
+- **exe**: `hayday-bot.exe --sim --cycles 2` (bỏ `--sim` khi nối điện thoại thật)
+
+`config.json` và thư mục `templates/` được ưu tiên đọc **cạnh file chạy** —
+hãy đặt template chụp từ điện thoại vào đó. Cấu trúc thư mục đầy đủ:
 
 ```
 hayday/
-├── run_bot.py            # điểm vào
-├── bot.py                # vòng lặp chính + kiểm tra template
-├── adb_core.py           # ADB: screenshot, tap, swipe, mở app
+├── run_bot.py            # điểm vào (--sim để chạy thế giới ảo)
+├── bot.py                # vòng lặp chính + kiểm tra template + resolve đường dẫn
+├── adb_core.py           # ADB: screenshot, tap, swipe, drag-row, mở app
 ├── vision.py             # template matching đa tỉ lệ + NMS
+├── soil.py               # SoilDetector: nhận diện ruộng theo màu
+├── sim.py                # máy ảo game Hay Day (SimADB) - test không cần máy
 ├── config.json           # toàn bộ cấu hình
 ├── requirements.txt
+├── hayday-bot.spec       # PyInstaller (exe + AppImage)
+├── build.sh / build.bat  # script đóng gói Linux / Windows
+├── .github/workflows/build.yml  # CI build exe + AppImage
 ├── modules/
 │   ├── base.py           # lớp cơ sở chung
 │   ├── farming.py        # trồng & thu hoạch (drag hoặc tap)
 │   ├── animals.py        # chăn nuôi
 │   ├── production.py     # máy chế biến
-│   └── market.py         # chợ & quảng cáo
-├── soil.py               # SoilDetector: nhận diện ruộng theo màu (h8d13/HayDay)
+│   ├── market.py         # chợ & quảng cáo
+│   ├── orders.py         # bảng đơn hàng
+│   ├── achievements.py   # thành tựu
+│   ├── miner.py          # mỏ tự động
+│   └── followers.py      # xoá người theo dõi
 ├── tools/
 │   ├── capture_templates.py  # chụp template tương tác
-│   └── calibrate.py          # kiểm tra thiết bị / vùng / toạ độ
+│   ├── calibrate.py          # kiểm tra thiết bị / vùng / toạ độ
+│   └── test_sim.py           # test end-to-end trong mô phỏng
 └── templates/            # ảnh mẫu .png/.jpg (đã có sẵn soil.jpg)
 ```
 

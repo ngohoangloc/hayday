@@ -143,5 +143,42 @@
     "market_retries": 3,
     "market_cycle_seconds": 30,
     "game_open_wait_seconds": 120
+  },
+
+  "achievements": {
+    "enabled": true,
+    "collect_every_cycles": 5
+  },
+
+  "orders": {
+    "enabled": true,
+    "run_every_cycles": 5,
+    "send_orders": true,
+    "del_orders": false,
+    "ask_for_help": false
+  },
+
+  "miner": {
+    "enabled": false,
+    "run_every_cycles": 10,
+    "dynamite": true,
+    "tnt_barrel": false
+  },
+
+  "followers": {
+    "enabled": false,
+    "run_every_cycles": 20
+  },
+
+  "sim": {
+    "cook_seconds": 6,
+    "animal_product_seconds": 6,
+    "hungry_seconds": 12,
+    "sale_seconds": 8,
+    "achievement_regen": 60,
+    "silo_capacity": 100,
+    "start_coins": 200,
+    "start_wheat": 40,
+    "dynamite_start": 5
   }
 }

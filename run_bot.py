@@ -22,9 +22,11 @@ def main():
     parser.add_argument("--serial", default=None, help="Serial thiết bị ADB")
     parser.add_argument("--check", action="store_true",
                         help="Chỉ kiểm tra thiết bị, độ phân giải và template rồi thoát")
+    parser.add_argument("--sim", action="store_true",
+                        help="Chạy trong thế giới mô phỏng (không cần điện thoại)")
     args = parser.parse_args()
 
-    bot = HayDayBot(args.config)
+    bot = HayDayBot(args.config, use_sim=args.sim)
     if args.serial:
         bot.adb.serial = args.serial
 
