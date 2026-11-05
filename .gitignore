@@ -9,3 +9,4 @@ packaging/AppDir/
 packaging/linuxdeploy-x86_64.AppImage
 packaging/*.AppImage
 templates_sim/
+apk_work/

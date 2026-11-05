@@ -36,7 +36,6 @@ def main():
 
         # ---- Quyền (Android Permission API) ---- #
         "permissions_requested": sorted(a.get_permissions()),
-        "permission_groups": sorted(a.get_groups()),
 
         # ---- Component (entry point của app - API surface) ---- #
         "activities": sorted(a.get_activities()),
@@ -45,15 +44,11 @@ def main():
         "providers": sorted(a.get_providers()),
         "main_activity": a.get_main_activity(),
 
-        # ---- Metadata ---- #
-        "meta_data": {k: v for k, v in (a.get_meta_data() or {}).items()},
-
         # ---- Native libraries ---- #
         "native_libs_abi": sorted(a.get_libraries()),
 
         # ---- Thiết bị/API yêu cầu ---- #
-        "uses_feature": a.get_features(),
-        "uses_configuration": a.get_uses_configuration(),
+        "uses_feature": a.get_features() if hasattr(a, "get_features") else [],
     }
 
     # SDK third-party nhận diện từ package Java trong dex (quét tên nhãn lớn)
