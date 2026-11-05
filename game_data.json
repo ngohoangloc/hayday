@@ -1,0 +1,8357 @@
+{
+ "source": "Hay Day APK asset pack",
+ "crops": {
+  "Wheat": {
+   "grow_seconds": 120,
+   "unlock_level": 1,
+   "order_price": 2
+  },
+  "Corn": {
+   "grow_seconds": 300,
+   "unlock_level": 2,
+   "order_price": 2
+  },
+  "Soybean": {
+   "grow_seconds": 1200,
+   "unlock_level": 5,
+   "order_price": 5
+  },
+  "Sugarcane": {
+   "grow_seconds": 1800,
+   "unlock_level": 7,
+   "order_price": 6
+  },
+  "Carrot": {
+   "grow_seconds": 600,
+   "unlock_level": 9,
+   "order_price": 3
+  },
+  "Indigo": {
+   "grow_seconds": 7200,
+   "unlock_level": 13,
+   "order_price": 10
+  },
+  "Pumpkin": {
+   "grow_seconds": 10800,
+   "unlock_level": 15,
+   "order_price": 12
+  },
+  "Chili": {
+   "grow_seconds": 14400,
+   "unlock_level": 25,
+   "order_price": 14
+  },
+  "Tomato": {
+   "grow_seconds": 21600,
+   "unlock_level": 30,
+   "order_price": 17
+  },
+  "Strawberry": {
+   "grow_seconds": 28800,
+   "unlock_level": 34,
+   "order_price": 19
+  },
+  "Potato": {
+   "grow_seconds": 13200,
+   "unlock_level": 35,
+   "order_price": 14
+  },
+  "Rice": {
+   "grow_seconds": 2700,
+   "unlock_level": 56,
+   "order_price": 7
+  },
+  "Lettuce": {
+   "grow_seconds": 12600,
+   "unlock_level": 58,
+   "order_price": 13
+  },
+  "Cotton": {
+   "grow_seconds": 9000,
+   "unlock_level": 18,
+   "order_price": 11
+  },
+  "Onion": {
+   "grow_seconds": 18000,
+   "unlock_level": 68,
+   "order_price": 16
+  },
+  "TeaLeaves": {
+   "grow_seconds": 23400,
+   "unlock_level": 80,
+   "order_price": 18
+  },
+  "Grapes": {
+   "grow_seconds": 10800,
+   "unlock_level": 84,
+   "order_price": 12
+  },
+  "Sunflower": {
+   "grow_seconds": 5400,
+   "unlock_level": 63,
+   "order_price": 9
+  },
+  "Peony": {
+   "grow_seconds": 14400,
+   "unlock_level": 82,
+   "order_price": 14
+  },
+  "Bellpepper": {
+   "grow_seconds": 16200,
+   "unlock_level": 74,
+   "order_price": 15
+  },
+  "Mint": {
+   "grow_seconds": 10800,
+   "unlock_level": 85,
+   "order_price": 12
+  },
+  "Watermelon": {
+   "grow_seconds": 18000,
+   "unlock_level": 92,
+   "order_price": 16
+  },
+  "Cucumber": {
+   "grow_seconds": 2100,
+   "unlock_level": 70,
+   "order_price": 6
+  },
+  "Pineapple": {
+   "grow_seconds": 1800,
+   "unlock_level": 52,
+   "order_price": 6
+  },
+  "Eggplant": {
+   "grow_seconds": 2400,
+   "unlock_level": 90,
+   "order_price": 6
+  },
+  "Broccoli": {
+   "grow_seconds": 4800,
+   "unlock_level": 83,
+   "order_price": 9
+  },
+  "Mushroom": {
+   "grow_seconds": 1200,
+   "unlock_level": 89,
+   "order_price": 5
+  },
+  "Ginger": {
+   "grow_seconds": 9000,
+   "unlock_level": 78,
+   "order_price": 11
+  },
+  "Sesame": {
+   "grow_seconds": 3600,
+   "unlock_level": 50,
+   "order_price": 8
+  },
+  "Lily": {
+   "grow_seconds": 5400,
+   "unlock_level": 53,
+   "order_price": 9
+  },
+  "Beetroot": {
+   "grow_seconds": 2400,
+   "unlock_level": 72,
+   "order_price": 6
+  },
+  "Garlic": {
+   "grow_seconds": 1800,
+   "unlock_level": 60,
+   "order_price": 6
+  },
+  "Cabbage": {
+   "grow_seconds": 2700,
+   "unlock_level": 65,
+   "order_price": 7
+  },
+  "Clay": {
+   "grow_seconds": 6600,
+   "unlock_level": 94,
+   "order_price": 10
+  },
+  "Chickpea": {
+   "grow_seconds": 3600,
+   "unlock_level": 95,
+   "order_price": 8
+  },
+  "PassionFruit": {
+   "grow_seconds": 3600,
+   "unlock_level": 88,
+   "order_price": 8
+  },
+  "Asparagus": {
+   "grow_seconds": 21600,
+   "unlock_level": 49,
+   "order_price": 17
+  },
+  "Oats": {
+   "grow_seconds": 420,
+   "unlock_level": 119,
+   "order_price": 3
+  },
+  "Chamomile": {
+   "grow_seconds": 1200,
+   "unlock_level": 45,
+   "order_price": 5
+  },
+  "BlackBean": {
+   "grow_seconds": 600,
+   "unlock_level": 25,
+   "order_price": 3
+  }
+ },
+ "products": {
+  "cafe:Espreso": {
+   "name": "Espreso",
+   "requirements": [
+    {
+     "item": "Coffee",
+     "amount": 3
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    }
+   ],
+   "time_min": 5,
+   "order_price": 128,
+   "unlock_level": 42
+  },
+  "cafe:Latte": {
+   "name": "Latte",
+   "requirements": [
+    {
+     "item": "Coffee",
+     "amount": 2
+    },
+    {
+     "item": "Milk",
+     "amount": 1
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 114,
+   "unlock_level": 43
+  },
+  "cafe:Mocha": {
+   "name": "Mocha",
+   "requirements": [
+    {
+     "item": "Coffee",
+     "amount": 1
+    },
+    {
+     "item": "Cacao",
+     "amount": 2
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    }
+   ],
+   "time_min": 15,
+   "order_price": 151,
+   "unlock_level": 45
+  },
+  "cafe:Raspberry Mocha": {
+   "name": "Raspberry Mocha",
+   "requirements": [
+    {
+     "item": "Coffee",
+     "amount": 1
+    },
+    {
+     "item": "Cacao",
+     "amount": 1
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "Raspberry",
+     "amount": 1
+    }
+   ],
+   "time_min": 30,
+   "order_price": 134,
+   "unlock_level": 46
+  },
+  "cafe:Hot Chocolate": {
+   "name": "Hot Chocolate",
+   "requirements": [
+    {
+     "item": "Cacao",
+     "amount": 2
+    },
+    {
+     "item": "Milk",
+     "amount": 1
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    }
+   ],
+   "time_min": 25,
+   "order_price": 164,
+   "unlock_level": 47
+  },
+  "cafe:BananaLatte": {
+   "name": "BananaLatte",
+   "requirements": [
+    {
+     "item": "Banana",
+     "amount": 1
+    },
+    {
+     "item": "Coffee",
+     "amount": 2
+    },
+    {
+     "item": "Milk",
+     "amount": 1
+    }
+   ],
+   "time_min": 20,
+   "order_price": 143,
+   "unlock_level": 88
+  },
+  "cafe:Caramel latte": {
+   "name": "Caramel latte",
+   "requirements": [
+    {
+     "item": "Coffee",
+     "amount": 2
+    },
+    {
+     "item": "Toffee",
+     "amount": 1
+    },
+    {
+     "item": "Milk",
+     "amount": 1
+    }
+   ],
+   "time_min": 15,
+   "order_price": 179,
+   "unlock_level": 62
+  },
+  "jam_maker:Apple Jam": {
+   "name": "Apple Jam",
+   "requirements": [
+    {
+     "item": "Apple",
+     "amount": 3
+    }
+   ],
+   "time_min": 360,
+   "order_price": 113,
+   "unlock_level": 35
+  },
+  "jam_maker:Raspberry Jam": {
+   "name": "Raspberry Jam",
+   "requirements": [
+    {
+     "item": "Raspberry",
+     "amount": 3
+    }
+   ],
+   "time_min": 420,
+   "order_price": 129,
+   "unlock_level": 36
+  },
+  "jam_maker:Blackberry Jam": {
+   "name": "Blackberry Jam",
+   "requirements": [
+    {
+     "item": "Blackberry",
+     "amount": 3
+    }
+   ],
+   "time_min": 480,
+   "order_price": 201,
+   "unlock_level": 37
+  },
+  "jam_maker:Cherry Jam": {
+   "name": "Cherry Jam",
+   "requirements": [
+    {
+     "item": "Cherry",
+     "amount": 3
+    }
+   ],
+   "time_min": 420,
+   "order_price": 173,
+   "unlock_level": 38
+  },
+  "jam_maker:Strawberry Jam": {
+   "name": "Strawberry Jam",
+   "requirements": [
+    {
+     "item": "Strawberry",
+     "amount": 3
+    }
+   ],
+   "time_min": 450,
+   "order_price": 140,
+   "unlock_level": 50
+  },
+  "jam_maker:Marmelade": {
+   "name": "Marmelade",
+   "requirements": [
+    {
+     "item": "Orange",
+     "amount": 3
+    }
+   ],
+   "time_min": 510,
+   "order_price": 236,
+   "unlock_level": 74
+  },
+  "jam_maker:Peach Jam": {
+   "name": "Peach Jam",
+   "requirements": [
+    {
+     "item": "Peach",
+     "amount": 3
+    }
+   ],
+   "time_min": 480,
+   "order_price": 239,
+   "unlock_level": 79
+  },
+  "jam_maker:Grape Jam": {
+   "name": "Grape Jam",
+   "requirements": [
+    {
+     "item": "Grapes",
+     "amount": 3
+    }
+   ],
+   "time_min": 390,
+   "order_price": 83,
+   "unlock_level": 85
+  },
+  "jam_maker:PlumJam": {
+   "name": "PlumJam",
+   "requirements": [
+    {
+     "item": "Plum",
+     "amount": 3
+    }
+   ],
+   "time_min": 300,
+   "order_price": 199,
+   "unlock_level": 94
+  },
+  "jam_maker:Passion Fruit Jam": {
+   "name": "Passion Fruit Jam",
+   "requirements": [
+    {
+     "item": "PassionFruit",
+     "amount": 3
+    }
+   ],
+   "time_min": 320,
+   "order_price": 61,
+   "unlock_level": 96
+  },
+  "jam_maker:Blueberry Chutney": {
+   "name": "Blueberry Chutney",
+   "requirements": [
+    {
+     "item": "Blueberry",
+     "amount": 3
+    },
+    {
+     "item": "Onion",
+     "amount": 1
+    },
+    {
+     "item": "Lemon",
+     "amount": 1
+    },
+    {
+     "item": "Brown_Sugar",
+     "amount": 1
+    }
+   ],
+   "time_min": 240,
+   "order_price": 300,
+   "unlock_level": 70
+  },
+  "ice_cream_maker:Vanilla Ice Cream": {
+   "name": "Vanilla Ice Cream",
+   "requirements": [
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "Milk",
+     "amount": 1
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    }
+   ],
+   "time_min": 120,
+   "order_price": 89,
+   "unlock_level": 29
+  },
+  "ice_cream_maker:Cherry Popsicle": {
+   "name": "Cherry Popsicle",
+   "requirements": [
+    {
+     "item": "Cherry Juice",
+     "amount": 1
+    },
+    {
+     "item": "Syrup",
+     "amount": 1
+    }
+   ],
+   "time_min": 180,
+   "order_price": 181,
+   "unlock_level": 33
+  },
+  "ice_cream_maker:Strawberry Ice Cream": {
+   "name": "Strawberry Ice Cream",
+   "requirements": [
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "Milk",
+     "amount": 1
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    },
+    {
+     "item": "Strawberry",
+     "amount": 3
+    }
+   ],
+   "time_min": 240,
+   "order_price": 171,
+   "unlock_level": 34
+  },
+  "ice_cream_maker:Chocolate Ice Cream": {
+   "name": "Chocolate Ice Cream",
+   "requirements": [
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "Milk",
+     "amount": 1
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    },
+    {
+     "item": "Cacao",
+     "amount": 2
+    }
+   ],
+   "time_min": 150,
+   "order_price": 176,
+   "unlock_level": 39
+  },
+  "ice_cream_maker:Orange Sorbet": {
+   "name": "Orange Sorbet",
+   "requirements": [
+    {
+     "item": "Orange",
+     "amount": 2
+    },
+    {
+     "item": "Honey",
+     "amount": 1
+    }
+   ],
+   "time_min": 210,
+   "order_price": 207,
+   "unlock_level": 78
+  },
+  "ice_cream_maker:Peach Ice Cream": {
+   "name": "Peach Ice Cream",
+   "requirements": [
+    {
+     "item": "Peach",
+     "amount": 2
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "Honey",
+     "amount": 1
+    }
+   ],
+   "time_min": 180,
+   "order_price": 233,
+   "unlock_level": 83
+  },
+  "ice_cream_maker:BananaSplit": {
+   "name": "BananaSplit",
+   "requirements": [
+    {
+     "item": "Banana",
+     "amount": 1
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "Cherry",
+     "amount": 3
+    }
+   ],
+   "time_min": 210,
+   "order_price": 208,
+   "unlock_level": 96
+  },
+  "ice_cream_maker:MintIcecream": {
+   "name": "MintIcecream",
+   "requirements": [
+    {
+     "item": "Cacao",
+     "amount": 1
+    },
+    {
+     "item": "Mint",
+     "amount": 2
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    }
+   ],
+   "time_min": 135,
+   "order_price": 148,
+   "unlock_level": 85
+  },
+  "ice_cream_maker:SesameIceCream": {
+   "name": "SesameIceCream",
+   "requirements": [
+    {
+     "item": "Sesame",
+     "amount": 3
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "Brown_Sugar",
+     "amount": 1
+    }
+   ],
+   "time_min": 120,
+   "order_price": 91,
+   "unlock_level": 50
+  },
+  "ice_cream_maker:Peanut Butter Milkshake": {
+   "name": "Peanut Butter Milkshake",
+   "requirements": [
+    {
+     "item": "PeanutBag",
+     "amount": 1
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "Milk",
+     "amount": 1
+    },
+    {
+     "item": "Cacao",
+     "amount": 3
+    }
+   ],
+   "time_min": 100,
+   "order_price": 374,
+   "unlock_level": 68
+  },
+  "ice_cream_maker:Affogato": {
+   "name": "Affogato",
+   "requirements": [
+    {
+     "item": "Vanilla Ice Cream",
+     "amount": 1
+    },
+    {
+     "item": "Espreso",
+     "amount": 1
+    }
+   ],
+   "time_min": 20,
+   "order_price": 225,
+   "unlock_level": 78
+  },
+  "ice_cream_maker:Coconut Ice Cream": {
+   "name": "Coconut Ice Cream",
+   "requirements": [
+    {
+     "item": "Coconut",
+     "amount": 2
+    },
+    {
+     "item": "Syrup",
+     "amount": 1
+    }
+   ],
+   "time_min": 15,
+   "order_price": 165,
+   "unlock_level": 102
+  },
+  "ice_cream_maker:Fruit Sorbet": {
+   "name": "Fruit Sorbet",
+   "requirements": [
+    {
+     "item": "Guava",
+     "amount": 1
+    },
+    {
+     "item": "Mango",
+     "amount": 2
+    },
+    {
+     "item": "PassionFruit",
+     "amount": 1
+    },
+    {
+     "item": "White Sugar",
+     "amount": 3
+    }
+   ],
+   "time_min": 60,
+   "order_price": 268,
+   "unlock_level": 106
+  },
+  "smoothie_mixer:GreenSmoothie": {
+   "name": "GreenSmoothie",
+   "requirements": [
+    {
+     "item": "Lettuce",
+     "amount": 5
+    },
+    {
+     "item": "Apple",
+     "amount": 1
+    },
+    {
+     "item": "Lemon",
+     "amount": 1
+    }
+   ],
+   "time_min": 45,
+   "order_price": 166,
+   "unlock_level": 66
+  },
+  "smoothie_mixer:BerrySmoothie": {
+   "name": "BerrySmoothie",
+   "requirements": [
+    {
+     "item": "Raspberry",
+     "amount": 3
+    },
+    {
+     "item": "Blackberry",
+     "amount": 3
+    },
+    {
+     "item": "Strawberry",
+     "amount": 3
+    }
+   ],
+   "time_min": 75,
+   "order_price": 283,
+   "unlock_level": 64
+  },
+  "smoothie_mixer:YogurtSmoothie": {
+   "name": "YogurtSmoothie",
+   "requirements": [
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    },
+    {
+     "item": "Raspberry",
+     "amount": 2
+    },
+    {
+     "item": "Cherry",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 181,
+   "unlock_level": 70
+  },
+  "smoothie_mixer:MixedSmoothie": {
+   "name": "MixedSmoothie",
+   "requirements": [
+    {
+     "item": "Peach",
+     "amount": 2
+    },
+    {
+     "item": "Orange",
+     "amount": 2
+    },
+    {
+     "item": "Lemon",
+     "amount": 1
+    }
+   ],
+   "time_min": 30,
+   "order_price": 261,
+   "unlock_level": 88
+  },
+  "smoothie_mixer:Cocoa smoothie": {
+   "name": "Cocoa smoothie",
+   "requirements": [
+    {
+     "item": "Cacao",
+     "amount": 3
+    },
+    {
+     "item": "Banana",
+     "amount": 2
+    },
+    {
+     "item": "Milk",
+     "amount": 1
+    }
+   ],
+   "time_min": 40,
+   "order_price": 263,
+   "unlock_level": 100
+  },
+  "smoothie_mixer:PlumSmoothie": {
+   "name": "PlumSmoothie",
+   "requirements": [
+    {
+     "item": "Plum",
+     "amount": 3
+    },
+    {
+     "item": "Grapes",
+     "amount": 2
+    },
+    {
+     "item": "Mint",
+     "amount": 1
+    },
+    {
+     "item": "Honey",
+     "amount": 1
+    }
+   ],
+   "time_min": 35,
+   "order_price": 269,
+   "unlock_level": 102
+  },
+  "smoothie_mixer:Cucumber Smoothie": {
+   "name": "Cucumber Smoothie",
+   "requirements": [
+    {
+     "item": "Cucumber",
+     "amount": 3
+    },
+    {
+     "item": "Pineapple",
+     "amount": 3
+    },
+    {
+     "item": "Honey",
+     "amount": 1
+    }
+   ],
+   "time_min": 40,
+   "order_price": 138,
+   "unlock_level": 70
+  },
+  "smoothie_mixer:SesameSmoothie": {
+   "name": "SesameSmoothie",
+   "requirements": [
+    {
+     "item": "Sesame",
+     "amount": 3
+    },
+    {
+     "item": "Banana",
+     "amount": 1
+    },
+    {
+     "item": "Goat Milk",
+     "amount": 2
+    }
+   ],
+   "time_min": 45,
+   "order_price": 161,
+   "unlock_level": 93
+  },
+  "smoothie_mixer:TropicalSmoothie": {
+   "name": "TropicalSmoothie",
+   "requirements": [
+    {
+     "item": "Coconut",
+     "amount": 1
+    },
+    {
+     "item": "Mango",
+     "amount": 2
+    },
+    {
+     "item": "PassionFruit",
+     "amount": 2
+    },
+    {
+     "item": "Banana",
+     "amount": 1
+    }
+   ],
+   "time_min": 40,
+   "order_price": 246,
+   "unlock_level": 104
+  },
+  "mine:SilverOre": {
+   "name": "SilverOre",
+   "requirements": [],
+   "time_min": null,
+   "order_price": null,
+   "unlock_level": 24
+  },
+  "mine:GoldOre": {
+   "name": "GoldOre",
+   "requirements": [],
+   "time_min": null,
+   "order_price": null,
+   "unlock_level": 24
+  },
+  "mine:PlatinumOre": {
+   "name": "PlatinumOre",
+   "requirements": [],
+   "time_min": null,
+   "order_price": null,
+   "unlock_level": 24
+  },
+  "mine:CoalOre": {
+   "name": "CoalOre",
+   "requirements": [],
+   "time_min": null,
+   "order_price": null,
+   "unlock_level": 33
+  },
+  "mine:IronOre": {
+   "name": "IronOre",
+   "requirements": [],
+   "time_min": null,
+   "order_price": null,
+   "unlock_level": 34
+  },
+  "jeweler:Bracelet": {
+   "name": "Bracelet",
+   "requirements": [
+    {
+     "item": "SilverBar",
+     "amount": 2
+    },
+    {
+     "item": "GoldBar",
+     "amount": 1
+    }
+   ],
+   "time_min": 120,
+   "order_price": 531,
+   "unlock_level": 38
+  },
+  "jeweler:Necklace": {
+   "name": "Necklace",
+   "requirements": [
+    {
+     "item": "SilverBar",
+     "amount": 2
+    },
+    {
+     "item": "GoldBar",
+     "amount": 1
+    },
+    {
+     "item": "PlatinumBar",
+     "amount": 1
+    }
+   ],
+   "time_min": 180,
+   "order_price": 751,
+   "unlock_level": 39
+  },
+  "jeweler:Diamond Ring": {
+   "name": "Diamond Ring",
+   "requirements": [
+    {
+     "item": "GoldBar",
+     "amount": 2
+    },
+    {
+     "item": "PlatinumBar",
+     "amount": 2
+    },
+    {
+     "item": "Diamonds",
+     "amount": 1
+    }
+   ],
+   "time_min": 240,
+   "order_price": 895,
+   "unlock_level": 40
+  },
+  "jeweler:IronBracelet": {
+   "name": "IronBracelet",
+   "requirements": [
+    {
+     "item": "IronBar",
+     "amount": 2
+    },
+    {
+     "item": "CoalBar",
+     "amount": 2
+    },
+    {
+     "item": "SilverBar",
+     "amount": 1
+    }
+   ],
+   "time_min": 90,
+   "order_price": 681,
+   "unlock_level": 41
+  },
+  "jeweler:Flower Pendant": {
+   "name": "Flower Pendant",
+   "requirements": [
+    {
+     "item": "Peony",
+     "amount": 3
+    },
+    {
+     "item": "GoldBar",
+     "amount": 2
+    },
+    {
+     "item": "PlatinumBar",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 360,
+   "unlock_level": 98
+  },
+  "honey_extractor:Honey": {
+   "name": "Honey",
+   "requirements": [
+    {
+     "item": "Honeycomb",
+     "amount": 2
+    }
+   ],
+   "time_min": 20,
+   "order_price": 81,
+   "unlock_level": 39
+  },
+  "honey_extractor:Beeswax": {
+   "name": "Beeswax",
+   "requirements": [
+    {
+     "item": "Honeycomb",
+     "amount": 3
+    }
+   ],
+   "time_min": 45,
+   "order_price": 121,
+   "unlock_level": 48
+  },
+  "bakery:Bread": {
+   "name": "Bread",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 3
+    }
+   ],
+   "time_min": 5,
+   "order_price": 11,
+   "unlock_level": 2
+  },
+  "bakery:Cookie": {
+   "name": "Cookie",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 2
+    },
+    {
+     "item": "Brown_Sugar",
+     "amount": 1
+    },
+    {
+     "item": "Egg",
+     "amount": 2
+    }
+   ],
+   "time_min": 60,
+   "order_price": 54,
+   "unlock_level": 10
+  },
+  "bakery:Corn Bread": {
+   "name": "Corn Bread",
+   "requirements": [
+    {
+     "item": "Corn",
+     "amount": 2
+    },
+    {
+     "item": "Egg",
+     "amount": 2
+    }
+   ],
+   "time_min": 30,
+   "order_price": 36,
+   "unlock_level": 7
+  },
+  "bakery:Pizza": {
+   "name": "Pizza",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 2
+    },
+    {
+     "item": "Tomato",
+     "amount": 1
+    },
+    {
+     "item": "Cheese",
+     "amount": 1
+    }
+   ],
+   "time_min": 15,
+   "order_price": 98,
+   "unlock_level": 33
+  },
+  "bakery:Spicy Pizza": {
+   "name": "Spicy Pizza",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 2
+    },
+    {
+     "item": "Tomato",
+     "amount": 1
+    },
+    {
+     "item": "Cheese",
+     "amount": 1
+    },
+    {
+     "item": "Chili",
+     "amount": 1
+    }
+   ],
+   "time_min": 15,
+   "order_price": 117,
+   "unlock_level": 37
+  },
+  "bakery:Raspberry Muffin": {
+   "name": "Raspberry Muffin",
+   "requirements": [
+    {
+     "item": "Raspberry",
+     "amount": 2
+    },
+    {
+     "item": "Wheat",
+     "amount": 2
+    },
+    {
+     "item": "Egg",
+     "amount": 1
+    }
+   ],
+   "time_min": 45,
+   "order_price": 72,
+   "unlock_level": 19
+  },
+  "bakery:Blackberry Muffin": {
+   "name": "Blackberry Muffin",
+   "requirements": [
+    {
+     "item": "Blackberry",
+     "amount": 2
+    },
+    {
+     "item": "Wheat",
+     "amount": 1
+    },
+    {
+     "item": "Egg",
+     "amount": 2
+    }
+   ],
+   "time_min": 45,
+   "order_price": 117,
+   "unlock_level": 26
+  },
+  "bakery:Potato Bread": {
+   "name": "Potato Bread",
+   "requirements": [
+    {
+     "item": "Potato",
+     "amount": 2
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    },
+    {
+     "item": "Egg",
+     "amount": 3
+    },
+    {
+     "item": "Butter",
+     "amount": 1
+    }
+   ],
+   "time_min": 45,
+   "order_price": 147,
+   "unlock_level": 39
+  },
+  "bakery:Frutti di Mare Pizza": {
+   "name": "Frutti di Mare Pizza",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 2
+    },
+    {
+     "item": "Cheese",
+     "amount": 1
+    },
+    {
+     "item": "Fish Meat",
+     "amount": 1
+    },
+    {
+     "item": "Lobster Meat",
+     "amount": 1
+    }
+   ],
+   "time_min": 15,
+   "order_price": 208,
+   "unlock_level": 45
+  },
+  "bakery:BananaBread": {
+   "name": "BananaBread",
+   "requirements": [
+    {
+     "item": "Banana",
+     "amount": 3
+    },
+    {
+     "item": "Grapes",
+     "amount": 2
+    },
+    {
+     "item": "Wheat",
+     "amount": 3
+    },
+    {
+     "item": "Egg",
+     "amount": 1
+    }
+   ],
+   "time_min": 30,
+   "order_price": 219,
+   "unlock_level": 91
+  },
+  "bakery:Gingerbread Cookie": {
+   "name": "Gingerbread Cookie",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 5
+    },
+    {
+     "item": "Syrup",
+     "amount": 1
+    },
+    {
+     "item": "Butter",
+     "amount": 1
+    },
+    {
+     "item": "Ginger",
+     "amount": 2
+    }
+   ],
+   "time_min": 30,
+   "order_price": 141,
+   "unlock_level": 86
+  },
+  "bakery:Macaroon": {
+   "name": "Macaroon",
+   "requirements": [
+    {
+     "item": "Coconut",
+     "amount": 2
+    },
+    {
+     "item": "White Sugar",
+     "amount": 2
+    },
+    {
+     "item": "Cacao",
+     "amount": 1
+    }
+   ],
+   "time_min": 30,
+   "order_price": 218,
+   "unlock_level": 101
+  },
+  "bakery:Pineapple coconut bars": {
+   "name": "Pineapple coconut bars",
+   "requirements": [
+    {
+     "item": "Coconut",
+     "amount": 1
+    },
+    {
+     "item": "White Sugar",
+     "amount": 2
+    },
+    {
+     "item": "Oats",
+     "amount": 3
+    },
+    {
+     "item": "Pineapple",
+     "amount": 2
+    }
+   ],
+   "time_min": 40,
+   "order_price": 147,
+   "unlock_level": 120
+  },
+  "bakery:Blueberry Muffin": {
+   "name": "Blueberry Muffin",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 1
+    },
+    {
+     "item": "Blueberry",
+     "amount": 2
+    },
+    {
+     "item": "Egg",
+     "amount": 2
+    }
+   ],
+   "time_min": 45,
+   "order_price": 120,
+   "unlock_level": 33
+  },
+  "mollusc:Mussel": {
+   "name": "Mussel",
+   "requirements": [],
+   "time_min": null,
+   "order_price": null,
+   "unlock_level": 27
+  },
+  "milkshake_bar:Vanilla Milkshake": {
+   "name": "Vanilla Milkshake",
+   "requirements": [
+    {
+     "item": "Vanilla Ice Cream",
+     "amount": 1
+    },
+    {
+     "item": "Cookie",
+     "amount": 2
+    },
+    {
+     "item": "Toffee",
+     "amount": 1
+    },
+    {
+     "item": "Syrup",
+     "amount": 1
+    }
+   ],
+   "time_min": 45,
+   "order_price": 347,
+   "unlock_level": 124
+  },
+  "milkshake_bar:Mocha Milkshake": {
+   "name": "Mocha Milkshake",
+   "requirements": [
+    {
+     "item": "Chocolate Ice Cream",
+     "amount": 1
+    },
+    {
+     "item": "Espreso",
+     "amount": 2
+    }
+   ],
+   "time_min": 30,
+   "order_price": 442,
+   "unlock_level": 125
+  },
+  "milkshake_bar:Fruity Milkshake": {
+   "name": "Fruity Milkshake",
+   "requirements": [
+    {
+     "item": "Peach Ice Cream",
+     "amount": 1
+    },
+    {
+     "item": "Orange",
+     "amount": 2
+    },
+    {
+     "item": "Lemon",
+     "amount": 1
+    }
+   ],
+   "time_min": 35,
+   "order_price": 392,
+   "unlock_level": 126
+  },
+  "waffle_maker:Plain Waffles": {
+   "name": "Plain Waffles",
+   "requirements": [
+    {
+     "item": "Egg",
+     "amount": 3
+    },
+    {
+     "item": "Wheat",
+     "amount": 5
+    },
+    {
+     "item": "White Sugar",
+     "amount": 2
+    }
+   ],
+   "time_min": 25,
+   "order_price": 103,
+   "unlock_level": 114
+  },
+  "waffle_maker:Breakfast Waffles": {
+   "name": "Breakfast Waffles",
+   "requirements": [
+    {
+     "item": "Bacon",
+     "amount": 2
+    },
+    {
+     "item": "Egg",
+     "amount": 1
+    },
+    {
+     "item": "Plain Waffles",
+     "amount": 1
+    },
+    {
+     "item": "Asparagus",
+     "amount": 2
+    }
+   ],
+   "time_min": 45,
+   "order_price": 220,
+   "unlock_level": 119
+  },
+  "waffle_maker:Berry Waffles": {
+   "name": "Berry Waffles",
+   "requirements": [
+    {
+     "item": "Syrup",
+     "amount": 1
+    },
+    {
+     "item": "Plain Waffles",
+     "amount": 1
+    },
+    {
+     "item": "Raspberry",
+     "amount": 3
+    },
+    {
+     "item": "Blackberry",
+     "amount": 2
+    }
+   ],
+   "time_min": 35,
+   "order_price": 311,
+   "unlock_level": 114
+  },
+  "waffle_maker:Chocolate Waffles": {
+   "name": "Chocolate Waffles",
+   "requirements": [
+    {
+     "item": "Cacao",
+     "amount": 2
+    },
+    {
+     "item": "Plain Waffles",
+     "amount": 1
+    },
+    {
+     "item": "Strawberry",
+     "amount": 3
+    },
+    {
+     "item": "Banana",
+     "amount": 1
+    }
+   ],
+   "time_min": 40,
+   "order_price": 329,
+   "unlock_level": 117
+  },
+  "waffle_maker:White Chocolate Blueberry Waffle": {
+   "name": "White Chocolate Blueberry Waffle",
+   "requirements": [
+    {
+     "item": "Cacao",
+     "amount": 2
+    },
+    {
+     "item": "Plain Waffles",
+     "amount": 1
+    },
+    {
+     "item": "Blueberry",
+     "amount": 3
+    },
+    {
+     "item": "Milk",
+     "amount": 1
+    }
+   ],
+   "time_min": 42,
+   "order_price": 345,
+   "unlock_level": 118
+  },
+  "seasonal:Gift_Box1": {
+   "name": "Gift_Box1",
+   "requirements": [
+    {
+     "item": "Corn Bread",
+     "amount": 1
+    },
+    {
+     "item": "Apple",
+     "amount": 3
+    },
+    {
+     "item": "Wool",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 57,
+   "unlock_level": 17
+  },
+  "seasonal:Gift_Box2": {
+   "name": "Gift_Box2",
+   "requirements": [
+    {
+     "item": "Bacon and Eggs",
+     "amount": 1
+    },
+    {
+     "item": "Indigo",
+     "amount": 5
+    },
+    {
+     "item": "Carrot",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 84,
+   "unlock_level": 17
+  },
+  "seasonal:Gift_Box3": {
+   "name": "Gift_Box3",
+   "requirements": [
+    {
+     "item": "Fish Pie",
+     "amount": 1
+    },
+    {
+     "item": "Tomato",
+     "amount": 5
+    },
+    {
+     "item": "Corn",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 98,
+   "unlock_level": 30
+  },
+  "seasonal:Gift_Box4": {
+   "name": "Gift_Box4",
+   "requirements": [
+    {
+     "item": "Cherry Popsicle",
+     "amount": 1
+    },
+    {
+     "item": "Strawberry",
+     "amount": 5
+    },
+    {
+     "item": "Goat Milk",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 133,
+   "unlock_level": 35
+  },
+  "seasonal:Easter_egg1": {
+   "name": "Easter_egg1",
+   "requirements": [
+    {
+     "item": "Brown_Sugar",
+     "amount": 1
+    },
+    {
+     "item": "Egg",
+     "amount": 2
+    },
+    {
+     "item": "Indigo",
+     "amount": 3
+    }
+   ],
+   "time_min": 30,
+   "order_price": 87,
+   "unlock_level": 17
+  },
+  "seasonal:Easter_egg2": {
+   "name": "Easter_egg2",
+   "requirements": [
+    {
+     "item": "Syrup",
+     "amount": 1
+    },
+    {
+     "item": "Butter",
+     "amount": 1
+    },
+    {
+     "item": "Cherry",
+     "amount": 3
+    }
+   ],
+   "time_min": 45,
+   "order_price": 206,
+   "unlock_level": 25
+  },
+  "seasonal:Easter_egg3": {
+   "name": "Easter_egg3",
+   "requirements": [
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "Blackberry",
+     "amount": 3
+    },
+    {
+     "item": "Honey",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 244,
+   "unlock_level": 43
+  },
+  "seasonal:Easter_egg4": {
+   "name": "Easter_egg4",
+   "requirements": [
+    {
+     "item": "Pineapple",
+     "amount": 3
+    },
+    {
+     "item": "Cacao",
+     "amount": 3
+    },
+    {
+     "item": "Toffee",
+     "amount": 1
+    }
+   ],
+   "time_min": 90,
+   "order_price": 258,
+   "unlock_level": 54
+  },
+  "seasonal:Gift_Box1_23": {
+   "name": "Gift_Box1_23",
+   "requirements": [
+    {
+     "item": "Cookie",
+     "amount": 1
+    },
+    {
+     "item": "Milk",
+     "amount": 3
+    },
+    {
+     "item": "Pumpkin",
+     "amount": 3
+    }
+   ],
+   "time_min": 45,
+   "order_price": 157,
+   "unlock_level": 17
+  },
+  "seasonal:Gift_Box2_23": {
+   "name": "Gift_Box2_23",
+   "requirements": [
+    {
+     "item": "Wooly Pants",
+     "amount": 1
+    },
+    {
+     "item": "Cotton",
+     "amount": 3
+    },
+    {
+     "item": "Apple",
+     "amount": 3
+    }
+   ],
+   "time_min": 45,
+   "order_price": 294,
+   "unlock_level": 25
+  },
+  "seasonal:Gift_Box3_23": {
+   "name": "Gift_Box3_23",
+   "requirements": [
+    {
+     "item": "Spicy Pizza",
+     "amount": 1
+    },
+    {
+     "item": "Strawberry",
+     "amount": 3
+    },
+    {
+     "item": "Honey",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 298,
+   "unlock_level": 43
+  },
+  "seasonal:Gift_Box4_23": {
+   "name": "Gift_Box4_23",
+   "requirements": [
+    {
+     "item": "Caramel latte",
+     "amount": 1
+    },
+    {
+     "item": "Lemon",
+     "amount": 1
+    },
+    {
+     "item": "Lily",
+     "amount": 3
+    }
+   ],
+   "time_min": 90,
+   "order_price": 304,
+   "unlock_level": 70
+  },
+  "seasonal:Easter_egg1_24": {
+   "name": "Easter_egg1_24",
+   "requirements": [
+    {
+     "item": "Pumpkin Pie",
+     "amount": 1
+    },
+    {
+     "item": "Soybean",
+     "amount": 5
+    },
+    {
+     "item": "Wheat",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 57,
+   "unlock_level": 17
+  },
+  "seasonal:Easter_egg2_24": {
+   "name": "Easter_egg2_24",
+   "requirements": [
+    {
+     "item": "Raspberry Muffin",
+     "amount": 1
+    },
+    {
+     "item": "Pumpkin",
+     "amount": 1
+    },
+    {
+     "item": "Corn",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 100,
+   "unlock_level": 20
+  },
+  "seasonal:Easter_egg3_24": {
+   "name": "Easter_egg3_24",
+   "requirements": [
+    {
+     "item": "Apple Juice",
+     "amount": 1
+    },
+    {
+     "item": "Potato",
+     "amount": 5
+    },
+    {
+     "item": "Goat Milk",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 79,
+   "unlock_level": 35
+  },
+  "seasonal:Easter_egg4_24": {
+   "name": "Easter_egg4_24",
+   "requirements": [
+    {
+     "item": "Toffee",
+     "amount": 1
+    },
+    {
+     "item": "Sesame",
+     "amount": 3
+    },
+    {
+     "item": "Lily",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 79,
+   "unlock_level": 55
+  },
+  "seasonal:Birthday_balloon1_24": {
+   "name": "Birthday_balloon1_24",
+   "requirements": [
+    {
+     "item": "Sweater",
+     "amount": 1
+    },
+    {
+     "item": "Apple",
+     "amount": 3
+    },
+    {
+     "item": "Bacon",
+     "amount": 3
+    }
+   ],
+   "time_min": 15,
+   "order_price": 67,
+   "unlock_level": 17
+  },
+  "seasonal:Birthday_balloon2_24": {
+   "name": "Birthday_balloon2_24",
+   "requirements": [
+    {
+     "item": "Carrot Cake",
+     "amount": 1
+    },
+    {
+     "item": "Cotton",
+     "amount": 3
+    },
+    {
+     "item": "Cherry",
+     "amount": 3
+    }
+   ],
+   "time_min": 25,
+   "order_price": 77,
+   "unlock_level": 22
+  },
+  "seasonal:Birthday_balloon3_24": {
+   "name": "Birthday_balloon3_24",
+   "requirements": [
+    {
+     "item": "Fishburger",
+     "amount": 1
+    },
+    {
+     "item": "Potato",
+     "amount": 3
+    },
+    {
+     "item": "Goat Milk",
+     "amount": 1
+    }
+   ],
+   "time_min": 45,
+   "order_price": 133,
+   "unlock_level": 35
+  },
+  "seasonal:Birthday_balloon4_24": {
+   "name": "Birthday_balloon4_24",
+   "requirements": [
+    {
+     "item": "Honey",
+     "amount": 1
+    },
+    {
+     "item": "Mocha",
+     "amount": 1
+    },
+    {
+     "item": "Corn",
+     "amount": 5
+    }
+   ],
+   "time_min": 45,
+   "order_price": 166,
+   "unlock_level": 45
+  },
+  "seasonal:Halloween_candy1_24": {
+   "name": "Halloween_candy1_24",
+   "requirements": [
+    {
+     "item": "Sugarcane",
+     "amount": 3
+    },
+    {
+     "item": "Carrot",
+     "amount": 3
+    },
+    {
+     "item": "Egg",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 27,
+   "unlock_level": 17
+  },
+  "seasonal:Halloween_candy2_24": {
+   "name": "Halloween_candy2_24",
+   "requirements": [
+    {
+     "item": "Apple",
+     "amount": 1
+    },
+    {
+     "item": "Popcorn",
+     "amount": 1
+    },
+    {
+     "item": "Indigo",
+     "amount": 3
+    }
+   ],
+   "time_min": 15,
+   "order_price": 45,
+   "unlock_level": 17
+  },
+  "seasonal:Halloween_candy3_24": {
+   "name": "Halloween_candy3_24",
+   "requirements": [
+    {
+     "item": "Blue Sweater",
+     "amount": 1
+    },
+    {
+     "item": "Chili",
+     "amount": 5
+    },
+    {
+     "item": "Brown_Sugar",
+     "amount": 2
+    }
+   ],
+   "time_min": 20,
+   "order_price": 109,
+   "unlock_level": 35
+  },
+  "seasonal:Halloween_candy4_24": {
+   "name": "Halloween_candy4_24",
+   "requirements": [
+    {
+     "item": "Potato Bread",
+     "amount": 1
+    },
+    {
+     "item": "Honey",
+     "amount": 1
+    },
+    {
+     "item": "Pumpkin",
+     "amount": 3
+    }
+   ],
+   "time_min": 20,
+   "order_price": 126,
+   "unlock_level": 50
+  },
+  "seasonal:Gift_Box1_24": {
+   "name": "Gift_Box1_24",
+   "requirements": [
+    {
+     "item": "Blue Woolly Hat",
+     "amount": 1
+    },
+    {
+     "item": "Raspberry",
+     "amount": 3
+    },
+    {
+     "item": "Cotton",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 87,
+   "unlock_level": 20
+  },
+  "seasonal:Gift_Box2_24": {
+   "name": "Gift_Box2_24",
+   "requirements": [
+    {
+     "item": "Chili Popcorn",
+     "amount": 1
+    },
+    {
+     "item": "Cherry",
+     "amount": 3
+    },
+    {
+     "item": "Egg",
+     "amount": 3
+    }
+   ],
+   "time_min": 10,
+   "order_price": 85,
+   "unlock_level": 25
+  },
+  "seasonal:Gift_Box3_24": {
+   "name": "Gift_Box3_24",
+   "requirements": [
+    {
+     "item": "Chocolate Cake",
+     "amount": 1
+    },
+    {
+     "item": "Coffee",
+     "amount": 3
+    },
+    {
+     "item": "Chamomile",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 122,
+   "unlock_level": 45
+  },
+  "seasonal:Gift_Box4_24": {
+   "name": "Gift_Box4_24",
+   "requirements": [
+    {
+     "item": "Toffee",
+     "amount": 1
+    },
+    {
+     "item": "Blackberry",
+     "amount": 3
+    },
+    {
+     "item": "Pineapple",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 106,
+   "unlock_level": 60
+  },
+  "seasonal:Easter_egg1_25": {
+   "name": "Easter_egg1_25",
+   "requirements": [
+    {
+     "item": "Pancakes",
+     "amount": 1
+    },
+    {
+     "item": "Corn",
+     "amount": 5
+    },
+    {
+     "item": "Milk",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 44,
+   "unlock_level": 17
+  },
+  "seasonal:Easter_egg2_25": {
+   "name": "Easter_egg2_25",
+   "requirements": [
+    {
+     "item": "Blue Woolly Hat",
+     "amount": 1
+    },
+    {
+     "item": "Carrot",
+     "amount": 5
+    },
+    {
+     "item": "Bacon",
+     "amount": 3
+    }
+   ],
+   "time_min": 10,
+   "order_price": 70,
+   "unlock_level": 20
+  },
+  "seasonal:Easter_egg3_25": {
+   "name": "Easter_egg3_25",
+   "requirements": [
+    {
+     "item": "Fish Pie",
+     "amount": 1
+    },
+    {
+     "item": "Tomato",
+     "amount": 5
+    },
+    {
+     "item": "Blackberry",
+     "amount": 3
+    }
+   ],
+   "time_min": 10,
+   "order_price": 145,
+   "unlock_level": 30
+  },
+  "seasonal:Easter_egg4_25": {
+   "name": "Easter_egg4_25",
+   "requirements": [
+    {
+     "item": "Chocolate Cake",
+     "amount": 1
+    },
+    {
+     "item": "Coffee",
+     "amount": 3
+    },
+    {
+     "item": "Chamomile",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 122,
+   "unlock_level": 45
+  },
+  "seasonal:Birthday_balloon1_25": {
+   "name": "Birthday_balloon1_25",
+   "requirements": [
+    {
+     "item": "Bacon and Eggs",
+     "amount": 1
+    },
+    {
+     "item": "Carrot",
+     "amount": 5
+    },
+    {
+     "item": "Indigo",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 84,
+   "unlock_level": 17
+  },
+  "seasonal:Birthday_balloon2_25": {
+   "name": "Birthday_balloon2_25",
+   "requirements": [
+    {
+     "item": "Corn Bread",
+     "amount": 1
+    },
+    {
+     "item": "Apple",
+     "amount": 3
+    },
+    {
+     "item": "Bacon",
+     "amount": 3
+    }
+   ],
+   "time_min": 10,
+   "order_price": 75,
+   "unlock_level": 17
+  },
+  "seasonal:Birthday_balloon3_25": {
+   "name": "Birthday_balloon3_25",
+   "requirements": [
+    {
+     "item": "Blue Woolly Hat",
+     "amount": 1
+    },
+    {
+     "item": "Raspberry",
+     "amount": 3
+    },
+    {
+     "item": "Soybean",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 70,
+   "unlock_level": 20
+  },
+  "seasonal:Birthday_balloon4_25": {
+   "name": "Birthday_balloon4_25",
+   "requirements": [
+    {
+     "item": "Chili Popcorn",
+     "amount": 1
+    },
+    {
+     "item": "Bread",
+     "amount": 1
+    },
+    {
+     "item": "Corn",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 45,
+   "unlock_level": 25
+  },
+  "seasonal:Birthday_balloon5_25": {
+   "name": "Birthday_balloon5_25",
+   "requirements": [
+    {
+     "item": "Vanilla Ice Cream",
+     "amount": 1
+    },
+    {
+     "item": "Blackberry",
+     "amount": 3
+    },
+    {
+     "item": "Chili",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 127,
+   "unlock_level": 30
+  },
+  "seasonal:Birthday_balloon6_25": {
+   "name": "Birthday_balloon6_25",
+   "requirements": [
+    {
+     "item": "Fish Pie",
+     "amount": 1
+    },
+    {
+     "item": "Cherry",
+     "amount": 3
+    },
+    {
+     "item": "Potato",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 129,
+   "unlock_level": 35
+  },
+  "seasonal:Birthday_balloon7_25": {
+   "name": "Birthday_balloon7_25",
+   "requirements": [
+    {
+     "item": "Soothing Pad",
+     "amount": 1
+    },
+    {
+     "item": "Coffee",
+     "amount": 3
+    },
+    {
+     "item": "Strawberry",
+     "amount": 3
+    }
+   ],
+   "time_min": 10,
+   "order_price": 140,
+   "unlock_level": 45
+  },
+  "seasonal:Birthday_balloon8_25": {
+   "name": "Birthday_balloon8_25",
+   "requirements": [
+    {
+     "item": "Tomato Soup",
+     "amount": 1
+    },
+    {
+     "item": "Pineapple",
+     "amount": 5
+    },
+    {
+     "item": "Garlic",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 133,
+   "unlock_level": 60
+  },
+  "seasonal:Halloween_candy1_25": {
+   "name": "Halloween_candy1_25",
+   "requirements": [
+    {
+     "item": "Bread",
+     "amount": 3
+    },
+    {
+     "item": "Soybean",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 34,
+   "unlock_level": 17
+  },
+  "seasonal:Halloween_candy2_25": {
+   "name": "Halloween_candy2_25",
+   "requirements": [
+    {
+     "item": "Popcorn",
+     "amount": 1
+    },
+    {
+     "item": "Egg",
+     "amount": 3
+    }
+   ],
+   "time_min": 10,
+   "order_price": 28,
+   "unlock_level": 17
+  },
+  "seasonal:Halloween_candy3_25": {
+   "name": "Halloween_candy3_25",
+   "requirements": [
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "Halloween_candy1_25",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 54,
+   "unlock_level": 20
+  },
+  "seasonal:Halloween_candy4_25": {
+   "name": "Halloween_candy4_25",
+   "requirements": [
+    {
+     "item": "Violet Dress",
+     "amount": 1
+    },
+    {
+     "item": "Halloween_candy2_25",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 102,
+   "unlock_level": 25
+  },
+  "seasonal:Gift_Box1_25": {
+   "name": "Gift_Box1_25",
+   "requirements": [
+    {
+     "item": "Indigo",
+     "amount": 5
+    },
+    {
+     "item": "Milk",
+     "amount": 3
+    },
+    {
+     "item": "Carrot Pie",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 71,
+   "unlock_level": 17
+  },
+  "seasonal:Gift_Box2_25": {
+   "name": "Gift_Box2_25",
+   "requirements": [
+    {
+     "item": "Sugarcane",
+     "amount": 5
+    },
+    {
+     "item": "Egg",
+     "amount": 3
+    },
+    {
+     "item": "Bread",
+     "amount": 3
+    }
+   ],
+   "time_min": 10,
+   "order_price": 48,
+   "unlock_level": 17
+  },
+  "seasonal:Gift_Box3_25": {
+   "name": "Gift_Box3_25",
+   "requirements": [
+    {
+     "item": "Pumpkin",
+     "amount": 5
+    },
+    {
+     "item": "Bacon",
+     "amount": 3
+    },
+    {
+     "item": "Raspberry Muffin",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 98,
+   "unlock_level": 20
+  },
+  "seasonal:Gift_Box4_25": {
+   "name": "Gift_Box4_25",
+   "requirements": [
+    {
+     "item": "Carrot",
+     "amount": 5
+    },
+    {
+     "item": "Wool",
+     "amount": 3
+    },
+    {
+     "item": "Brown_Sugar",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 58,
+   "unlock_level": 30
+  },
+  "seasonal:Halloween_candy5_25": {
+   "name": "Halloween_candy5_25",
+   "requirements": [
+    {
+     "item": "Cookie",
+     "amount": 1
+    },
+    {
+     "item": "Bacon",
+     "amount": 3
+    }
+   ],
+   "time_min": 10,
+   "order_price": 60,
+   "unlock_level": 30
+  },
+  "seasonal:Halloween_candy6_25": {
+   "name": "Halloween_candy6_25",
+   "requirements": [
+    {
+     "item": "Carrot Pie",
+     "amount": 1
+    },
+    {
+     "item": "Halloween_candy3_25",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 80,
+   "unlock_level": 35
+  },
+  "seasonal:Halloween_candy7_25": {
+   "name": "Halloween_candy7_25",
+   "requirements": [
+    {
+     "item": "Honey",
+     "amount": 1
+    },
+    {
+     "item": "Halloween_candy4_25",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 143,
+   "unlock_level": 45
+  },
+  "seasonal:Halloween_candy8_25": {
+   "name": "Halloween_candy8_25",
+   "requirements": [
+    {
+     "item": "Apple Juice",
+     "amount": 1
+    },
+    {
+     "item": "Halloween_candy5_25",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 93,
+   "unlock_level": 60
+  },
+  "seasonal:Gift_Box5_25": {
+   "name": "Gift_Box5_25",
+   "requirements": [
+    {
+     "item": "Gift_Box1_25",
+     "amount": 1
+    },
+    {
+     "item": "Goat Cheese",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 113,
+   "unlock_level": 50
+  },
+  "seasonal:Gift_Box6_25": {
+   "name": "Gift_Box6_25",
+   "requirements": [
+    {
+     "item": "Gift_Box2_25",
+     "amount": 1
+    },
+    {
+     "item": "Blue Woolly Hat",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 80,
+   "unlock_level": 75
+  },
+  "seasonal:Gift_Box7_25": {
+   "name": "Gift_Box7_25",
+   "requirements": [
+    {
+     "item": "Gift_Box3_25",
+     "amount": 1
+    },
+    {
+     "item": "Violet Dress",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 173,
+   "unlock_level": 80
+  },
+  "seasonal:Gift_Box8_25": {
+   "name": "Gift_Box8_25",
+   "requirements": [
+    {
+     "item": "Gift_Box4_25",
+     "amount": 1
+    },
+    {
+     "item": "Hamburger",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 104,
+   "unlock_level": 85
+  },
+  "seasonal:Birthday_balloon1_26": {
+   "name": "Birthday_balloon1_26",
+   "requirements": [
+    {
+     "item": "Carrot Pie",
+     "amount": 1
+    },
+    {
+     "item": "Soybean",
+     "amount": 5
+    },
+    {
+     "item": "Wheat",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 71,
+   "unlock_level": 17
+  },
+  "seasonal:Birthday_balloon2_26": {
+   "name": "Birthday_balloon2_26",
+   "requirements": [
+    {
+     "item": "Raspberry Muffin",
+     "amount": 1
+    },
+    {
+     "item": "Pumpkin",
+     "amount": 5
+    },
+    {
+     "item": "Soybean",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 48,
+   "unlock_level": 20
+  },
+  "seasonal:Birthday_balloon3_26": {
+   "name": "Birthday_balloon3_26",
+   "requirements": [
+    {
+     "item": "Tomato Juice",
+     "amount": 1
+    },
+    {
+     "item": "Potato",
+     "amount": 5
+    },
+    {
+     "item": "Goat Cheese",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 98,
+   "unlock_level": 35
+  },
+  "seasonal:Birthday_balloon4_26": {
+   "name": "Birthday_balloon4_26",
+   "requirements": [
+    {
+     "item": "Lamb Soup",
+     "amount": 1
+    },
+    {
+     "item": "Sesame",
+     "amount": 5
+    },
+    {
+     "item": "Corn",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 58,
+   "unlock_level": 75
+  },
+  "seasonal:Birthday_balloon5_26": {
+   "name": "Birthday_balloon5_26",
+   "requirements": [
+    {
+     "item": "Pancakes",
+     "amount": 1
+    },
+    {
+     "item": "Corn",
+     "amount": 5
+    },
+    {
+     "item": "Milk",
+     "amount": 2
+    }
+   ],
+   "time_min": 10,
+   "order_price": 113,
+   "unlock_level": 17
+  },
+  "seasonal:Birthday_balloon6_26": {
+   "name": "Birthday_balloon6_26",
+   "requirements": [
+    {
+     "item": "Blue Sweater",
+     "amount": 1
+    },
+    {
+     "item": "Carrot",
+     "amount": 5
+    },
+    {
+     "item": "Bacon",
+     "amount": 3
+    }
+   ],
+   "time_min": 10,
+   "order_price": 80,
+   "unlock_level": 20
+  },
+  "seasonal:Birthday_balloon7_26": {
+   "name": "Birthday_balloon7_26",
+   "requirements": [
+    {
+     "item": "Fish Pie",
+     "amount": 1
+    },
+    {
+     "item": "Tomato",
+     "amount": 5
+    },
+    {
+     "item": "Egg",
+     "amount": 2
+    }
+   ],
+   "time_min": 10,
+   "order_price": 173,
+   "unlock_level": 30
+  },
+  "seasonal:Birthday_balloon8_26": {
+   "name": "Birthday_balloon8_26",
+   "requirements": [
+    {
+     "item": "Chocolate Cake",
+     "amount": 1
+    },
+    {
+     "item": "Coffee",
+     "amount": 3
+    },
+    {
+     "item": "Roasted Tomatoes",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 104,
+   "unlock_level": 45
+  },
+  "seasonal:Wax_beads": {
+   "name": "Wax_beads",
+   "requirements": [
+    {
+     "item": "Chocolate Cake",
+     "amount": 1
+    },
+    {
+     "item": "Coffee",
+     "amount": 3
+    },
+    {
+     "item": "Roasted Tomatoes",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 104,
+   "unlock_level": 17
+  },
+  "seasonal:Herb_bundle": {
+   "name": "Herb_bundle",
+   "requirements": [
+    {
+     "item": "Chocolate Cake",
+     "amount": 1
+    },
+    {
+     "item": "Coffee",
+     "amount": 3
+    },
+    {
+     "item": "Roasted Tomatoes",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 104,
+   "unlock_level": 17
+  },
+  "seasonal:Garlic_seeds": {
+   "name": "Garlic_seeds",
+   "requirements": [
+    {
+     "item": "Chocolate Cake",
+     "amount": 1
+    },
+    {
+     "item": "Coffee",
+     "amount": 3
+    },
+    {
+     "item": "Roasted Tomatoes",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 104,
+   "unlock_level": 39
+  },
+  "seasonal:Golden_bells": {
+   "name": "Golden_bells",
+   "requirements": [
+    {
+     "item": "Chocolate Cake",
+     "amount": 1
+    },
+    {
+     "item": "Coffee",
+     "amount": 3
+    },
+    {
+     "item": "Roasted Tomatoes",
+     "amount": 1
+    }
+   ],
+   "time_min": 10,
+   "order_price": 104,
+   "unlock_level": 39
+  },
+  "seasonal:Enchanted_wax": {
+   "name": "Enchanted_wax",
+   "requirements": [
+    {
+     "item": "Wax_beads",
+     "amount": 1
+    },
+    {
+     "item": "Brown_Sugar",
+     "amount": 1
+    },
+    {
+     "item": "Indigo",
+     "amount": 6
+    }
+   ],
+   "time_min": 30,
+   "order_price": 104,
+   "unlock_level": 17
+  },
+  "seasonal:Herb_pouch": {
+   "name": "Herb_pouch",
+   "requirements": [
+    {
+     "item": "Herb_bundle",
+     "amount": 1
+    },
+    {
+     "item": "Brown_Sugar",
+     "amount": 1
+    },
+    {
+     "item": "Wool",
+     "amount": 1
+    }
+   ],
+   "time_min": 30,
+   "order_price": 104,
+   "unlock_level": 17
+  },
+  "seasonal:Black_garlic": {
+   "name": "Black_garlic",
+   "requirements": [
+    {
+     "item": "Garlic_seeds",
+     "amount": 1
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    },
+    {
+     "item": "Cotton Fabrics",
+     "amount": 2
+    }
+   ],
+   "time_min": 30,
+   "order_price": 104,
+   "unlock_level": 39
+  },
+  "seasonal:Sun_bell": {
+   "name": "Sun_bell",
+   "requirements": [
+    {
+     "item": "Golden_bells",
+     "amount": 1
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    },
+    {
+     "item": "GoldOre",
+     "amount": 2
+    }
+   ],
+   "time_min": 30,
+   "order_price": 104,
+   "unlock_level": 39
+  },
+  "sauce_mixer:SoySauce": {
+   "name": "SoySauce",
+   "requirements": [
+    {
+     "item": "Soybean",
+     "amount": 9
+    },
+    {
+     "item": "Wheat",
+     "amount": 1
+    }
+   ],
+   "time_min": 180,
+   "order_price": 80,
+   "unlock_level": 54
+  },
+  "sauce_mixer:OliveOil": {
+   "name": "OliveOil",
+   "requirements": [
+    {
+     "item": "Olive",
+     "amount": 3
+    }
+   ],
+   "time_min": 45,
+   "order_price": 144,
+   "unlock_level": 60
+  },
+  "sauce_mixer:Mayonaise": {
+   "name": "Mayonaise",
+   "requirements": [
+    {
+     "item": "Egg",
+     "amount": 4
+    },
+    {
+     "item": "OliveOil",
+     "amount": 1
+    }
+   ],
+   "time_min": 15,
+   "order_price": 190,
+   "unlock_level": 62
+  },
+  "sauce_mixer:Lemon Curd": {
+   "name": "Lemon Curd",
+   "requirements": [
+    {
+     "item": "Lemon",
+     "amount": 2
+    },
+    {
+     "item": "Egg",
+     "amount": 2
+    },
+    {
+     "item": "Butter",
+     "amount": 1
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    }
+   ],
+   "time_min": 25,
+   "order_price": 194,
+   "unlock_level": 66
+  },
+  "sauce_mixer:Tomato Sauce": {
+   "name": "Tomato Sauce",
+   "requirements": [
+    {
+     "item": "Tomato",
+     "amount": 2
+    },
+    {
+     "item": "Brown_Sugar",
+     "amount": 1
+    },
+    {
+     "item": "Lemon",
+     "amount": 1
+    }
+   ],
+   "time_min": 30,
+   "order_price": 119,
+   "unlock_level": 69
+  },
+  "sauce_mixer:Salsa": {
+   "name": "Salsa",
+   "requirements": [
+    {
+     "item": "Tomato",
+     "amount": 2
+    },
+    {
+     "item": "Onion",
+     "amount": 2
+    },
+    {
+     "item": "Chili",
+     "amount": 2
+    }
+   ],
+   "time_min": 20,
+   "order_price": 130,
+   "unlock_level": 77
+  },
+  "sauce_mixer:Olive Dip": {
+   "name": "Olive Dip",
+   "requirements": [
+    {
+     "item": "Olive",
+     "amount": 3
+    },
+    {
+     "item": "Lemon",
+     "amount": 1
+    },
+    {
+     "item": "Fish Meat",
+     "amount": 1
+    },
+    {
+     "item": "Bread",
+     "amount": 2
+    }
+   ],
+   "time_min": 45,
+   "order_price": 241,
+   "unlock_level": 66
+  },
+  "sauce_mixer:Passion Fruit Sauce": {
+   "name": "Passion Fruit Sauce",
+   "requirements": [
+    {
+     "item": "PassionFruit",
+     "amount": 2
+    },
+    {
+     "item": "Chili",
+     "amount": 2
+    },
+    {
+     "item": "Honey",
+     "amount": 1
+    }
+   ],
+   "time_min": 30,
+   "order_price": 148,
+   "unlock_level": 100
+  },
+  "sauce_mixer:Hummus": {
+   "name": "Hummus",
+   "requirements": [
+    {
+     "item": "Chickpea",
+     "amount": 3
+    },
+    {
+     "item": "Garlic",
+     "amount": 1
+    },
+    {
+     "item": "Lemon",
+     "amount": 2
+    }
+   ],
+   "time_min": 30,
+   "order_price": 142,
+   "unlock_level": 95
+  },
+  "sauce_mixer:Bean Dip": {
+   "name": "Bean Dip",
+   "requirements": [
+    {
+     "item": "BlackBean",
+     "amount": 3
+    },
+    {
+     "item": "Tomato",
+     "amount": 1
+    },
+    {
+     "item": "Chili",
+     "amount": 1
+    }
+   ],
+   "time_min": 40,
+   "order_price": 66,
+   "unlock_level": 54
+  },
+  "pasta_kitchen:Gnocchi": {
+   "name": "Gnocchi",
+   "requirements": [
+    {
+     "item": "Potato",
+     "amount": 4
+    },
+    {
+     "item": "Wheat",
+     "amount": 2
+    },
+    {
+     "item": "Tomato",
+     "amount": 3
+    },
+    {
+     "item": "Butter",
+     "amount": 2
+    }
+   ],
+   "time_min": 80,
+   "order_price": 245,
+   "unlock_level": 72
+  },
+  "pasta_kitchen:Lasagna": {
+   "name": "Lasagna",
+   "requirements": [
+    {
+     "item": "Raw Pasta",
+     "amount": 3
+    },
+    {
+     "item": "Cheese",
+     "amount": 1
+    },
+    {
+     "item": "Tomato Sauce",
+     "amount": 1
+    },
+    {
+     "item": "Carrot",
+     "amount": 1
+    }
+   ],
+   "time_min": 100,
+   "order_price": 275,
+   "unlock_level": 74
+  },
+  "pasta_kitchen:Lobster Pasta": {
+   "name": "Lobster Pasta",
+   "requirements": [
+    {
+     "item": "Raw Pasta",
+     "amount": 3
+    },
+    {
+     "item": "Lobster Meat",
+     "amount": 1
+    },
+    {
+     "item": "Tomato",
+     "amount": 4
+    },
+    {
+     "item": "Cream",
+     "amount": 2
+    }
+   ],
+   "time_min": 120,
+   "order_price": 329,
+   "unlock_level": 79
+  },
+  "pasta_kitchen:Pasta Carbonara": {
+   "name": "Pasta Carbonara",
+   "requirements": [
+    {
+     "item": "Raw Pasta",
+     "amount": 3
+    },
+    {
+     "item": "Egg",
+     "amount": 1
+    },
+    {
+     "item": "Bacon",
+     "amount": 2
+    },
+    {
+     "item": "Cheese",
+     "amount": 1
+    }
+   ],
+   "time_min": 150,
+   "order_price": 212,
+   "unlock_level": 83
+  },
+  "pasta_kitchen:Spicy spaghetti": {
+   "name": "Spicy spaghetti",
+   "requirements": [
+    {
+     "item": "Raw Pasta",
+     "amount": 3
+    },
+    {
+     "item": "Tomato Sauce",
+     "amount": 1
+    },
+    {
+     "item": "Chili",
+     "amount": 3
+    },
+    {
+     "item": "Onion",
+     "amount": 2
+    }
+   ],
+   "time_min": 90,
+   "order_price": 297,
+   "unlock_level": 87
+  },
+  "pasta_kitchen:Broccoli Mac": {
+   "name": "Broccoli Mac",
+   "requirements": [
+    {
+     "item": "Broccoli",
+     "amount": 3
+    },
+    {
+     "item": "Raw Pasta",
+     "amount": 3
+    },
+    {
+     "item": "Cheese",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 178,
+   "unlock_level": 83
+  },
+  "pasta_kitchen:MushroomPasta": {
+   "name": "MushroomPasta",
+   "requirements": [
+    {
+     "item": "Raw Pasta",
+     "amount": 3
+    },
+    {
+     "item": "Mushroom",
+     "amount": 5
+    },
+    {
+     "item": "Goat Milk",
+     "amount": 1
+    }
+   ],
+   "time_min": 75,
+   "order_price": 144,
+   "unlock_level": 101
+  },
+  "pasta_kitchen:Mussel Linguine": {
+   "name": "Mussel Linguine",
+   "requirements": [
+    {
+     "item": "Raw Pasta",
+     "amount": 3
+    },
+    {
+     "item": "Mussel Meat",
+     "amount": 4
+    },
+    {
+     "item": "Garlic",
+     "amount": 3
+    },
+    {
+     "item": "OliveOil",
+     "amount": 1
+    }
+   ],
+   "time_min": 90,
+   "order_price": 300,
+   "unlock_level": 73
+  },
+  "squirrel_nest:PeanutBag": {
+   "name": "PeanutBag",
+   "requirements": [],
+   "time_min": null,
+   "order_price": 186,
+   "unlock_level": 62
+  },
+  "juice_press:Carrot Juice": {
+   "name": "Carrot Juice",
+   "requirements": [
+    {
+     "item": "Carrot",
+     "amount": 3
+    }
+   ],
+   "time_min": 30,
+   "order_price": 24,
+   "unlock_level": 26
+  },
+  "juice_press:Tomato Juice": {
+   "name": "Tomato Juice",
+   "requirements": [
+    {
+     "item": "Tomato",
+     "amount": 3
+    }
+   ],
+   "time_min": 90,
+   "order_price": 84,
+   "unlock_level": 31
+  },
+  "juice_press:Apple Juice": {
+   "name": "Apple Juice",
+   "requirements": [
+    {
+     "item": "Apple",
+     "amount": 2
+    }
+   ],
+   "time_min": 120,
+   "order_price": 66,
+   "unlock_level": 28
+  },
+  "juice_press:Cherry Juice": {
+   "name": "Cherry Juice",
+   "requirements": [
+    {
+     "item": "Cherry",
+     "amount": 2
+    }
+   ],
+   "time_min": 150,
+   "order_price": 111,
+   "unlock_level": 30
+  },
+  "juice_press:Berry Juice": {
+   "name": "Berry Juice",
+   "requirements": [
+    {
+     "item": "Raspberry",
+     "amount": 1
+    },
+    {
+     "item": "Blackberry",
+     "amount": 1
+    }
+   ],
+   "time_min": 180,
+   "order_price": 106,
+   "unlock_level": 31
+  },
+  "juice_press:Orange Juice": {
+   "name": "Orange Juice",
+   "requirements": [
+    {
+     "item": "Orange",
+     "amount": 2
+    }
+   ],
+   "time_min": 120,
+   "order_price": 120,
+   "unlock_level": 71
+  },
+  "juice_press:Grape Juice": {
+   "name": "Grape Juice",
+   "requirements": [
+    {
+     "item": "Grapes",
+     "amount": 2
+    }
+   ],
+   "time_min": 150,
+   "order_price": 55,
+   "unlock_level": 84
+  },
+  "juice_press:WatermelonLemonade": {
+   "name": "WatermelonLemonade",
+   "requirements": [
+    {
+     "item": "Watermelon",
+     "amount": 2
+    }
+   ],
+   "time_min": 60,
+   "order_price": 55,
+   "unlock_level": 92
+  },
+  "juice_press:Pineapple Juice": {
+   "name": "Pineapple Juice",
+   "requirements": [
+    {
+     "item": "Pineapple",
+     "amount": 3
+    }
+   ],
+   "time_min": 45,
+   "order_price": 35,
+   "unlock_level": 52
+  },
+  "juice_press:Passion Fruit Juice": {
+   "name": "Passion Fruit Juice",
+   "requirements": [
+    {
+     "item": "PassionFruit",
+     "amount": 2
+    }
+   ],
+   "time_min": 45,
+   "order_price": 33,
+   "unlock_level": 88
+  },
+  "juice_press:Mango Juice": {
+   "name": "Mango Juice",
+   "requirements": [
+    {
+     "item": "Mango",
+     "amount": 2
+    }
+   ],
+   "time_min": 50,
+   "order_price": 119,
+   "unlock_level": 97
+  },
+  "juice_press:Guava Juice": {
+   "name": "Guava Juice",
+   "requirements": [
+    {
+     "item": "Guava",
+     "amount": 2
+    }
+   ],
+   "time_min": 55,
+   "order_price": 129,
+   "unlock_level": 104
+  },
+  "placeholder:Placeholder": {
+   "name": "Placeholder",
+   "requirements": [
+    {
+     "item": "Milk",
+     "amount": 1
+    }
+   ],
+   "time_min": 20,
+   "order_price": 25,
+   "unlock_level": 150
+  },
+  "fondue_pot:Cheese fondue": {
+   "name": "Cheese fondue",
+   "requirements": [
+    {
+     "item": "Potato Bread",
+     "amount": 1
+    },
+    {
+     "item": "Cheese",
+     "amount": 1
+    },
+    {
+     "item": "Mushroom",
+     "amount": 2
+    },
+    {
+     "item": "Tomato",
+     "amount": 1
+    }
+   ],
+   "time_min": 20,
+   "order_price": 254,
+   "unlock_level": 91
+  },
+  "fondue_pot:Meat fondue": {
+   "name": "Meat fondue",
+   "requirements": [
+    {
+     "item": "Bacon",
+     "amount": 3
+    },
+    {
+     "item": "OliveOil",
+     "amount": 1
+    },
+    {
+     "item": "Broccoli",
+     "amount": 1
+    },
+    {
+     "item": "Bellpepper",
+     "amount": 1
+    }
+   ],
+   "time_min": 30,
+   "order_price": 261,
+   "unlock_level": 86
+  },
+  "fondue_pot:Chocolate fondue": {
+   "name": "Chocolate fondue",
+   "requirements": [
+    {
+     "item": "Chocolate",
+     "amount": 1
+    },
+    {
+     "item": "Strawberry",
+     "amount": 3
+    }
+   ],
+   "time_min": 25,
+   "order_price": 322,
+   "unlock_level": 81
+  },
+  "fondue_pot:Tropical fondue": {
+   "name": "Tropical fondue",
+   "requirements": [
+    {
+     "item": "Mango",
+     "amount": 2
+    },
+    {
+     "item": "Pineapple",
+     "amount": 3
+    },
+    {
+     "item": "Cream",
+     "amount": 2
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    }
+   ],
+   "time_min": 35,
+   "order_price": 216,
+   "unlock_level": 100
+  },
+  "stew_pot:Chickpea Stew": {
+   "name": "Chickpea Stew",
+   "requirements": [
+    {
+     "item": "Chickpea",
+     "amount": 3
+    },
+    {
+     "item": "Tomato",
+     "amount": 2
+    },
+    {
+     "item": "Coconut",
+     "amount": 1
+    }
+   ],
+   "time_min": 90,
+   "order_price": 147,
+   "unlock_level": 106
+  },
+  "stew_pot:Winter Stew": {
+   "name": "Winter Stew",
+   "requirements": [
+    {
+     "item": "Bacon",
+     "amount": 1
+    },
+    {
+     "item": "Potato",
+     "amount": 3
+    },
+    {
+     "item": "Mushroom",
+     "amount": 2
+    },
+    {
+     "item": "Onion",
+     "amount": 2
+    }
+   ],
+   "time_min": 140,
+   "order_price": 153,
+   "unlock_level": 112
+  },
+  "stew_pot:Chili Stew": {
+   "name": "Chili Stew",
+   "requirements": [
+    {
+     "item": "Bacon",
+     "amount": 2
+    },
+    {
+     "item": "Chili",
+     "amount": 3
+    },
+    {
+     "item": "Onion",
+     "amount": 2
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    }
+   ],
+   "time_min": 120,
+   "order_price": 192,
+   "unlock_level": 109
+  },
+  "sewing_machine:Cotton Shirt": {
+   "name": "Cotton Shirt",
+   "requirements": [
+    {
+     "item": "Cotton Fabrics",
+     "amount": 2
+    }
+   ],
+   "time_min": 45,
+   "order_price": 124,
+   "unlock_level": 19
+  },
+  "sewing_machine:Wooly Pants": {
+   "name": "Wooly Pants",
+   "requirements": [
+    {
+     "item": "Cotton Fabrics",
+     "amount": 1
+    },
+    {
+     "item": "Wool",
+     "amount": 3
+    }
+   ],
+   "time_min": 90,
+   "order_price": 159,
+   "unlock_level": 21
+  },
+  "sewing_machine:Violet Dress": {
+   "name": "Violet Dress",
+   "requirements": [
+    {
+     "item": "Cotton Fabrics",
+     "amount": 2
+    },
+    {
+     "item": "Indigo",
+     "amount": 1
+    },
+    {
+     "item": "Raspberry",
+     "amount": 1
+    }
+   ],
+   "time_min": 135,
+   "order_price": 168,
+   "unlock_level": 25
+  },
+  "sewing_machine:Pillow": {
+   "name": "Pillow",
+   "requirements": [
+    {
+     "item": "Cotton Fabrics",
+     "amount": 2
+    },
+    {
+     "item": "Duck Down",
+     "amount": 3
+    }
+   ],
+   "time_min": 180,
+   "order_price": 350,
+   "unlock_level": 51
+  },
+  "sewing_machine:Blanket": {
+   "name": "Blanket",
+   "requirements": [
+    {
+     "item": "Cotton Fabrics",
+     "amount": 3
+    },
+    {
+     "item": "Duck Down",
+     "amount": 5
+    },
+    {
+     "item": "Pumpkin",
+     "amount": 1
+    }
+   ],
+   "time_min": 210,
+   "order_price": 566,
+   "unlock_level": 59
+  },
+  "sewing_machine:Soothing Pad": {
+   "name": "Soothing Pad",
+   "requirements": [
+    {
+     "item": "Cotton Fabrics",
+     "amount": 2
+    },
+    {
+     "item": "Wheat",
+     "amount": 5
+    },
+    {
+     "item": "Chamomile",
+     "amount": 5
+    }
+   ],
+   "time_min": 60,
+   "order_price": 166,
+   "unlock_level": 45
+  },
+  "hotdog_stand:Hot Dog": {
+   "name": "Hot Dog",
+   "requirements": [
+    {
+     "item": "Bread",
+     "amount": 1
+    },
+    {
+     "item": "Bacon",
+     "amount": 2
+    },
+    {
+     "item": "Tomato Sauce",
+     "amount": 1
+    }
+   ],
+   "time_min": 30,
+   "order_price": 191,
+   "unlock_level": 75
+  },
+  "hotdog_stand:Tofu Dog": {
+   "name": "Tofu Dog",
+   "requirements": [
+    {
+     "item": "Lettuce",
+     "amount": 3
+    },
+    {
+     "item": "Soybean",
+     "amount": 6
+    },
+    {
+     "item": "Tomato",
+     "amount": 4
+    }
+   ],
+   "time_min": 45,
+   "order_price": 189,
+   "unlock_level": 76
+  },
+  "hotdog_stand:Corn Dog": {
+   "name": "Corn Dog",
+   "requirements": [
+    {
+     "item": "Bacon",
+     "amount": 4
+    },
+    {
+     "item": "Corn",
+     "amount": 4
+    },
+    {
+     "item": "OliveOil",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 273,
+   "unlock_level": 78
+  },
+  "hotdog_stand:Onion Dog": {
+   "name": "Onion Dog",
+   "requirements": [
+    {
+     "item": "Bread",
+     "amount": 1
+    },
+    {
+     "item": "Bacon",
+     "amount": 2
+    },
+    {
+     "item": "Onion",
+     "amount": 3
+    },
+    {
+     "item": "Chili",
+     "amount": 1
+    }
+   ],
+   "time_min": 75,
+   "order_price": 157,
+   "unlock_level": 80
+  },
+  "essentials_oils_lab:Lemon essential oil": {
+   "name": "Lemon essential oil",
+   "requirements": [
+    {
+     "item": "Lemon",
+     "amount": 3
+    }
+   ],
+   "time_min": 10,
+   "order_price": 149,
+   "unlock_level": 68
+  },
+  "essentials_oils_lab:Mint essential oil": {
+   "name": "Mint essential oil",
+   "requirements": [
+    {
+     "item": "Mint",
+     "amount": 5
+    }
+   ],
+   "time_min": 15,
+   "order_price": 89,
+   "unlock_level": 85
+  },
+  "essentials_oils_lab:Ginger essential oil": {
+   "name": "Ginger essential oil",
+   "requirements": [
+    {
+     "item": "Ginger",
+     "amount": 5
+    }
+   ],
+   "time_min": 20,
+   "order_price": 83,
+   "unlock_level": 80
+  },
+  "essentials_oils_lab:Chamomile essential oil": {
+   "name": "Chamomile essential oil",
+   "requirements": [
+    {
+     "item": "Chamomile",
+     "amount": 5
+    }
+   ],
+   "time_min": 10,
+   "order_price": 37,
+   "unlock_level": 74
+  },
+  "preservation_station:Dried Fruit": {
+   "name": "Dried Fruit",
+   "requirements": [
+    {
+     "item": "Strawberry",
+     "amount": 1
+    },
+    {
+     "item": "Grapes",
+     "amount": 1
+    },
+    {
+     "item": "Raspberry",
+     "amount": 1
+    },
+    {
+     "item": "Orange",
+     "amount": 1
+    }
+   ],
+   "time_min": 180,
+   "order_price": 138,
+   "unlock_level": 102
+  },
+  "preservation_station:Pickles": {
+   "name": "Pickles",
+   "requirements": [
+    {
+     "item": "Cucumber",
+     "amount": 3
+    },
+    {
+     "item": "Onion",
+     "amount": 2
+    },
+    {
+     "item": "Lemon",
+     "amount": 1
+    }
+   ],
+   "time_min": 240,
+   "order_price": 139,
+   "unlock_level": 91
+  },
+  "preservation_station:Canned Fish": {
+   "name": "Canned Fish",
+   "requirements": [
+    {
+     "item": "Fish Meat",
+     "amount": 2
+    },
+    {
+     "item": "OliveOil",
+     "amount": 1
+    },
+    {
+     "item": "Chili",
+     "amount": 1
+    }
+   ],
+   "time_min": 220,
+   "order_price": 244,
+   "unlock_level": 95
+  },
+  "preservation_station:Kimchi": {
+   "name": "Kimchi",
+   "requirements": [
+    {
+     "item": "Cabbage",
+     "amount": 5
+    },
+    {
+     "item": "Chili",
+     "amount": 1
+    },
+    {
+     "item": "Ginger",
+     "amount": 1
+    },
+    {
+     "item": "Garlic",
+     "amount": 1
+    }
+   ],
+   "time_min": 300,
+   "order_price": 114,
+   "unlock_level": 98
+  },
+  "preservation_station:Guava Compote": {
+   "name": "Guava Compote",
+   "requirements": [
+    {
+     "item": "Guava",
+     "amount": 2
+    },
+    {
+     "item": "Lemon",
+     "amount": 1
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    }
+   ],
+   "time_min": 260,
+   "order_price": 218,
+   "unlock_level": 104
+  },
+  "popcorn_pot:Popcorn": {
+   "name": "Popcorn",
+   "requirements": [
+    {
+     "item": "Corn",
+     "amount": 2
+    }
+   ],
+   "time_min": 30,
+   "order_price": 17,
+   "unlock_level": 8
+  },
+  "popcorn_pot:Butter Popcorn": {
+   "name": "Butter Popcorn",
+   "requirements": [
+    {
+     "item": "Corn",
+     "amount": 2
+    },
+    {
+     "item": "Butter",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 65,
+   "unlock_level": 16
+  },
+  "popcorn_pot:Chili Popcorn": {
+   "name": "Chili Popcorn",
+   "requirements": [
+    {
+     "item": "Corn",
+     "amount": 2
+    },
+    {
+     "item": "Chili",
+     "amount": 2
+    }
+   ],
+   "time_min": 120,
+   "order_price": 63,
+   "unlock_level": 25
+  },
+  "popcorn_pot:Chocolate Popcorn": {
+   "name": "Chocolate Popcorn",
+   "requirements": [
+    {
+     "item": "Corn",
+     "amount": 2
+    },
+    {
+     "item": "Cacao",
+     "amount": 2
+    }
+   ],
+   "time_min": 150,
+   "order_price": 127,
+   "unlock_level": 44
+  },
+  "popcorn_pot:Honey Popcorn": {
+   "name": "Honey Popcorn",
+   "requirements": [
+    {
+     "item": "Corn",
+     "amount": 2
+    },
+    {
+     "item": "Honey",
+     "amount": 2
+    }
+   ],
+   "time_min": 90,
+   "order_price": 186,
+   "unlock_level": 40
+  },
+  "popcorn_pot:Snack Mix": {
+   "name": "Snack Mix",
+   "requirements": [
+    {
+     "item": "Corn",
+     "amount": 2
+    },
+    {
+     "item": "PeanutBag",
+     "amount": 1
+    },
+    {
+     "item": "Sesame",
+     "amount": 1
+    }
+   ],
+   "time_min": 45,
+   "order_price": 215,
+   "unlock_level": 64
+  },
+  "deep_fryer:Loaded Fries": {
+   "name": "Loaded Fries",
+   "requirements": [
+    {
+     "item": "Potato",
+     "amount": 4
+    },
+    {
+     "item": "Bacon",
+     "amount": 2
+    },
+    {
+     "item": "Chili",
+     "amount": 1
+    },
+    {
+     "item": "Garlic",
+     "amount": 1
+    }
+   ],
+   "time_min": 25,
+   "order_price": 157,
+   "unlock_level": 87
+  },
+  "deep_fryer:Stuffed Peppers": {
+   "name": "Stuffed Peppers",
+   "requirements": [
+    {
+     "item": "Chili",
+     "amount": 3
+    },
+    {
+     "item": "Bacon",
+     "amount": 3
+    },
+    {
+     "item": "Cheese",
+     "amount": 1
+    },
+    {
+     "item": "Wheat",
+     "amount": 1
+    }
+   ],
+   "time_min": 40,
+   "order_price": 209,
+   "unlock_level": 98
+  },
+  "deep_fryer:Hand Pies": {
+   "name": "Hand Pies",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 5
+    },
+    {
+     "item": "Egg",
+     "amount": 2
+    },
+    {
+     "item": "Apple Jam",
+     "amount": 1
+    }
+   ],
+   "time_min": 20,
+   "order_price": 152,
+   "unlock_level": 91
+  },
+  "deep_fryer:Fried Candy": {
+   "name": "Fried Candy",
+   "requirements": [
+    {
+     "item": "Cacao",
+     "amount": 3
+    },
+    {
+     "item": "PeanutBag",
+     "amount": 1
+    },
+    {
+     "item": "Cookie",
+     "amount": 1
+    }
+   ],
+   "time_min": 15,
+   "order_price": 376,
+   "unlock_level": 100
+  },
+  "deep_fryer:Falafel": {
+   "name": "Falafel",
+   "requirements": [
+    {
+     "item": "Chickpea",
+     "amount": 3
+    },
+    {
+     "item": "Onion",
+     "amount": 2
+    },
+    {
+     "item": "Garlic",
+     "amount": 2
+    },
+    {
+     "item": "Chili",
+     "amount": 1
+    }
+   ],
+   "time_min": 55,
+   "order_price": 117,
+   "unlock_level": 98
+  },
+  "deep_fryer:Samosa": {
+   "name": "Samosa",
+   "requirements": [
+    {
+     "item": "Chickpea",
+     "amount": 2
+    },
+    {
+     "item": "Potato",
+     "amount": 3
+    },
+    {
+     "item": "Chili",
+     "amount": 1
+    },
+    {
+     "item": "Wheat",
+     "amount": 4
+    }
+   ],
+   "time_min": 75,
+   "order_price": 116,
+   "unlock_level": 103
+  },
+  "candle_maker:Strawberry Candle": {
+   "name": "Strawberry Candle",
+   "requirements": [
+    {
+     "item": "Beeswax",
+     "amount": 1
+    },
+    {
+     "item": "Strawberry",
+     "amount": 2
+    }
+   ],
+   "time_min": 120,
+   "order_price": 191,
+   "unlock_level": 48
+  },
+  "candle_maker:Raspberry Candle": {
+   "name": "Raspberry Candle",
+   "requirements": [
+    {
+     "item": "Beeswax",
+     "amount": 1
+    },
+    {
+     "item": "Raspberry",
+     "amount": 2
+    }
+   ],
+   "time_min": 105,
+   "order_price": 185,
+   "unlock_level": 52
+  },
+  "candle_maker:Lemon Candle": {
+   "name": "Lemon Candle",
+   "requirements": [
+    {
+     "item": "Beeswax",
+     "amount": 1
+    },
+    {
+     "item": "Lemon",
+     "amount": 2
+    }
+   ],
+   "time_min": 135,
+   "order_price": 237,
+   "unlock_level": 72
+  },
+  "candle_maker:Floral candle": {
+   "name": "Floral candle",
+   "requirements": [
+    {
+     "item": "Beeswax",
+     "amount": 1
+    },
+    {
+     "item": "Peony",
+     "amount": 2
+    },
+    {
+     "item": "Sunflower",
+     "amount": 2
+    },
+    {
+     "item": "Indigo",
+     "amount": 2
+    }
+   ],
+   "time_min": 120,
+   "order_price": 228,
+   "unlock_level": 95
+  },
+  "candle_maker:Party Candle": {
+   "name": "Party Candle",
+   "requirements": [
+    {
+     "item": "Beeswax",
+     "amount": 1
+    },
+    {
+     "item": "Raspberry",
+     "amount": 1
+    },
+    {
+     "item": "Carrot",
+     "amount": 1
+    }
+   ],
+   "time_min": 110,
+   "order_price": 167,
+   "unlock_level": 84
+  },
+  "dairy:Cream": {
+   "name": "Cream",
+   "requirements": [
+    {
+     "item": "Milk",
+     "amount": 1
+    }
+   ],
+   "time_min": 20,
+   "order_price": 25,
+   "unlock_level": 6
+  },
+  "dairy:Butter": {
+   "name": "Butter",
+   "requirements": [
+    {
+     "item": "Milk",
+     "amount": 2
+    }
+   ],
+   "time_min": 30,
+   "order_price": 44,
+   "unlock_level": 9
+  },
+  "dairy:Cheese": {
+   "name": "Cheese",
+   "requirements": [
+    {
+     "item": "Milk",
+     "amount": 3
+    }
+   ],
+   "time_min": 60,
+   "order_price": 64,
+   "unlock_level": 12
+  },
+  "dairy:Goat Cheese": {
+   "name": "Goat Cheese",
+   "requirements": [
+    {
+     "item": "Goat Milk",
+     "amount": 2
+    }
+   ],
+   "time_min": 90,
+   "order_price": 83,
+   "unlock_level": 33
+  },
+  "sugar_mill:Brown_Sugar": {
+   "name": "Brown_Sugar",
+   "requirements": [
+    {
+     "item": "Sugarcane",
+     "amount": 1
+    }
+   ],
+   "time_min": 20,
+   "order_price": 16,
+   "unlock_level": 7
+  },
+  "sugar_mill:White Sugar": {
+   "name": "White Sugar",
+   "requirements": [
+    {
+     "item": "Sugarcane",
+     "amount": 2
+    }
+   ],
+   "time_min": 40,
+   "order_price": 27,
+   "unlock_level": 13
+  },
+  "sugar_mill:Syrup": {
+   "name": "Syrup",
+   "requirements": [
+    {
+     "item": "Sugarcane",
+     "amount": 4
+    }
+   ],
+   "time_min": 90,
+   "order_price": 47,
+   "unlock_level": 18
+  },
+  "doner_kebab_stand:Lamb Doner Wrap": {
+   "name": "Lamb Doner Wrap",
+   "requirements": [
+    {
+     "item": "Grilled Lamb Skewer",
+     "amount": 1
+    },
+    {
+     "item": "Tomato",
+     "amount": 1
+    },
+    {
+     "item": "Bread",
+     "amount": 1
+    }
+   ],
+   "time_min": 20,
+   "order_price": 88,
+   "unlock_level": 32
+  },
+  "doner_kebab_stand:Spicy Bean Doner": {
+   "name": "Spicy Bean Doner",
+   "requirements": [
+    {
+     "item": "Corn Bread",
+     "amount": 1
+    },
+    {
+     "item": "BlackBean",
+     "amount": 3
+    },
+    {
+     "item": "Chili",
+     "amount": 3
+    },
+    {
+     "item": "Cheese",
+     "amount": 2
+    }
+   ],
+   "time_min": 30,
+   "order_price": 243,
+   "unlock_level": 32
+  },
+  "doner_kebab_stand:Tower Doner Supreme": {
+   "name": "Tower Doner Supreme",
+   "requirements": [
+    {
+     "item": "Lamb Meat",
+     "amount": 3
+    },
+    {
+     "item": "Corn Bread",
+     "amount": 1
+    },
+    {
+     "item": "Goat Cheese",
+     "amount": 1
+    },
+    {
+     "item": "Lettuce",
+     "amount": 3
+    }
+   ],
+   "time_min": 40,
+   "order_price": 183,
+   "unlock_level": 58
+  },
+  "tea_stand:Green Tea": {
+   "name": "Green Tea",
+   "requirements": [
+    {
+     "item": "TeaLeaves",
+     "amount": 5
+    }
+   ],
+   "time_min": 30,
+   "order_price": 125,
+   "unlock_level": 80
+  },
+  "tea_stand:Milk Tea": {
+   "name": "Milk Tea",
+   "requirements": [
+    {
+     "item": "TeaLeaves",
+     "amount": 3
+    },
+    {
+     "item": "Milk",
+     "amount": 1
+    }
+   ],
+   "time_min": 45,
+   "order_price": 98,
+   "unlock_level": 81
+  },
+  "tea_stand:Honey Tea": {
+   "name": "Honey Tea",
+   "requirements": [
+    {
+     "item": "TeaLeaves",
+     "amount": 3
+    },
+    {
+     "item": "Honey",
+     "amount": 1
+    }
+   ],
+   "time_min": 40,
+   "order_price": 162,
+   "unlock_level": 83
+  },
+  "tea_stand:Lemon Tea": {
+   "name": "Lemon Tea",
+   "requirements": [
+    {
+     "item": "TeaLeaves",
+     "amount": 3
+    },
+    {
+     "item": "Lemon",
+     "amount": 1
+    }
+   ],
+   "time_min": 20,
+   "order_price": 125,
+   "unlock_level": 86
+  },
+  "tea_stand:Orange Tea": {
+   "name": "Orange Tea",
+   "requirements": [
+    {
+     "item": "TeaLeaves",
+     "amount": 3
+    },
+    {
+     "item": "Orange",
+     "amount": 1
+    }
+   ],
+   "time_min": 40,
+   "order_price": 131,
+   "unlock_level": 89
+  },
+  "tea_stand:Ice Tea": {
+   "name": "Ice Tea",
+   "requirements": [
+    {
+     "item": "TeaLeaves",
+     "amount": 3
+    },
+    {
+     "item": "Peach",
+     "amount": 1
+    }
+   ],
+   "time_min": 30,
+   "order_price": 131,
+   "unlock_level": 92
+  },
+  "tea_stand:MintTea": {
+   "name": "MintTea",
+   "requirements": [
+    {
+     "item": "TeaLeaves",
+     "amount": 3
+    },
+    {
+     "item": "Mint",
+     "amount": 2
+    },
+    {
+     "item": "Watermelon",
+     "amount": 1
+    }
+   ],
+   "time_min": 35,
+   "order_price": 133,
+   "unlock_level": 97
+  },
+  "tea_stand:GingerTea": {
+   "name": "GingerTea",
+   "requirements": [
+    {
+     "item": "Ginger",
+     "amount": 1
+    },
+    {
+     "item": "Apple",
+     "amount": 2
+    },
+    {
+     "item": "TeaLeaves",
+     "amount": 1
+    }
+   ],
+   "time_min": 30,
+   "order_price": 87,
+   "unlock_level": 88
+  },
+  "tea_stand:Pomegranate Tea": {
+   "name": "Pomegranate Tea",
+   "requirements": [
+    {
+     "item": "TeaLeaves",
+     "amount": 4
+    },
+    {
+     "item": "Pomegranate",
+     "amount": 1
+    }
+   ],
+   "time_min": 35,
+   "order_price": 161,
+   "unlock_level": 107
+  },
+  "tea_stand:Chamomile Tea": {
+   "name": "Chamomile Tea",
+   "requirements": [
+    {
+     "item": "Chamomile",
+     "amount": 5
+    },
+    {
+     "item": "Honeycomb",
+     "amount": 1
+    }
+   ],
+   "time_min": 20,
+   "order_price": 75,
+   "unlock_level": 100
+  },
+  "sushi_bar:SushiRoll": {
+   "name": "SushiRoll",
+   "requirements": [
+    {
+     "item": "Rice",
+     "amount": 15
+    },
+    {
+     "item": "SoySauce",
+     "amount": 1
+    },
+    {
+     "item": "Fish Meat",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 253,
+   "unlock_level": 56
+  },
+  "sushi_bar:LobsterSushi": {
+   "name": "LobsterSushi",
+   "requirements": [
+    {
+     "item": "Rice",
+     "amount": 15
+    },
+    {
+     "item": "SoySauce",
+     "amount": 1
+    },
+    {
+     "item": "Lobster Meat",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 329,
+   "unlock_level": 59
+  },
+  "sushi_bar:EggRoll": {
+   "name": "EggRoll",
+   "requirements": [
+    {
+     "item": "Rice",
+     "amount": 15
+    },
+    {
+     "item": "Egg",
+     "amount": 4
+    },
+    {
+     "item": "SoySauce",
+     "amount": 1
+    },
+    {
+     "item": "Brown_Sugar",
+     "amount": 1
+    }
+   ],
+   "time_min": 120,
+   "order_price": 285,
+   "unlock_level": 63
+  },
+  "sushi_bar:Big sushi roll": {
+   "name": "Big sushi roll",
+   "requirements": [
+    {
+     "item": "Rice",
+     "amount": 20
+    },
+    {
+     "item": "Fish Meat",
+     "amount": 1
+    },
+    {
+     "item": "Egg",
+     "amount": 3
+    },
+    {
+     "item": "Lettuce",
+     "amount": 5
+    }
+   ],
+   "time_min": 90,
+   "order_price": 334,
+   "unlock_level": 76
+  },
+  "sushi_bar:Rice Ball": {
+   "name": "Rice Ball",
+   "requirements": [
+    {
+     "item": "Rice",
+     "amount": 20
+    },
+    {
+     "item": "Plum",
+     "amount": 1
+    },
+    {
+     "item": "Sesame",
+     "amount": 1
+    }
+   ],
+   "time_min": 45,
+   "order_price": 239,
+   "unlock_level": 110
+  },
+  "sushi_bar:Mussel Sushi": {
+   "name": "Mussel Sushi",
+   "requirements": [
+    {
+     "item": "Rice",
+     "amount": 15
+    },
+    {
+     "item": "Mussel Meat",
+     "amount": 4
+    },
+    {
+     "item": "SoySauce",
+     "amount": 1
+    }
+   ],
+   "time_min": 90,
+   "order_price": 280,
+   "unlock_level": 56
+  },
+  "salad_bar:GreekSalad": {
+   "name": "GreekSalad",
+   "requirements": [
+    {
+     "item": "Lettuce",
+     "amount": 3
+    },
+    {
+     "item": "Goat Cheese",
+     "amount": 2
+    },
+    {
+     "item": "Roasted Tomatoes",
+     "amount": 1
+    },
+    {
+     "item": "Olive",
+     "amount": 2
+    }
+   ],
+   "time_min": 90,
+   "order_price": 384,
+   "unlock_level": 58
+  },
+  "salad_bar:BaconSalad": {
+   "name": "BaconSalad",
+   "requirements": [
+    {
+     "item": "Lettuce",
+     "amount": 3
+    },
+    {
+     "item": "Bacon",
+     "amount": 2
+    },
+    {
+     "item": "Roasted Tomatoes",
+     "amount": 1
+    },
+    {
+     "item": "Mayonaise",
+     "amount": 1
+    }
+   ],
+   "time_min": 105,
+   "order_price": 373,
+   "unlock_level": 62
+  },
+  "salad_bar:SeafoodSalad": {
+   "name": "SeafoodSalad",
+   "requirements": [
+    {
+     "item": "Lettuce",
+     "amount": 3
+    },
+    {
+     "item": "Lobster Meat",
+     "amount": 1
+    },
+    {
+     "item": "Fish Meat",
+     "amount": 1
+    },
+    {
+     "item": "Mayonaise",
+     "amount": 1
+    }
+   ],
+   "time_min": 120,
+   "order_price": 394,
+   "unlock_level": 64
+  },
+  "salad_bar:Pasta Salad": {
+   "name": "Pasta Salad",
+   "requirements": [
+    {
+     "item": "Raw Pasta",
+     "amount": 4
+    },
+    {
+     "item": "OliveOil",
+     "amount": 1
+    },
+    {
+     "item": "Lemon",
+     "amount": 2
+    },
+    {
+     "item": "Tomato",
+     "amount": 2
+    }
+   ],
+   "time_min": 150,
+   "order_price": 392,
+   "unlock_level": 67
+  },
+  "salad_bar:Fruit Salad": {
+   "name": "Fruit Salad",
+   "requirements": [
+    {
+     "item": "Orange",
+     "amount": 1
+    },
+    {
+     "item": "Strawberry",
+     "amount": 3
+    },
+    {
+     "item": "Blackberry",
+     "amount": 2
+    },
+    {
+     "item": "Honey",
+     "amount": 1
+    }
+   ],
+   "time_min": 120,
+   "order_price": 309,
+   "unlock_level": 82
+  },
+  "salad_bar:Summer Salad": {
+   "name": "Summer Salad",
+   "requirements": [
+    {
+     "item": "Peach",
+     "amount": 1
+    },
+    {
+     "item": "Tomato",
+     "amount": 3
+    },
+    {
+     "item": "Goat Cheese",
+     "amount": 1
+    },
+    {
+     "item": "Onion",
+     "amount": 3
+    }
+   ],
+   "time_min": 180,
+   "order_price": 285,
+   "unlock_level": 84
+  },
+  "salad_bar:Summer Rolls": {
+   "name": "Summer Rolls",
+   "requirements": [
+    {
+     "item": "Rice Noodles",
+     "amount": 2
+    },
+    {
+     "item": "Carrot",
+     "amount": 2
+    },
+    {
+     "item": "Lettuce",
+     "amount": 1
+    },
+    {
+     "item": "Chili",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 164,
+   "unlock_level": 78
+  },
+  "salad_bar:VeggieDip": {
+   "name": "VeggieDip",
+   "requirements": [
+    {
+     "item": "Bellpepper",
+     "amount": 2
+    },
+    {
+     "item": "Carrot",
+     "amount": 2
+    },
+    {
+     "item": "Tomato",
+     "amount": 2
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    }
+   ],
+   "time_min": 120,
+   "order_price": 137,
+   "unlock_level": 74
+  },
+  "salad_bar:MushroomSalad": {
+   "name": "MushroomSalad",
+   "requirements": [
+    {
+     "item": "Mushroom",
+     "amount": 3
+    },
+    {
+     "item": "Lettuce",
+     "amount": 1
+    },
+    {
+     "item": "Bacon",
+     "amount": 1
+    },
+    {
+     "item": "Potato",
+     "amount": 2
+    }
+   ],
+   "time_min": 60,
+   "order_price": 111,
+   "unlock_level": 89
+  },
+  "salad_bar:Beetroot salad": {
+   "name": "Beetroot salad",
+   "requirements": [
+    {
+     "item": "Beetroot",
+     "amount": 3
+    },
+    {
+     "item": "Goat Cheese",
+     "amount": 1
+    }
+   ],
+   "time_min": 45,
+   "order_price": 120,
+   "unlock_level": 76
+  },
+  "salad_bar:Coleslaw": {
+   "name": "Coleslaw",
+   "requirements": [
+    {
+     "item": "Cabbage",
+     "amount": 3
+    },
+    {
+     "item": "Mayonaise",
+     "amount": 1
+    },
+    {
+     "item": "Carrot",
+     "amount": 2
+    }
+   ],
+   "time_min": 75,
+   "order_price": 241,
+   "unlock_level": 75
+  },
+  "salad_bar:Orange Salad": {
+   "name": "Orange Salad",
+   "requirements": [
+    {
+     "item": "Orange",
+     "amount": 2
+    },
+    {
+     "item": "Pomegranate",
+     "amount": 1
+    },
+    {
+     "item": "Lettuce",
+     "amount": 3
+    },
+    {
+     "item": "Cheese",
+     "amount": 1
+    }
+   ],
+   "time_min": 45,
+   "order_price": 287,
+   "unlock_level": 117
+  },
+  "salad_bar:Bean Salad": {
+   "name": "Bean Salad",
+   "requirements": [
+    {
+     "item": "BlackBean",
+     "amount": 3
+    },
+    {
+     "item": "Tomato",
+     "amount": 1
+    },
+    {
+     "item": "Lettuce",
+     "amount": 2
+    },
+    {
+     "item": "Corn",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 88,
+   "unlock_level": 58
+  },
+  "bath_kiosk:Exfoliating Soap": {
+   "name": "Exfoliating Soap",
+   "requirements": [
+    {
+     "item": "Cacao",
+     "amount": 2
+    },
+    {
+     "item": "Coffee",
+     "amount": 2
+    },
+    {
+     "item": "Raspberry",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 187,
+   "unlock_level": 93
+  },
+  "bath_kiosk:Face Mask": {
+   "name": "Face Mask",
+   "requirements": [
+    {
+     "item": "Egg",
+     "amount": 2
+    },
+    {
+     "item": "Lemon",
+     "amount": 1
+    },
+    {
+     "item": "Honey",
+     "amount": 1
+    }
+   ],
+   "time_min": 90,
+   "order_price": 165,
+   "unlock_level": 99
+  },
+  "bath_kiosk:Honey Soap": {
+   "name": "Honey Soap",
+   "requirements": [
+    {
+     "item": "Cacao",
+     "amount": 2
+    },
+    {
+     "item": "Goat Milk",
+     "amount": 1
+    },
+    {
+     "item": "Honeycomb",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 169,
+   "unlock_level": 84
+  },
+  "bath_kiosk:Lemon Lotion": {
+   "name": "Lemon Lotion",
+   "requirements": [
+    {
+     "item": "OliveOil",
+     "amount": 1
+    },
+    {
+     "item": "Lemon",
+     "amount": 1
+    }
+   ],
+   "time_min": 75,
+   "order_price": 207,
+   "unlock_level": 84
+  },
+  "bath_kiosk:Rich soap": {
+   "name": "Rich soap",
+   "requirements": [
+    {
+     "item": "Oats",
+     "amount": 2
+    },
+    {
+     "item": "Pomegranate",
+     "amount": 1
+    },
+    {
+     "item": "Coconut",
+     "amount": 1
+    }
+   ],
+   "time_min": 70,
+   "order_price": 137,
+   "unlock_level": 121
+  },
+  "taco_kitchen:Taco": {
+   "name": "Taco",
+   "requirements": [
+    {
+     "item": "Corn Bread",
+     "amount": 1
+    },
+    {
+     "item": "Bacon",
+     "amount": 1
+    },
+    {
+     "item": "Salsa",
+     "amount": 1
+    }
+   ],
+   "time_min": 45,
+   "order_price": 205,
+   "unlock_level": 77
+  },
+  "taco_kitchen:Fish Taco": {
+   "name": "Fish Taco",
+   "requirements": [
+    {
+     "item": "Corn Bread",
+     "amount": 2
+    },
+    {
+     "item": "Fish Meat",
+     "amount": 1
+    },
+    {
+     "item": "Chili",
+     "amount": 2
+    },
+    {
+     "item": "Lemon",
+     "amount": 1
+    }
+   ],
+   "time_min": 90,
+   "order_price": 202,
+   "unlock_level": 79
+  },
+  "taco_kitchen:Quesadilla": {
+   "name": "Quesadilla",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 4
+    },
+    {
+     "item": "Cheese",
+     "amount": 1
+    },
+    {
+     "item": "Chili",
+     "amount": 2
+    }
+   ],
+   "time_min": 60,
+   "order_price": 124,
+   "unlock_level": 82
+  },
+  "taco_kitchen:Nachos": {
+   "name": "Nachos",
+   "requirements": [
+    {
+     "item": "Corn",
+     "amount": 4
+    },
+    {
+     "item": "Salsa",
+     "amount": 1
+    },
+    {
+     "item": "Cheese",
+     "amount": 1
+    }
+   ],
+   "time_min": 75,
+   "order_price": 224,
+   "unlock_level": 87
+  },
+  "taco_kitchen:Spicy Bean Taco": {
+   "name": "Spicy Bean Taco",
+   "requirements": [
+    {
+     "item": "Taco",
+     "amount": 1
+    },
+    {
+     "item": "BlackBean",
+     "amount": 2
+    }
+   ],
+   "time_min": 120,
+   "order_price": 234,
+   "unlock_level": 77
+  },
+  "wok_kitchen:Fried rice": {
+   "name": "Fried rice",
+   "requirements": [
+    {
+     "item": "Egg",
+     "amount": 5
+    },
+    {
+     "item": "Rice",
+     "amount": 5
+    }
+   ],
+   "time_min": 60,
+   "order_price": 106,
+   "unlock_level": 69
+  },
+  "wok_kitchen:Tofu stir fry": {
+   "name": "Tofu stir fry",
+   "requirements": [
+    {
+     "item": "Soybean",
+     "amount": 3
+    },
+    {
+     "item": "Sesame",
+     "amount": 3
+    },
+    {
+     "item": "Broccoli",
+     "amount": 3
+    },
+    {
+     "item": "Onion",
+     "amount": 3
+    }
+   ],
+   "time_min": 75,
+   "order_price": 158,
+   "unlock_level": 89
+  },
+  "wok_kitchen:Spicy fish": {
+   "name": "Spicy fish",
+   "requirements": [
+    {
+     "item": "Fish Meat",
+     "amount": 1
+    },
+    {
+     "item": "OliveOil",
+     "amount": 1
+    },
+    {
+     "item": "Garlic",
+     "amount": 5
+    },
+    {
+     "item": "Chili",
+     "amount": 3
+    }
+   ],
+   "time_min": 90,
+   "order_price": 280,
+   "unlock_level": 79
+  },
+  "wok_kitchen:Peanut noodles": {
+   "name": "Peanut noodles",
+   "requirements": [
+    {
+     "item": "Rice Noodles",
+     "amount": 1
+    },
+    {
+     "item": "PeanutBag",
+     "amount": 1
+    },
+    {
+     "item": "Ginger",
+     "amount": 1
+    },
+    {
+     "item": "SoySauce",
+     "amount": 1
+    }
+   ],
+   "time_min": 45,
+   "order_price": 346,
+   "unlock_level": 86
+  },
+  "wok_kitchen:Lamb Stir Fry": {
+   "name": "Lamb Stir Fry",
+   "requirements": [
+    {
+     "item": "Rice",
+     "amount": 3
+    },
+    {
+     "item": "Grilled Lamb Skewer",
+     "amount": 1
+    },
+    {
+     "item": "Chili",
+     "amount": 2
+    },
+    {
+     "item": "Sesame",
+     "amount": 1
+    }
+   ],
+   "time_min": 120,
+   "order_price": 139,
+   "unlock_level": 69
+  },
+  "candy_machine:Caramel Apple": {
+   "name": "Caramel Apple",
+   "requirements": [
+    {
+     "item": "Apple",
+     "amount": 1
+    },
+    {
+     "item": "Syrup",
+     "amount": 2
+    }
+   ],
+   "time_min": 120,
+   "order_price": 66,
+   "unlock_level": 51
+  },
+  "candy_machine:Toffee": {
+   "name": "Toffee",
+   "requirements": [
+    {
+     "item": "Butter",
+     "amount": 1
+    },
+    {
+     "item": "Wheat",
+     "amount": 1
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    }
+   ],
+   "time_min": 90,
+   "order_price": 45,
+   "unlock_level": 52
+  },
+  "candy_machine:Chocolate": {
+   "name": "Chocolate",
+   "requirements": [
+    {
+     "item": "Cacao",
+     "amount": 3
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    }
+   ],
+   "time_min": 1200,
+   "order_price": 119,
+   "unlock_level": 54
+  },
+  "candy_machine:Lollipop": {
+   "name": "Lollipop",
+   "requirements": [
+    {
+     "item": "Syrup",
+     "amount": 1
+    },
+    {
+     "item": "Strawberry",
+     "amount": 2
+    },
+    {
+     "item": "Cherry",
+     "amount": 1
+    }
+   ],
+   "time_min": 720,
+   "order_price": 88,
+   "unlock_level": 57
+  },
+  "candy_machine:Jelly Beans": {
+   "name": "Jelly Beans",
+   "requirements": [
+    {
+     "item": "Raspberry Jam",
+     "amount": 1
+    },
+    {
+     "item": "Blackberry Jam",
+     "amount": 1
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    }
+   ],
+   "time_min": 1440,
+   "order_price": 122,
+   "unlock_level": 60
+  },
+  "candy_machine:SesameBrittle": {
+   "name": "SesameBrittle",
+   "requirements": [
+    {
+     "item": "Sesame",
+     "amount": 3
+    },
+    {
+     "item": "Ginger",
+     "amount": 1
+    },
+    {
+     "item": "Honey",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 70,
+   "unlock_level": 78
+  },
+  "candy_machine:CandiedPeanuts": {
+   "name": "CandiedPeanuts",
+   "requirements": [
+    {
+     "item": "PeanutBag",
+     "amount": 1
+    },
+    {
+     "item": "Honey",
+     "amount": 1
+    }
+   ],
+   "time_min": 40,
+   "order_price": 279,
+   "unlock_level": 63
+  },
+  "candy_machine:Cotton Candy": {
+   "name": "Cotton Candy",
+   "requirements": [
+    {
+     "item": "White Sugar",
+     "amount": 3
+    },
+    {
+     "item": "Strawberry",
+     "amount": 1
+    }
+   ],
+   "time_min": 30,
+   "order_price": 116,
+   "unlock_level": 75
+  },
+  "sandwich_bar:BLTToast": {
+   "name": "BLTToast",
+   "requirements": [
+    {
+     "item": "Bread",
+     "amount": 2
+    },
+    {
+     "item": "Lettuce",
+     "amount": 3
+    },
+    {
+     "item": "Bacon",
+     "amount": 2
+    },
+    {
+     "item": "Mayonaise",
+     "amount": 1
+    }
+   ],
+   "time_min": 100,
+   "order_price": 333,
+   "unlock_level": 65
+  },
+  "sandwich_bar:VeggieBagel": {
+   "name": "VeggieBagel",
+   "requirements": [
+    {
+     "item": "Bread",
+     "amount": 2
+    },
+    {
+     "item": "Lettuce",
+     "amount": 3
+    },
+    {
+     "item": "Tomato",
+     "amount": 2
+    },
+    {
+     "item": "OliveOil",
+     "amount": 1
+    }
+   ],
+   "time_min": 40,
+   "order_price": 274,
+   "unlock_level": 61
+  },
+  "sandwich_bar:EggSandwich": {
+   "name": "EggSandwich",
+   "requirements": [
+    {
+     "item": "Bread",
+     "amount": 2
+    },
+    {
+     "item": "Lettuce",
+     "amount": 3
+    },
+    {
+     "item": "Egg",
+     "amount": 2
+    },
+    {
+     "item": "Mayonaise",
+     "amount": 1
+    }
+   ],
+   "time_min": 80,
+   "order_price": 300,
+   "unlock_level": 66
+  },
+  "sandwich_bar:Honey Toast": {
+   "name": "Honey Toast",
+   "requirements": [
+    {
+     "item": "Bread",
+     "amount": 1
+    },
+    {
+     "item": "Egg",
+     "amount": 1
+    },
+    {
+     "item": "Milk",
+     "amount": 1
+    },
+    {
+     "item": "Honey",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 133,
+   "unlock_level": 69
+  },
+  "sandwich_bar:Goat Cheese Toast": {
+   "name": "Goat Cheese Toast",
+   "requirements": [
+    {
+     "item": "Bread",
+     "amount": 1
+    },
+    {
+     "item": "Goat Cheese",
+     "amount": 1
+    },
+    {
+     "item": "Grapes",
+     "amount": 3
+    }
+   ],
+   "time_min": 50,
+   "order_price": 156,
+   "unlock_level": 92
+  },
+  "sandwich_bar:Onion melt": {
+   "name": "Onion melt",
+   "requirements": [
+    {
+     "item": "Corn Bread",
+     "amount": 2
+    },
+    {
+     "item": "Onion",
+     "amount": 3
+    },
+    {
+     "item": "Cheese",
+     "amount": 1
+    }
+   ],
+   "time_min": 90,
+   "order_price": 215,
+   "unlock_level": 84
+  },
+  "sandwich_bar:Cucumber Sandwich": {
+   "name": "Cucumber Sandwich",
+   "requirements": [
+    {
+     "item": "Cucumber",
+     "amount": 2
+    },
+    {
+     "item": "Bread",
+     "amount": 2
+    },
+    {
+     "item": "Mayonaise",
+     "amount": 1
+    }
+   ],
+   "time_min": 35,
+   "order_price": 239,
+   "unlock_level": 79
+  },
+  "sandwich_bar:PBJ Sandwich": {
+   "name": "PBJ Sandwich",
+   "requirements": [
+    {
+     "item": "Bread",
+     "amount": 2
+    },
+    {
+     "item": "PeanutBag",
+     "amount": 1
+    },
+    {
+     "item": "Raspberry Jam",
+     "amount": 1
+    }
+   ],
+   "time_min": 25,
+   "order_price": 347,
+   "unlock_level": 71
+  },
+  "sandwich_bar:Hummus Wrap": {
+   "name": "Hummus Wrap",
+   "requirements": [
+    {
+     "item": "Bread",
+     "amount": 2
+    },
+    {
+     "item": "Hummus",
+     "amount": 1
+    },
+    {
+     "item": "Lettuce",
+     "amount": 1
+    }
+   ],
+   "time_min": 30,
+   "order_price": 193,
+   "unlock_level": 109
+  },
+  "perfumerie:Fresh Diffuser": {
+   "name": "Fresh Diffuser",
+   "requirements": [
+    {
+     "item": "Ginger essential oil",
+     "amount": 1
+    },
+    {
+     "item": "Mint essential oil",
+     "amount": 1
+    }
+   ],
+   "time_min": 20,
+   "order_price": 181,
+   "unlock_level": 110
+  },
+  "perfumerie:Zesty Perfume": {
+   "name": "Zesty Perfume",
+   "requirements": [
+    {
+     "item": "Lemon essential oil",
+     "amount": 1
+    },
+    {
+     "item": "Ginger",
+     "amount": 3
+    }
+   ],
+   "time_min": 15,
+   "order_price": 201,
+   "unlock_level": 113
+  },
+  "perfumerie:Calming Diffuser": {
+   "name": "Calming Diffuser",
+   "requirements": [
+    {
+     "item": "Chamomile essential oil",
+     "amount": 1
+    },
+    {
+     "item": "Indigo",
+     "amount": 3
+    }
+   ],
+   "time_min": 25,
+   "order_price": 87,
+   "unlock_level": 116
+  },
+  "gatherer_nest:Honeycomb": {
+   "name": "Honeycomb",
+   "requirements": [],
+   "time_min": null,
+   "order_price": 36,
+   "unlock_level": 39
+  },
+  "cupcake_maker:Plain Cupcake": {
+   "name": "Plain Cupcake",
+   "requirements": [
+    {
+     "item": "White Sugar",
+     "amount": 3
+    },
+    {
+     "item": "Wheat",
+     "amount": 5
+    },
+    {
+     "item": "Egg",
+     "amount": 1
+    },
+    {
+     "item": "Milk",
+     "amount": 2
+    }
+   ],
+   "time_min": 40,
+   "order_price": 145,
+   "unlock_level": 109
+  },
+  "cupcake_maker:Tropical Cupcake": {
+   "name": "Tropical Cupcake",
+   "requirements": [
+    {
+     "item": "Plain Cupcake",
+     "amount": 1
+    },
+    {
+     "item": "Coconut",
+     "amount": 2
+    },
+    {
+     "item": "Pineapple",
+     "amount": 3
+    }
+   ],
+   "time_min": 90,
+   "order_price": 296,
+   "unlock_level": 112
+  },
+  "cupcake_maker:Cookie Cupcake": {
+   "name": "Cookie Cupcake",
+   "requirements": [
+    {
+     "item": "Plain Cupcake",
+     "amount": 1
+    },
+    {
+     "item": "Cookie",
+     "amount": 2
+    },
+    {
+     "item": "Cream",
+     "amount": 2
+    },
+    {
+     "item": "Cacao",
+     "amount": 1
+    }
+   ],
+   "time_min": 120,
+   "order_price": 368,
+   "unlock_level": 114
+  },
+  "cupcake_maker:Guava Cupcake": {
+   "name": "Guava Cupcake",
+   "requirements": [
+    {
+     "item": "Plain Cupcake",
+     "amount": 1
+    },
+    {
+     "item": "Guava",
+     "amount": 2
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    }
+   ],
+   "time_min": 70,
+   "order_price": 302,
+   "unlock_level": 109
+  },
+  "yoghurt_maker:Plain Yoghurt": {
+   "name": "Plain Yoghurt",
+   "requirements": [
+    {
+     "item": "Cream",
+     "amount": 2
+    },
+    {
+     "item": "Milk",
+     "amount": 3
+    }
+   ],
+   "time_min": 120,
+   "order_price": 120,
+   "unlock_level": 103
+  },
+  "yoghurt_maker:Strawberry Yoghurt": {
+   "name": "Strawberry Yoghurt",
+   "requirements": [
+    {
+     "item": "Plain Yoghurt",
+     "amount": 1
+    },
+    {
+     "item": "Strawberry Jam",
+     "amount": 1
+    }
+   ],
+   "time_min": 40,
+   "order_price": 272,
+   "unlock_level": 105
+  },
+  "yoghurt_maker:Tropical Yoghurt": {
+   "name": "Tropical Yoghurt",
+   "requirements": [
+    {
+     "item": "Plain Yoghurt",
+     "amount": 1
+    },
+    {
+     "item": "Raspberry",
+     "amount": 4
+    },
+    {
+     "item": "Mango",
+     "amount": 2
+    },
+    {
+     "item": "PassionFruit",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 235,
+   "unlock_level": 109
+  },
+  "yoghurt_maker:Breakfast Bowl": {
+   "name": "Breakfast Bowl",
+   "requirements": [
+    {
+     "item": "Plain Yoghurt",
+     "amount": 1
+    },
+    {
+     "item": "Oats",
+     "amount": 4
+    },
+    {
+     "item": "Honey",
+     "amount": 1
+    },
+    {
+     "item": "Blackberry",
+     "amount": 2
+    }
+   ],
+   "time_min": 50,
+   "order_price": 312,
+   "unlock_level": 119
+  },
+  "animal:Egg": {
+   "name": "Egg",
+   "requirements": [],
+   "time_min": 20,
+   "order_price": 8,
+   "unlock_level": 1
+  },
+  "animal:Milk": {
+   "name": "Milk",
+   "requirements": [],
+   "time_min": 60,
+   "order_price": 14,
+   "unlock_level": 6
+  },
+  "animal:Wool": {
+   "name": "Wool",
+   "requirements": [],
+   "time_min": 360,
+   "order_price": 24,
+   "unlock_level": 16
+  },
+  "animal:Bacon": {
+   "name": "Bacon",
+   "requirements": [],
+   "time_min": 240,
+   "order_price": 21,
+   "unlock_level": 10
+  },
+  "animal:Goat Milk": {
+   "name": "Goat Milk",
+   "requirements": [],
+   "time_min": 480,
+   "order_price": 28,
+   "unlock_level": 32
+  },
+  "animal:Lamb Meat": {
+   "name": "Lamb Meat",
+   "requirements": [],
+   "time_min": 30,
+   "order_price": 16,
+   "unlock_level": 25
+  },
+  "donut_maker:Plain donut": {
+   "name": "Plain donut",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 3
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    },
+    {
+     "item": "Milk",
+     "amount": 1
+    },
+    {
+     "item": "Egg",
+     "amount": 1
+    }
+   ],
+   "time_min": 15,
+   "order_price": 67,
+   "unlock_level": 76
+  },
+  "donut_maker:Cream donut": {
+   "name": "Cream donut",
+   "requirements": [
+    {
+     "item": "Plain donut",
+     "amount": 1
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "Brown_Sugar",
+     "amount": 1
+    }
+   ],
+   "time_min": 25,
+   "order_price": 119,
+   "unlock_level": 86
+  },
+  "donut_maker:Bacon donut": {
+   "name": "Bacon donut",
+   "requirements": [
+    {
+     "item": "Plain donut",
+     "amount": 1
+    },
+    {
+     "item": "Syrup",
+     "amount": 1
+    },
+    {
+     "item": "Bacon",
+     "amount": 3
+    }
+   ],
+   "time_min": 30,
+   "order_price": 200,
+   "unlock_level": 88
+  },
+  "donut_maker:Filled donut": {
+   "name": "Filled donut",
+   "requirements": [
+    {
+     "item": "Plain donut",
+     "amount": 1
+    },
+    {
+     "item": "Raspberry Jam",
+     "amount": 1
+    }
+   ],
+   "time_min": 35,
+   "order_price": 208,
+   "unlock_level": 93
+  },
+  "donut_maker:Crunchy donut": {
+   "name": "Crunchy donut",
+   "requirements": [
+    {
+     "item": "Plain donut",
+     "amount": 1
+    },
+    {
+     "item": "Cacao",
+     "amount": 1
+    },
+    {
+     "item": "PeanutBag",
+     "amount": 1
+    }
+   ],
+   "time_min": 30,
+   "order_price": 306,
+   "unlock_level": 82
+  },
+  "donut_maker:Sprinkles donut": {
+   "name": "Sprinkles donut",
+   "requirements": [
+    {
+     "item": "Plain donut",
+     "amount": 1
+    },
+    {
+     "item": "Cacao",
+     "amount": 2
+    }
+   ],
+   "time_min": 20,
+   "order_price": 161,
+   "unlock_level": 79
+  },
+  "omelet_maker:Colorful omelet": {
+   "name": "Colorful omelet",
+   "requirements": [
+    {
+     "item": "Egg",
+     "amount": 2
+    },
+    {
+     "item": "Bellpepper",
+     "amount": 1
+    },
+    {
+     "item": "Carrot",
+     "amount": 2
+    },
+    {
+     "item": "Cabbage",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 71,
+   "unlock_level": 77
+  },
+  "omelet_maker:Spring omelet": {
+   "name": "Spring omelet",
+   "requirements": [
+    {
+     "item": "Egg",
+     "amount": 2
+    },
+    {
+     "item": "Butter",
+     "amount": 1
+    },
+    {
+     "item": "Asparagus",
+     "amount": 2
+    }
+   ],
+   "time_min": 40,
+   "order_price": 119,
+   "unlock_level": 77
+  },
+  "omelet_maker:Rice omelet": {
+   "name": "Rice omelet",
+   "requirements": [
+    {
+     "item": "Egg",
+     "amount": 3
+    },
+    {
+     "item": "Rice",
+     "amount": 1
+    },
+    {
+     "item": "Tomato Sauce",
+     "amount": 2
+    }
+   ],
+   "time_min": 120,
+   "order_price": 295,
+   "unlock_level": 83
+  },
+  "omelet_maker:Cheese omelet": {
+   "name": "Cheese omelet",
+   "requirements": [
+    {
+     "item": "Egg",
+     "amount": 3
+    },
+    {
+     "item": "Cheese",
+     "amount": 2
+    },
+    {
+     "item": "Onion",
+     "amount": 1
+    },
+    {
+     "item": "Tomato",
+     "amount": 2
+    }
+   ],
+   "time_min": 90,
+   "order_price": 239,
+   "unlock_level": 79
+  },
+  "omelet_maker:Potato omelet": {
+   "name": "Potato omelet",
+   "requirements": [
+    {
+     "item": "Egg",
+     "amount": 3
+    },
+    {
+     "item": "Potato",
+     "amount": 1
+    },
+    {
+     "item": "Bacon",
+     "amount": 3
+    }
+   ],
+   "time_min": 75,
+   "order_price": 139,
+   "unlock_level": 87
+  },
+  "soup_kitchen:Lobster Soup": {
+   "name": "Lobster Soup",
+   "requirements": [
+    {
+     "item": "Lobster Meat",
+     "amount": 2
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "Tomato",
+     "amount": 1
+    },
+    {
+     "item": "Chili",
+     "amount": 2
+    }
+   ],
+   "time_min": 150,
+   "order_price": 315,
+   "unlock_level": 46
+  },
+  "soup_kitchen:Tomato Soup": {
+   "name": "Tomato Soup",
+   "requirements": [
+    {
+     "item": "Tomato",
+     "amount": 2
+    },
+    {
+     "item": "Tomato Juice",
+     "amount": 1
+    },
+    {
+     "item": "Chili",
+     "amount": 1
+    },
+    {
+     "item": "Goat Cheese",
+     "amount": 1
+    }
+   ],
+   "time_min": 90,
+   "order_price": 247,
+   "unlock_level": 47
+  },
+  "soup_kitchen:Fish Soup": {
+   "name": "Fish Soup",
+   "requirements": [
+    {
+     "item": "Potato",
+     "amount": 3
+    },
+    {
+     "item": "Milk",
+     "amount": 1
+    },
+    {
+     "item": "Fish Meat",
+     "amount": 2
+    },
+    {
+     "item": "Carrot",
+     "amount": 1
+    }
+   ],
+   "time_min": 180,
+   "order_price": 154,
+   "unlock_level": 53
+  },
+  "soup_kitchen:Pumpkin Soup": {
+   "name": "Pumpkin Soup",
+   "requirements": [
+    {
+     "item": "Pumpkin",
+     "amount": 3
+    },
+    {
+     "item": "Carrot",
+     "amount": 2
+    },
+    {
+     "item": "Butter",
+     "amount": 1
+    },
+    {
+     "item": "Honey",
+     "amount": 1
+    }
+   ],
+   "time_min": 120,
+   "order_price": 202,
+   "unlock_level": 49
+  },
+  "soup_kitchen:Noodle Soup": {
+   "name": "Noodle Soup",
+   "requirements": [
+    {
+     "item": "Rice Noodles",
+     "amount": 3
+    },
+    {
+     "item": "Carrot",
+     "amount": 2
+    },
+    {
+     "item": "Chili",
+     "amount": 1
+    },
+    {
+     "item": "Egg",
+     "amount": 2
+    }
+   ],
+   "time_min": 120,
+   "order_price": 223,
+   "unlock_level": 73
+  },
+  "soup_kitchen:Onion Soup": {
+   "name": "Onion Soup",
+   "requirements": [
+    {
+     "item": "Onion",
+     "amount": 3
+    },
+    {
+     "item": "Cheese",
+     "amount": 1
+    },
+    {
+     "item": "Bread",
+     "amount": 2
+    }
+   ],
+   "time_min": 150,
+   "order_price": 170,
+   "unlock_level": 72
+  },
+  "soup_kitchen:PotatoSoup": {
+   "name": "PotatoSoup",
+   "requirements": [
+    {
+     "item": "Potato",
+     "amount": 3
+    },
+    {
+     "item": "Milk",
+     "amount": 1
+    },
+    {
+     "item": "Onion",
+     "amount": 2
+    }
+   ],
+   "time_min": 150,
+   "order_price": 132,
+   "unlock_level": 78
+  },
+  "soup_kitchen:PepperSoup": {
+   "name": "PepperSoup",
+   "requirements": [
+    {
+     "item": "Bellpepper",
+     "amount": 2
+    },
+    {
+     "item": "Chili",
+     "amount": 1
+    },
+    {
+     "item": "Bread",
+     "amount": 1
+    },
+    {
+     "item": "OliveOil",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 227,
+   "unlock_level": 81
+  },
+  "soup_kitchen:Broccoli Soup": {
+   "name": "Broccoli Soup",
+   "requirements": [
+    {
+     "item": "Broccoli",
+     "amount": 3
+    },
+    {
+     "item": "Potato",
+     "amount": 3
+    },
+    {
+     "item": "Onion",
+     "amount": 1
+    }
+   ],
+   "time_min": 75,
+   "order_price": 123,
+   "unlock_level": 87
+  },
+  "soup_kitchen:MushroomSoup": {
+   "name": "MushroomSoup",
+   "requirements": [
+    {
+     "item": "Mushroom",
+     "amount": 3
+    },
+    {
+     "item": "Onion",
+     "amount": 2
+    },
+    {
+     "item": "Milk",
+     "amount": 1
+    }
+   ],
+   "time_min": 80,
+   "order_price": 92,
+   "unlock_level": 104
+  },
+  "soup_kitchen:Cabbage Soup": {
+   "name": "Cabbage Soup",
+   "requirements": [
+    {
+     "item": "Cabbage",
+     "amount": 3
+    },
+    {
+     "item": "Potato",
+     "amount": 2
+    },
+    {
+     "item": "Bacon",
+     "amount": 2
+    },
+    {
+     "item": "Carrot",
+     "amount": 2
+    }
+   ],
+   "time_min": 90,
+   "order_price": 138,
+   "unlock_level": 65
+  },
+  "soup_kitchen:Asparagus Soup": {
+   "name": "Asparagus Soup",
+   "requirements": [
+    {
+     "item": "Asparagus",
+     "amount": 3
+    },
+    {
+     "item": "Cream",
+     "amount": 2
+    }
+   ],
+   "time_min": 60,
+   "order_price": 132,
+   "unlock_level": 51
+  },
+  "soup_kitchen:Lamb Soup": {
+   "name": "Lamb Soup",
+   "requirements": [
+    {
+     "item": "Grilled Lamb Skewer",
+     "amount": 1
+    },
+    {
+     "item": "Potato",
+     "amount": 1
+    },
+    {
+     "item": "Carrot",
+     "amount": 2
+    }
+   ],
+   "time_min": 120,
+   "order_price": 93,
+   "unlock_level": 46
+  },
+  "soup_kitchen:Mussel Chowder": {
+   "name": "Mussel Chowder",
+   "requirements": [
+    {
+     "item": "Mussel Meat",
+     "amount": 4
+    },
+    {
+     "item": "Bacon",
+     "amount": 3
+    },
+    {
+     "item": "Milk",
+     "amount": 1
+    },
+    {
+     "item": "Baked Potato",
+     "amount": 1
+    }
+   ],
+   "time_min": 180,
+   "order_price": 323,
+   "unlock_level": 47
+  },
+  "smelter:SilverBar": {
+   "name": "SilverBar",
+   "requirements": [
+    {
+     "item": "SilverOre",
+     "amount": 3
+    }
+   ],
+   "time_min": 480,
+   "order_price": 77,
+   "unlock_level": 24
+  },
+  "smelter:GoldBar": {
+   "name": "GoldBar",
+   "requirements": [
+    {
+     "item": "GoldOre",
+     "amount": 3
+    }
+   ],
+   "time_min": 720,
+   "order_price": 92,
+   "unlock_level": 25
+  },
+  "smelter:PlatinumBar": {
+   "name": "PlatinumBar",
+   "requirements": [
+    {
+     "item": "PlatinumOre",
+     "amount": 3
+    }
+   ],
+   "time_min": 960,
+   "order_price": 106,
+   "unlock_level": 25
+  },
+  "smelter:CoalBar": {
+   "name": "CoalBar",
+   "requirements": [
+    {
+     "item": "CoalOre",
+     "amount": 3
+    }
+   ],
+   "time_min": 360,
+   "order_price": 56,
+   "unlock_level": 33
+  },
+  "smelter:IronBar": {
+   "name": "IronBar",
+   "requirements": [
+    {
+     "item": "IronOre",
+     "amount": 3
+    }
+   ],
+   "time_min": 420,
+   "order_price": 67,
+   "unlock_level": 34
+  },
+  "pie_oven:Carrot Pie": {
+   "name": "Carrot Pie",
+   "requirements": [
+    {
+     "item": "Carrot",
+     "amount": 3
+    },
+    {
+     "item": "Wheat",
+     "amount": 2
+    },
+    {
+     "item": "Egg",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 42,
+   "unlock_level": 14
+  },
+  "pie_oven:Bacon Pie": {
+   "name": "Bacon Pie",
+   "requirements": [
+    {
+     "item": "Bacon",
+     "amount": 3
+    },
+    {
+     "item": "Wheat",
+     "amount": 2
+    },
+    {
+     "item": "Egg",
+     "amount": 1
+    }
+   ],
+   "time_min": 180,
+   "order_price": 114,
+   "unlock_level": 18
+  },
+  "pie_oven:Pumpkin Pie": {
+   "name": "Pumpkin Pie",
+   "requirements": [
+    {
+     "item": "Pumpkin",
+     "amount": 3
+    },
+    {
+     "item": "Wheat",
+     "amount": 2
+    },
+    {
+     "item": "Egg",
+     "amount": 1
+    }
+   ],
+   "time_min": 120,
+   "order_price": 82,
+   "unlock_level": 15
+  },
+  "pie_oven:Apple Pie": {
+   "name": "Apple Pie",
+   "requirements": [
+    {
+     "item": "Apple",
+     "amount": 3
+    },
+    {
+     "item": "Wheat",
+     "amount": 2
+    },
+    {
+     "item": "Egg",
+     "amount": 1
+    },
+    {
+     "item": "Syrup",
+     "amount": 1
+    }
+   ],
+   "time_min": 150,
+   "order_price": 140,
+   "unlock_level": 28
+  },
+  "pie_oven:Feta Pie": {
+   "name": "Feta Pie",
+   "requirements": [
+    {
+     "item": "Goat Cheese",
+     "amount": 1
+    },
+    {
+     "item": "Wheat",
+     "amount": 2
+    },
+    {
+     "item": "Egg",
+     "amount": 1
+    }
+   ],
+   "time_min": 90,
+   "order_price": 114,
+   "unlock_level": 34
+  },
+  "pie_oven:Casserole": {
+   "name": "Casserole",
+   "requirements": [
+    {
+     "item": "Potato",
+     "amount": 2
+    },
+    {
+     "item": "Cheese",
+     "amount": 1
+    },
+    {
+     "item": "Bacon",
+     "amount": 2
+    },
+    {
+     "item": "Egg",
+     "amount": 2
+    }
+   ],
+   "time_min": 120,
+   "order_price": 189,
+   "unlock_level": 36
+  },
+  "pie_oven:Shepherds Pie": {
+   "name": "Shepherds Pie",
+   "requirements": [
+    {
+     "item": "Potato",
+     "amount": 2
+    },
+    {
+     "item": "Carrot",
+     "amount": 2
+    },
+    {
+     "item": "Bacon",
+     "amount": 2
+    },
+    {
+     "item": "Pumpkin",
+     "amount": 2
+    }
+   ],
+   "time_min": 100,
+   "order_price": 146,
+   "unlock_level": 39
+  },
+  "pie_oven:Fish Pie": {
+   "name": "Fish Pie",
+   "requirements": [
+    {
+     "item": "Fish Meat",
+     "amount": 3
+    },
+    {
+     "item": "Wheat",
+     "amount": 2
+    },
+    {
+     "item": "Egg",
+     "amount": 1
+    }
+   ],
+   "time_min": 120,
+   "order_price": 117,
+   "unlock_level": 28
+  },
+  "pie_oven:Lemon Pie": {
+   "name": "Lemon Pie",
+   "requirements": [
+    {
+     "item": "Lemon Curd",
+     "amount": 1
+    },
+    {
+     "item": "Wheat",
+     "amount": 2
+    },
+    {
+     "item": "Egg",
+     "amount": 1
+    }
+   ],
+   "time_min": 135,
+   "order_price": 229,
+   "unlock_level": 67
+  },
+  "pie_oven:Peach Tart": {
+   "name": "Peach Tart",
+   "requirements": [
+    {
+     "item": "Peach",
+     "amount": 3
+    },
+    {
+     "item": "Wheat",
+     "amount": 2
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "Egg",
+     "amount": 2
+    }
+   ],
+   "time_min": 150,
+   "order_price": 225,
+   "unlock_level": 76
+  },
+  "pie_oven:Eggplant Parmesan": {
+   "name": "Eggplant Parmesan",
+   "requirements": [
+    {
+     "item": "Eggplant",
+     "amount": 4
+    },
+    {
+     "item": "Tomato Sauce",
+     "amount": 1
+    },
+    {
+     "item": "Cheese",
+     "amount": 1
+    }
+   ],
+   "time_min": 45,
+   "order_price": 228,
+   "unlock_level": 99
+  },
+  "pie_oven:Chocolate Pie": {
+   "name": "Chocolate Pie",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 3
+    },
+    {
+     "item": "Egg",
+     "amount": 1
+    },
+    {
+     "item": "Cacao",
+     "amount": 2
+    },
+    {
+     "item": "PeanutBag",
+     "amount": 1
+    }
+   ],
+   "time_min": 75,
+   "order_price": 304,
+   "unlock_level": 65
+  },
+  "pie_oven:Mushroom Pot Pie": {
+   "name": "Mushroom Pot Pie",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 3
+    },
+    {
+     "item": "Egg",
+     "amount": 2
+    },
+    {
+     "item": "Mushroom",
+     "amount": 3
+    },
+    {
+     "item": "Cabbage",
+     "amount": 3
+    }
+   ],
+   "time_min": 60,
+   "order_price": 84,
+   "unlock_level": 97
+  },
+  "pie_oven:Passion Fruit Pie": {
+   "name": "Passion Fruit Pie",
+   "requirements": [
+    {
+     "item": "PassionFruit",
+     "amount": 3
+    },
+    {
+     "item": "Wheat",
+     "amount": 2
+    },
+    {
+     "item": "Egg",
+     "amount": 1
+    }
+   ],
+   "time_min": 50,
+   "order_price": 57,
+   "unlock_level": 92
+  },
+  "pie_oven:Asparagus Quiche": {
+   "name": "Asparagus Quiche",
+   "requirements": [
+    {
+     "item": "Asparagus",
+     "amount": 2
+    },
+    {
+     "item": "Egg",
+     "amount": 2
+    },
+    {
+     "item": "Cheese",
+     "amount": 1
+    },
+    {
+     "item": "Wheat",
+     "amount": 4
+    }
+   ],
+   "time_min": 120,
+   "order_price": 156,
+   "unlock_level": 49
+  },
+  "barbecue_grill:Pancakes": {
+   "name": "Pancakes",
+   "requirements": [
+    {
+     "item": "Egg",
+     "amount": 3
+    },
+    {
+     "item": "Brown_Sugar",
+     "amount": 1
+    }
+   ],
+   "time_min": 30,
+   "order_price": 56,
+   "unlock_level": 9
+  },
+  "barbecue_grill:Bacon and Eggs": {
+   "name": "Bacon and Eggs",
+   "requirements": [
+    {
+     "item": "Egg",
+     "amount": 4
+    },
+    {
+     "item": "Bacon",
+     "amount": 2
+    }
+   ],
+   "time_min": 60,
+   "order_price": 104,
+   "unlock_level": 11
+  },
+  "barbecue_grill:Hamburger": {
+   "name": "Hamburger",
+   "requirements": [
+    {
+     "item": "Bread",
+     "amount": 2
+    },
+    {
+     "item": "Bacon",
+     "amount": 2
+    }
+   ],
+   "time_min": 120,
+   "order_price": 93,
+   "unlock_level": 18
+  },
+  "barbecue_grill:Roasted Tomatoes": {
+   "name": "Roasted Tomatoes",
+   "requirements": [
+    {
+     "item": "Tomato",
+     "amount": 2
+    }
+   ],
+   "time_min": 90,
+   "order_price": 62,
+   "unlock_level": 30
+  },
+  "barbecue_grill:Baked Potato": {
+   "name": "Baked Potato",
+   "requirements": [
+    {
+     "item": "Potato",
+     "amount": 2
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "Chili",
+     "amount": 1
+    },
+    {
+     "item": "Cheese",
+     "amount": 1
+    }
+   ],
+   "time_min": 35,
+   "order_price": 155,
+   "unlock_level": 35
+  },
+  "barbecue_grill:Fishburger": {
+   "name": "Fishburger",
+   "requirements": [
+    {
+     "item": "Fish Meat",
+     "amount": 2
+    },
+    {
+     "item": "Bread",
+     "amount": 2
+    },
+    {
+     "item": "Chili",
+     "amount": 1
+    }
+   ],
+   "time_min": 120,
+   "order_price": 116,
+   "unlock_level": 27
+  },
+  "barbecue_grill:Fish and Chips": {
+   "name": "Fish and Chips",
+   "requirements": [
+    {
+     "item": "Fish Meat",
+     "amount": 2
+    },
+    {
+     "item": "Potato",
+     "amount": 3
+    }
+   ],
+   "time_min": 90,
+   "order_price": 126,
+   "unlock_level": 41
+  },
+  "barbecue_grill:Lobster Skewer": {
+   "name": "Lobster Skewer",
+   "requirements": [
+    {
+     "item": "Lobster Meat",
+     "amount": 1
+    },
+    {
+     "item": "Honey",
+     "amount": 1
+    },
+    {
+     "item": "Chili",
+     "amount": 1
+    }
+   ],
+   "time_min": 40,
+   "order_price": 216,
+   "unlock_level": 48
+  },
+  "barbecue_grill:Grilled Onion": {
+   "name": "Grilled Onion",
+   "requirements": [
+    {
+     "item": "Onion",
+     "amount": 2
+    },
+    {
+     "item": "Butter",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 99,
+   "unlock_level": 68
+  },
+  "barbecue_grill:BananaPancakes": {
+   "name": "BananaPancakes",
+   "requirements": [
+    {
+     "item": "Banana",
+     "amount": 1
+    },
+    {
+     "item": "Blackberry",
+     "amount": 2
+    },
+    {
+     "item": "Wheat",
+     "amount": 3
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 182,
+   "unlock_level": 94
+  },
+  "barbecue_grill:Grilled Eggplant": {
+   "name": "Grilled Eggplant",
+   "requirements": [
+    {
+     "item": "Eggplant",
+     "amount": 3
+    },
+    {
+     "item": "Salsa",
+     "amount": 1
+    }
+   ],
+   "time_min": 40,
+   "order_price": 167,
+   "unlock_level": 90
+  },
+  "barbecue_grill:FishSkewer": {
+   "name": "FishSkewer",
+   "requirements": [
+    {
+     "item": "Fish Meat",
+     "amount": 1
+    },
+    {
+     "item": "Mushroom",
+     "amount": 3
+    },
+    {
+     "item": "Sesame",
+     "amount": 2
+    },
+    {
+     "item": "Ginger",
+     "amount": 1
+    }
+   ],
+   "time_min": 30,
+   "order_price": 91,
+   "unlock_level": 96
+  },
+  "barbecue_grill:Roast veggies": {
+   "name": "Roast veggies",
+   "requirements": [
+    {
+     "item": "Beetroot",
+     "amount": 2
+    },
+    {
+     "item": "Carrot",
+     "amount": 2
+    },
+    {
+     "item": "Potato",
+     "amount": 2
+    },
+    {
+     "item": "Pumpkin",
+     "amount": 2
+    }
+   ],
+   "time_min": 25,
+   "order_price": 103,
+   "unlock_level": 72
+  },
+  "barbecue_grill:Garlic bread": {
+   "name": "Garlic bread",
+   "requirements": [
+    {
+     "item": "Bread",
+     "amount": 2
+    },
+    {
+     "item": "Butter",
+     "amount": 1
+    },
+    {
+     "item": "Garlic",
+     "amount": 4
+    }
+   ],
+   "time_min": 15,
+   "order_price": 103,
+   "unlock_level": 60
+  },
+  "barbecue_grill:Stuffed Bellpeppers": {
+   "name": "Stuffed Bellpeppers",
+   "requirements": [
+    {
+     "item": "Bellpepper",
+     "amount": 3
+    },
+    {
+     "item": "Rice",
+     "amount": 3
+    },
+    {
+     "item": "Bacon",
+     "amount": 1
+    },
+    {
+     "item": "Cheese",
+     "amount": 1
+    }
+   ],
+   "time_min": 20,
+   "order_price": 182,
+   "unlock_level": 80
+  },
+  "barbecue_grill:Grilled Asparagus": {
+   "name": "Grilled Asparagus",
+   "requirements": [
+    {
+     "item": "Asparagus",
+     "amount": 5
+    },
+    {
+     "item": "Bacon",
+     "amount": 3
+    },
+    {
+     "item": "Lemon",
+     "amount": 1
+    }
+   ],
+   "time_min": 75,
+   "order_price": 250,
+   "unlock_level": 67
+  },
+  "barbecue_grill:Grilled Lamb Skewer": {
+   "name": "Grilled Lamb Skewer",
+   "requirements": [
+    {
+     "item": "Lamb Meat",
+     "amount": 2
+    }
+   ],
+   "time_min": 20,
+   "order_price": 46,
+   "unlock_level": 25
+  },
+  "barbecue_grill:Steamed Mussels": {
+   "name": "Steamed Mussels",
+   "requirements": [
+    {
+     "item": "Mussel Meat",
+     "amount": 4
+    },
+    {
+     "item": "Butter",
+     "amount": 2
+    }
+   ],
+   "time_min": 15,
+   "order_price": 147,
+   "unlock_level": 27
+  },
+  "barbecue_grill:Grilled Mussels": {
+   "name": "Grilled Mussels",
+   "requirements": [
+    {
+     "item": "Mussel Meat",
+     "amount": 3
+    },
+    {
+     "item": "Butter",
+     "amount": 1
+    },
+    {
+     "item": "Chili",
+     "amount": 3
+    },
+    {
+     "item": "Corn Bread",
+     "amount": 1
+    }
+   ],
+   "time_min": 80,
+   "order_price": 191,
+   "unlock_level": 32
+  },
+  "pottery_studio:Tea Pot": {
+   "name": "Tea Pot",
+   "requirements": [
+    {
+     "item": "Clay",
+     "amount": 3
+    },
+    {
+     "item": "Coffee",
+     "amount": 1
+    },
+    {
+     "item": "GoldOre",
+     "amount": 1
+    }
+   ],
+   "time_min": 240,
+   "order_price": 114,
+   "unlock_level": 94
+  },
+  "pottery_studio:Plant pot": {
+   "name": "Plant pot",
+   "requirements": [
+    {
+     "item": "Clay",
+     "amount": 3
+    },
+    {
+     "item": "Sunflower",
+     "amount": 1
+    }
+   ],
+   "time_min": 220,
+   "order_price": 77,
+   "unlock_level": 96
+  },
+  "pottery_studio:Mug": {
+   "name": "Mug",
+   "requirements": [
+    {
+     "item": "Clay",
+     "amount": 3
+    },
+    {
+     "item": "Indigo",
+     "amount": 2
+    },
+    {
+     "item": "Peony",
+     "amount": 1
+    }
+   ],
+   "time_min": 200,
+   "order_price": 109,
+   "unlock_level": 99
+  },
+  "hat_maker:ClocheHat": {
+   "name": "ClocheHat",
+   "requirements": [
+    {
+     "item": "Wool",
+     "amount": 6
+    },
+    {
+     "item": "Strawberry",
+     "amount": 2
+    }
+   ],
+   "time_min": 120,
+   "order_price": 242,
+   "unlock_level": 70
+  },
+  "hat_maker:TopHat": {
+   "name": "TopHat",
+   "requirements": [
+    {
+     "item": "Cotton Fabrics",
+     "amount": 3
+    },
+    {
+     "item": "Duck Down",
+     "amount": 1
+    },
+    {
+     "item": "CoalBar",
+     "amount": 1
+    }
+   ],
+   "time_min": 210,
+   "order_price": 320,
+   "unlock_level": 72
+  },
+  "hat_maker:SunHat": {
+   "name": "SunHat",
+   "requirements": [
+    {
+     "item": "Wool",
+     "amount": 3
+    },
+    {
+     "item": "Duck Down",
+     "amount": 2
+    },
+    {
+     "item": "Indigo",
+     "amount": 1
+    },
+    {
+     "item": "Raspberry",
+     "amount": 1
+    }
+   ],
+   "time_min": 150,
+   "order_price": 287,
+   "unlock_level": 74
+  },
+  "hat_maker:FlowerCrown": {
+   "name": "FlowerCrown",
+   "requirements": [
+    {
+     "item": "Peony",
+     "amount": 5
+    },
+    {
+     "item": "Cotton",
+     "amount": 4
+    }
+   ],
+   "time_min": 120,
+   "order_price": 172,
+   "unlock_level": 86
+  },
+  "fishing:Fish Meat": {
+   "name": "Fish Meat",
+   "requirements": [],
+   "time_min": null,
+   "order_price": 21,
+   "unlock_level": 27
+  },
+  "fishing:Lobster Meat": {
+   "name": "Lobster Meat",
+   "requirements": [],
+   "time_min": null,
+   "order_price": 104,
+   "unlock_level": 44
+  },
+  "fishing:Duck Down": {
+   "name": "Duck Down",
+   "requirements": [],
+   "time_min": null,
+   "order_price": 72,
+   "unlock_level": 50
+  },
+  "fishing:Mussel Meat": {
+   "name": "Mussel Meat",
+   "requirements": [],
+   "time_min": null,
+   "order_price": 11,
+   "unlock_level": 27
+  },
+  "fudge_shop:Mint Fudge": {
+   "name": "Mint Fudge",
+   "requirements": [
+    {
+     "item": "Butter",
+     "amount": 2
+    },
+    {
+     "item": "Cacao",
+     "amount": 2
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    },
+    {
+     "item": "Mint",
+     "amount": 3
+    }
+   ],
+   "time_min": 150,
+   "order_price": 270,
+   "unlock_level": 102
+  },
+  "fudge_shop:Chili Fudge": {
+   "name": "Chili Fudge",
+   "requirements": [
+    {
+     "item": "Butter",
+     "amount": 2
+    },
+    {
+     "item": "Cacao",
+     "amount": 2
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    },
+    {
+     "item": "Chili",
+     "amount": 3
+    }
+   ],
+   "time_min": 170,
+   "order_price": 278,
+   "unlock_level": 104
+  },
+  "fudge_shop:Lemon Fudge": {
+   "name": "Lemon Fudge",
+   "requirements": [
+    {
+     "item": "Butter",
+     "amount": 2
+    },
+    {
+     "item": "White Sugar",
+     "amount": 2
+    },
+    {
+     "item": "Milk",
+     "amount": 3
+    },
+    {
+     "item": "Lemon",
+     "amount": 2
+    }
+   ],
+   "time_min": 110,
+   "order_price": 304,
+   "unlock_level": 108
+  },
+  "fudge_shop:Peanut Fudge": {
+   "name": "Peanut Fudge",
+   "requirements": [
+    {
+     "item": "Butter",
+     "amount": 2
+    },
+    {
+     "item": "Cacao",
+     "amount": 2
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    },
+    {
+     "item": "PeanutBag",
+     "amount": 2
+    }
+   ],
+   "time_min": 90,
+   "order_price": 589,
+   "unlock_level": 111
+  },
+  "fudge_shop:Rich Fudge": {
+   "name": "Rich Fudge",
+   "requirements": [
+    {
+     "item": "Butter",
+     "amount": 3
+    },
+    {
+     "item": "Cacao",
+     "amount": 3
+    },
+    {
+     "item": "White Sugar",
+     "amount": 2
+    }
+   ],
+   "time_min": 120,
+   "order_price": 333,
+   "unlock_level": 99
+  },
+  "porridge_bar:Apple porridge": {
+   "name": "Apple porridge",
+   "requirements": [
+    {
+     "item": "Apple Jam",
+     "amount": 2
+    },
+    {
+     "item": "Oats",
+     "amount": 4
+    },
+    {
+     "item": "Apple",
+     "amount": 1
+    }
+   ],
+   "time_min": 20,
+   "order_price": 269,
+   "unlock_level": 119
+  },
+  "porridge_bar:Sweet porridge": {
+   "name": "Sweet porridge",
+   "requirements": [
+    {
+     "item": "Oats",
+     "amount": 3
+    },
+    {
+     "item": "Peach",
+     "amount": 1
+    },
+    {
+     "item": "Honey",
+     "amount": 2
+    }
+   ],
+   "time_min": 45,
+   "order_price": 237,
+   "unlock_level": 120
+  },
+  "porridge_bar:Fresh porridge": {
+   "name": "Fresh porridge",
+   "requirements": [
+    {
+     "item": "Oats",
+     "amount": 3
+    },
+    {
+     "item": "Pomegranate",
+     "amount": 1
+    },
+    {
+     "item": "Mint",
+     "amount": 2
+    },
+    {
+     "item": "Coconut",
+     "amount": 2
+    }
+   ],
+   "time_min": 35,
+   "order_price": 224,
+   "unlock_level": 122
+  },
+  "cake_oven:Cheese Cake": {
+   "name": "Cheese Cake",
+   "requirements": [
+    {
+     "item": "Cookie",
+     "amount": 1
+    },
+    {
+     "item": "Cheese",
+     "amount": 1
+    }
+   ],
+   "time_min": 240,
+   "order_price": 146,
+   "unlock_level": 24
+  },
+  "cake_oven:Carrot Cake": {
+   "name": "Carrot Cake",
+   "requirements": [
+    {
+     "item": "Carrot",
+     "amount": 2
+    },
+    {
+     "item": "Butter",
+     "amount": 1
+    },
+    {
+     "item": "Brown_Sugar",
+     "amount": 1
+    }
+   ],
+   "time_min": 90,
+   "order_price": 86,
+   "unlock_level": 21
+  },
+  "cake_oven:Birthday Cake": {
+   "name": "Birthday Cake",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 5
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    }
+   ],
+   "time_min": 180,
+   "order_price": 112,
+   "unlock_level": 23
+  },
+  "cake_oven:Chocolate Cake": {
+   "name": "Chocolate Cake",
+   "requirements": [
+    {
+     "item": "Butter",
+     "amount": 1
+    },
+    {
+     "item": "Brown_Sugar",
+     "amount": 1
+    },
+    {
+     "item": "Cacao",
+     "amount": 2
+    }
+   ],
+   "time_min": 120,
+   "order_price": 165,
+   "unlock_level": 36
+  },
+  "cake_oven:Strawberry Cake": {
+   "name": "Strawberry Cake",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 3
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "White Sugar",
+     "amount": 1
+    },
+    {
+     "item": "Strawberry",
+     "amount": 2
+    }
+   ],
+   "time_min": 180,
+   "order_price": 163,
+   "unlock_level": 35
+  },
+  "cake_oven:Berry Cake": {
+   "name": "Berry Cake",
+   "requirements": [
+    {
+     "item": "Raspberry",
+     "amount": 1
+    },
+    {
+     "item": "Cherry",
+     "amount": 2
+    },
+    {
+     "item": "Milk",
+     "amount": 1
+    },
+    {
+     "item": "Egg",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 132,
+   "unlock_level": 23
+  },
+  "cake_oven:Potato Feta Cake": {
+   "name": "Potato Feta Cake",
+   "requirements": [
+    {
+     "item": "Potato",
+     "amount": 1
+    },
+    {
+     "item": "Goat Cheese",
+     "amount": 1
+    },
+    {
+     "item": "Egg",
+     "amount": 4
+    }
+   ],
+   "time_min": 120,
+   "order_price": 159,
+   "unlock_level": 38
+  },
+  "cake_oven:Lemon Cake": {
+   "name": "Lemon Cake",
+   "requirements": [
+    {
+     "item": "Lemon Curd",
+     "amount": 2
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "Egg",
+     "amount": 2
+    },
+    {
+     "item": "Wheat",
+     "amount": 3
+    }
+   ],
+   "time_min": 150,
+   "order_price": 462,
+   "unlock_level": 68
+  },
+  "cake_oven:Honey Apple Cake": {
+   "name": "Honey Apple Cake",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 2
+    },
+    {
+     "item": "Egg",
+     "amount": 2
+    },
+    {
+     "item": "Apple",
+     "amount": 2
+    },
+    {
+     "item": "Honey",
+     "amount": 2
+    }
+   ],
+   "time_min": 200,
+   "order_price": 248,
+   "unlock_level": 42
+  },
+  "cake_oven:Fruitcake": {
+   "name": "Fruitcake",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 3
+    },
+    {
+     "item": "Orange",
+     "amount": 2
+    },
+    {
+     "item": "Cherry",
+     "amount": 2
+    },
+    {
+     "item": "Grapes",
+     "amount": 2
+    }
+   ],
+   "time_min": 180,
+   "order_price": 232,
+   "unlock_level": 89
+  },
+  "cake_oven:Pineapple Cake": {
+   "name": "Pineapple Cake",
+   "requirements": [
+    {
+     "item": "Pineapple",
+     "amount": 3
+    },
+    {
+     "item": "Wheat",
+     "amount": 4
+    },
+    {
+     "item": "Egg",
+     "amount": 2
+    },
+    {
+     "item": "Cherry",
+     "amount": 2
+    }
+   ],
+   "time_min": 75,
+   "order_price": 135,
+   "unlock_level": 65
+  },
+  "cake_oven:Fancy Cake": {
+   "name": "Fancy Cake",
+   "requirements": [
+    {
+     "item": "Lily",
+     "amount": 3
+    },
+    {
+     "item": "Raspberry",
+     "amount": 3
+    },
+    {
+     "item": "GoldOre",
+     "amount": 1
+    },
+    {
+     "item": "Birthday Cake",
+     "amount": 1
+    }
+   ],
+   "time_min": 15,
+   "order_price": 228,
+   "unlock_level": 54
+  },
+  "cake_oven:Chocolate Roll": {
+   "name": "Chocolate Roll",
+   "requirements": [
+    {
+     "item": "Cacao",
+     "amount": 5
+    },
+    {
+     "item": "Wheat",
+     "amount": 3
+    },
+    {
+     "item": "Cream",
+     "amount": 1
+    },
+    {
+     "item": "Mint",
+     "amount": 3
+    }
+   ],
+   "time_min": 90,
+   "order_price": 312,
+   "unlock_level": 95
+  },
+  "cake_oven:Pomegranate Cake": {
+   "name": "Pomegranate Cake",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 6
+    },
+    {
+     "item": "Egg",
+     "amount": 2
+    },
+    {
+     "item": "Cream",
+     "amount": 2
+    },
+    {
+     "item": "Pomegranate",
+     "amount": 1
+    }
+   ],
+   "time_min": 160,
+   "order_price": 164,
+   "unlock_level": 108
+  },
+  "cake_oven:Blueberry Cheesecake": {
+   "name": "Blueberry Cheesecake",
+   "requirements": [
+    {
+     "item": "Cheese Cake",
+     "amount": 1
+    },
+    {
+     "item": "Blueberry",
+     "amount": 2
+    }
+   ],
+   "time_min": 240,
+   "order_price": 259,
+   "unlock_level": 31
+  },
+  "pasta_maker:Raw Pasta": {
+   "name": "Raw Pasta",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 2
+    },
+    {
+     "item": "Egg",
+     "amount": 1
+    }
+   ],
+   "time_min": 15,
+   "order_price": 22,
+   "unlock_level": 67
+  },
+  "pasta_maker:Rice Noodles": {
+   "name": "Rice Noodles",
+   "requirements": [
+    {
+     "item": "Rice",
+     "amount": 5
+    }
+   ],
+   "time_min": 20,
+   "order_price": 52,
+   "unlock_level": 73
+  },
+  "flowershop:Rustic Bouquet": {
+   "name": "Rustic Bouquet",
+   "requirements": [
+    {
+     "item": "Indigo",
+     "amount": 3
+    },
+    {
+     "item": "Wheat",
+     "amount": 5
+    },
+    {
+     "item": "Cotton",
+     "amount": 3
+    }
+   ],
+   "time_min": 45,
+   "order_price": 109,
+   "unlock_level": 49
+  },
+  "flowershop:Bright Bouquet": {
+   "name": "Bright Bouquet",
+   "requirements": [
+    {
+     "item": "Sunflower",
+     "amount": 5
+    },
+    {
+     "item": "Indigo",
+     "amount": 3
+    },
+    {
+     "item": "Cotton",
+     "amount": 1
+    },
+    {
+     "item": "IronOre",
+     "amount": 5
+    }
+   ],
+   "time_min": 20,
+   "order_price": 175,
+   "unlock_level": 65
+  },
+  "flowershop:Soft Bouquet": {
+   "name": "Soft Bouquet",
+   "requirements": [
+    {
+     "item": "Peony",
+     "amount": 4
+    },
+    {
+     "item": "Cotton",
+     "amount": 1
+    },
+    {
+     "item": "Cotton Fabrics",
+     "amount": 1
+    }
+   ],
+   "time_min": 30,
+   "order_price": 155,
+   "unlock_level": 93
+  },
+  "flowershop:Candy bouquet": {
+   "name": "Candy bouquet",
+   "requirements": [
+    {
+     "item": "Peony",
+     "amount": 3
+    },
+    {
+     "item": "Caramel Apple",
+     "amount": 1
+    },
+    {
+     "item": "Toffee",
+     "amount": 1
+    }
+   ],
+   "time_min": 20,
+   "order_price": 287,
+   "unlock_level": 90
+  },
+  "flowershop:Gracious bouquet": {
+   "name": "Gracious bouquet",
+   "requirements": [
+    {
+     "item": "Cotton Fabrics",
+     "amount": 1
+    },
+    {
+     "item": "Lily",
+     "amount": 5
+    },
+    {
+     "item": "GoldOre",
+     "amount": 1
+    },
+    {
+     "item": "Diamonds",
+     "amount": 1
+    }
+   ],
+   "time_min": 40,
+   "order_price": 752,
+   "unlock_level": 73
+  },
+  "flowershop:Veggie Bouquet": {
+   "name": "Veggie Bouquet",
+   "requirements": [
+    {
+     "item": "Broccoli",
+     "amount": 3
+    },
+    {
+     "item": "Mushroom",
+     "amount": 3
+    },
+    {
+     "item": "Tomato",
+     "amount": 3
+    },
+    {
+     "item": "Cotton Fabrics",
+     "amount": 1
+    }
+   ],
+   "time_min": 15,
+   "order_price": 181,
+   "unlock_level": 106
+  },
+  "flowershop:Birthday Bouquet": {
+   "name": "Birthday Bouquet",
+   "requirements": [
+    {
+     "item": "Peony",
+     "amount": 3
+    },
+    {
+     "item": "Lily",
+     "amount": 1
+    },
+    {
+     "item": "Indigo",
+     "amount": 1
+    },
+    {
+     "item": "Cherry Juice",
+     "amount": 1
+    }
+   ],
+   "time_min": 20,
+   "order_price": 181,
+   "unlock_level": 92
+  },
+  "loom:Sweater": {
+   "name": "Sweater",
+   "requirements": [
+    {
+     "item": "Wool",
+     "amount": 2
+    }
+   ],
+   "time_min": 120,
+   "order_price": 77,
+   "unlock_level": 17
+  },
+  "loom:Blue Woolly Hat": {
+   "name": "Blue Woolly Hat",
+   "requirements": [
+    {
+     "item": "Wool",
+     "amount": 1
+    },
+    {
+     "item": "Indigo",
+     "amount": 1
+    }
+   ],
+   "time_min": 60,
+   "order_price": 57,
+   "unlock_level": 19
+  },
+  "loom:Blue Sweater": {
+   "name": "Blue Sweater",
+   "requirements": [
+    {
+     "item": "Wool",
+     "amount": 2
+    },
+    {
+     "item": "Indigo",
+     "amount": 2
+    }
+   ],
+   "time_min": 180,
+   "order_price": 108,
+   "unlock_level": 20
+  },
+  "loom:Red Scarf": {
+   "name": "Red Scarf",
+   "requirements": [
+    {
+     "item": "Wool",
+     "amount": 2
+    },
+    {
+     "item": "Strawberry",
+     "amount": 2
+    }
+   ],
+   "time_min": 150,
+   "order_price": 148,
+   "unlock_level": 48
+  },
+  "loom:Cotton Fabrics": {
+   "name": "Cotton Fabrics",
+   "requirements": [
+    {
+     "item": "Cotton",
+     "amount": 3
+    }
+   ],
+   "time_min": 30,
+   "order_price": 55,
+   "unlock_level": 18
+  },
+  "loom:Flower Shawl": {
+   "name": "Flower Shawl",
+   "requirements": [
+    {
+     "item": "Wool",
+     "amount": 2
+    },
+    {
+     "item": "Blackberry",
+     "amount": 1
+    },
+    {
+     "item": "Sunflower",
+     "amount": 3
+    }
+   ],
+   "time_min": 90,
+   "order_price": 151,
+   "unlock_level": 71
+  }
+ },
+ "feed": {
+  "Chicken Food": {
+   "name": "Chicken Food",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 2
+    },
+    {
+     "item": "Corn",
+     "amount": 1
+    }
+   ]
+  },
+  "Cow Food": {
+   "name": "Cow Food",
+   "requirements": [
+    {
+     "item": "Corn",
+     "amount": 1
+    },
+    {
+     "item": "Soybean",
+     "amount": 2
+    }
+   ]
+  },
+  "Pig Food": {
+   "name": "Pig Food",
+   "requirements": [
+    {
+     "item": "Carrot",
+     "amount": 2
+    },
+    {
+     "item": "Soybean",
+     "amount": 1
+    }
+   ]
+  },
+  "Sheep Food": {
+   "name": "Sheep Food",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 3
+    },
+    {
+     "item": "Soybean",
+     "amount": 1
+    }
+   ]
+  },
+  "Goat Food": {
+   "name": "Goat Food",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 1
+    },
+    {
+     "item": "Carrot",
+     "amount": 2
+    },
+    {
+     "item": "Corn",
+     "amount": 1
+    }
+   ]
+  },
+  "Herbivore Food": {
+   "name": "Herbivore Food",
+   "requirements": [
+    {
+     "item": "Wheat",
+     "amount": 75
+    }
+   ]
+  },
+  "Carnivore Food": {
+   "name": "Carnivore Food",
+   "requirements": [
+    {
+     "item": "Carrot",
+     "amount": 5
+    },
+    {
+     "item": "Fish Meat",
+     "amount": 3
+    }
+   ]
+  },
+  "Lamb Food": {
+   "name": "Lamb Food",
+   "requirements": [
+    {
+     "item": "BlackBean",
+     "amount": 4
+    },
+    {
+     "item": "Soybean",
+     "amount": 2
+    }
+   ]
+  }
+ },
+ "animal_goods": {
+  "Egg": {
+   "name": "Egg",
+   "requirements": []
+  },
+  "Milk": {
+   "name": "Milk",
+   "requirements": []
+  },
+  "Wool": {
+   "name": "Wool",
+   "requirements": []
+  },
+  "Bacon": {
+   "name": "Bacon",
+   "requirements": []
+  },
+  "Goat Milk": {
+   "name": "Goat Milk",
+   "requirements": []
+  },
+  "Lamb Meat": {
+   "name": "Lamb Meat",
+   "requirements": []
+  }
+ }
+}

@@ -27,18 +27,22 @@ class TemplateStore:
 
     _EXTS = (".png", ".jpg", ".jpeg")
 
+    def _find(self, name: str):
+        """Tìm template: thư mục chính trước, rồi thư mục con apk/ (sprite
+        sinh từ asset game)."""
+        for d in (self.directory, os.path.join(self.directory, "apk")):
+            for ext in self._EXTS:
+                p = os.path.join(d, name + ext)
+                if os.path.isfile(p):
+                    return p
+        return None
+
     def exists(self, name: str) -> bool:
-        return any(os.path.isfile(os.path.join(self.directory, name + ext))
-                   for ext in self._EXTS)
+        return self._find(name) is not None
 
     def get(self, name: str) -> np.ndarray:
         if name not in self._cache:
-            path = None
-            for ext in self._EXTS:
-                p = os.path.join(self.directory, name + ext)
-                if os.path.isfile(p):
-                    path = p
-                    break
+            path = self._find(name)
             if path is None:
                 raise FileNotFoundError(f"Thiếu template: {name}.png trong {self.directory}")
             tpl = cv2.imread(path, cv2.IMREAD_COLOR)
@@ -48,10 +52,13 @@ class TemplateStore:
         return self._cache[name]
 
     def list_available(self) -> list[str]:
-        names = []
-        for f in os.listdir(self.directory):
-            if f.lower().endswith(".png"):
-                names.append(os.path.splitext(f)[0])
+        names = set()
+        for d in (self.directory, os.path.join(self.directory, "apk")):
+            if not os.path.isdir(d):
+                continue
+            for f in os.listdir(d):
+                if f.lower().endswith(self._EXTS):
+                    names.add(os.path.splitext(f)[0])
         return sorted(names)
 
 

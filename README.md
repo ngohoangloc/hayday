@@ -88,6 +88,30 @@ Cách làm:
    ```
 3. Gõ tên template (theo bảng dưới) → kéo chuột chọn khung → Enter → lưu.
 
+### Template sẵn có từ APK (không cần chụp)
+
+Repo có công cụ bóc **asset gốc của game** từ APK Hay Day:
+
+```bash
+# 1. Bóc atlas sprite từ XAPK/APK (một lần, cần file xapk đặt ở apk_work/)
+python tools/decode_sc_batch.py icons nature_new hud_roadside_shop
+# 2. Tách sprite riêng lẻ + xem contact sheet để tra chỉ số
+python tools/crop_atlas.py apk_work/decoded/icons/icons_2.png apk_work/sprites/icons_2
+python tools/make_sheet.py apk_work/sprites/icons_2 apk_work/sheet_icons2.jpg
+# 3. Sinh template vào templates/apk/ (bot tự đọc thư mục này)
+python tools/gen_templates_from_apk.py
+```
+
+Đã có sẵn: `item_wheat/corn/carrot/sugarcane/tomato.png` trong `templates/apk/`.
+
+### Dữ liệu game thật (game_data.json)
+
+`tools/import_game_data.py` đọc CSV dữ liệu game trong APK → `game_data.json`:
+thời gian lớn **thật** của 40 loại cây (lúa 2 phút, ngô 5 phút, đậu tương 20,
+mía 30 phút...), 424 công thức máy (nguyên liệu + thời gian + giá bán),
+thức ăn chăn nuôi. Bot dùng các giá trị này để chờ đúng thời điểm và định giá
+khi bán.
+
 ### Danh sách template cần chụp
 
 | Tên | Nội dung | Chụp ở đâu |
