@@ -33,15 +33,15 @@
       0.95
     ],
     "shop_area": [
-      0.1,
-      0.1,
-      0.9,
-      0.9
+      0.17,
+      0.02,
+      0.8,
+      0.95
     ]
   },
   "general": {
     "cycle_interval_seconds": 60,
-    "max_cycles": 2,
+    "max_cycles": 1,
     "random_delay_max_ms": 250,
     "screenshot_debug_dir": "debug",
     "save_debug_screens": true
@@ -193,15 +193,15 @@
   },
   "market": {
     "enabled": false,
-    "price_option": "low",
+    "price_option": "high",
     "sell_every_cycles": 1,
     "force_last_plant_sell": false,
     "use_min_amount": true,
-    "manage_advertisements": true,
+    "manage_advertisements": false,
     "advert_only_when_full": true,
     "only_when_silo_full": false,
     "periodic_market_check": true,
-    "slots_per_cycle": 10,
+    "slots_per_cycle": 2,
     "sell_items": [
       {
         "name": "wheat",
@@ -209,31 +209,27 @@
       },
       {
         "name": "corn",
-        "enabled": false
+        "enabled": true
       },
       {
         "name": "carrot",
-        "enabled": false
+        "enabled": true
       },
       {
         "name": "soybean",
-        "enabled": false
+        "enabled": true
       },
       {
         "name": "sugarcane",
-        "enabled": false
+        "enabled": true
       },
       {
-        "name": "bread",
-        "enabled": false
+        "name": "pumpkin",
+        "enabled": true
       },
       {
-        "name": "cream",
-        "enabled": false
-      },
-      {
-        "name": "brown_sugar",
-        "enabled": false
+        "name": "cotton",
+        "enabled": true
       }
     ],
     "material_selling": {

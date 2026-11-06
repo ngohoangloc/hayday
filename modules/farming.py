@@ -18,8 +18,46 @@ Template cần thiết:
 
 import time
 
+import cv2
+import numpy as np
+
 from modules.base import BaseModule
 from vision import center
+
+
+# Dải màu HSV (OpenCV: H 0-179) nhận diện cây chín - bất biến vị trí/góc camera
+RIPE_HSV = {
+    "wheat":   ((20, 130, 180), (35, 255, 255)),  # vàng lúa chín
+    "carrot":  ((5, 170, 160), (20, 255, 255)),   # cam cà rốt đậm
+    "tomato":  ((3, 150, 140), (10, 255, 255)),   # đỏ cà chua
+    "pumpkin": ((10, 120, 150), (25, 255, 255)),  # cam bí
+}
+MIN_BLOB_AREA = 6000          # px - bỏ nhiễu nhỏ
+MAX_PLOTS_PER_CROP = 4
+
+
+def find_ripe_by_color(img, name: str):
+    """Trả về list tâm (x, y) các cụm cây chín theo màu HSV."""
+    rng = RIPE_HSV.get(name)
+    if not rng:
+        return []
+    hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+    mask = cv2.inRange(hsv, np.array(rng[0]), np.array(rng[1]))
+    mask = cv2.morphologyEx(mask, cv2.MORPH_OPEN, np.ones((7, 7), np.uint8))
+    cnts, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    blobs = [(cv2.contourArea(c), c) for c in cnts]
+    blobs = [b for b in blobs if b[0] >= MIN_BLOB_AREA]
+    blobs.sort(key=lambda b: -b[0])
+    out = []
+    for area, c in blobs[:MAX_PLOTS_PER_CROP]:
+        M = cv2.moments(c)
+        if M["m00"]:
+            px, py = int(M["m10"] / M["m00"]), int(M["m01"] / M["m00"])
+            # Loại điểm quá gần nút bấm: thanh dưới, cột nút trái, mép phải
+            if py > 900 or py < 60 or px < 150 or px > 2320:
+                continue
+            out.append((px, py))
+    return out
 
 
 class FarmingModule(BaseModule):
@@ -60,8 +98,11 @@ class FarmingModule(BaseModule):
             self._sleep_interruptible(max(5, shortest - 20))
 
     def _find_seed(self, crop_name: str):
-        """Tìm hạt trên thanh giống, lật tối đa 3 trang nếu chưa thấy."""
-        for page in range(3):
+        """Kiểm tra thanh giống có mở không, rồi tìm hạt (lật tối đa 3 trang)."""
+        panel = self.find_one(self.shot(), "seed_panel", 0.75, "seed_bar")
+        if not panel:
+            return None                      # thanh chưa mở - không tap mò
+        for _ in range(3):
             seed = self.find_one(self.shot(), f"seed_{crop_name}", 0.80, "seed_bar")
             if seed:
                 return seed
@@ -140,39 +181,72 @@ class FarmingModule(BaseModule):
     # Chiến lược tap (dự phòng)
     # ------------------------------------------------------------------ #
 
+    def dismiss_tutorial(self) -> bool:
+        """Bubble tutorial liềm chặn mọi tap -> kéo chéo qua ô nó khoanh."""
+        m = self.find_one(self.shot(), "sickle_tool", 0.70, "field_area")
+        if not m:
+            return False
+        sx, sy = center(m)
+        self.log("[farming] Phát hiện tutorial - kéo để tắt.")
+        self.adb.swipe(sx, sy + 150, sx + 260, sy + 260, 400)
+        time.sleep(1.0)
+        return True
+
     def _cycle_tap(self, crops):
-        self._harvest(crops)
-        self._replant(crops)
+        pts = self._harvest(crops)
+        self.dismiss_tutorial()
+        self._replant(crops, prior=pts)
 
     def _harvest(self, crops):
         img = self.shot()
         total = 0
+        tapped = []
         for crop in crops:
             name = crop["name"]
-            matches = self.find(img, f"crop_ready_{name}", 0.78, "field_area")
-            if matches:
-                self.log(f"[farming] Thu hoạch {len(matches)} ô {name}")
-                self.tap_matches(matches, pause=0.30)
-                total += len(matches)
-                time.sleep(1.0)
+            # 1) Ưu tiên nhận diện theo màu HSV (bất biến góc camera)
+            pts = find_ripe_by_color(img, name)
+            if not pts:
+                # 2) Dự phòng: template
+                matches = self.find(img, f"crop_ready_{name}", 0.78, "field_area")
+                pts = [center(m) for m in matches]
+            if pts:
+                self.log(f"[farming] Thu hoạch {len(pts)} cụm {name} "
+                         f"tại {pts[:3]}")
+                for px, py in pts:
+                    self.adb.tap(px, py)
+                    time.sleep(0.45)
+                tapped.extend(pts)
+                total += len(pts)
+                # Kết thúc bằng một đường kéo qua cụm cuối: vừa thu hoạch thêm
+                # vừa tắt bubble tutorial liềm (game hiện lại sau mỗi lần tap)
+                lx, ly = pts[-1]
+                self.adb.swipe(lx, ly, lx + 170, ly + 60, 350)
+                time.sleep(1.2)
                 img = self.shot()
         self.save_debug(img, "harvest")
         if total == 0:
             self.log("[farming] Không thấy cây nào chín.")
-        return total
+        return tapped
 
-    def _replant(self, crops):
+    def _replant(self, crops, prior=()):
         img = self.shot()
         empty = self.find(img, "field_empty", 0.80, "field_area")
-        if not empty:
+        # Ưu tiên các ô VỪA thu hoạch (chắc chắn trống và đúng vị trí tap)
+        spots = list(prior) + [center(m) for m in empty]
+        if not spots:
             self.log("[farming] Không còn ô ruộng trống.")
             return 0
         crop = crops[0]
-        # Tap ô trống ĐẦU TIÊN để mở thanh chọn hạt
-        first = center(empty[0])
-        self.adb.tap(*first)
-        time.sleep(1.0)
-        seed = self._find_seed(crop["name"])
+        self.log(f"[farming] Gieo {crop['name']} - thử {len(spots[:3])} ô")
+        # Thử lần lượt từng ô: tap -> kiểm tra thanh giống mở chưa
+        seed = None
+        for spot in spots[:3]:
+            self.dismiss_tutorial()
+            self.adb.tap(*spot)
+            time.sleep(1.0)
+            seed = self._find_seed(crop["name"])
+            if seed:
+                break
         if not seed:
             self.log(f"[farming] Không tìm thấy hạt {crop['name']} trên thanh chọn.")
             return 0
