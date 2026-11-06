@@ -49,7 +49,8 @@ class FarmingModule(BaseModule):
         if cfg.get("wait_for_crop_growth"):
             shortest = min(c.get("grow_seconds", 120) for c in crops)
             # Bán bớt kho trong thời gian chờ (kỹ thuật "sell during growth")
-            if cfg.get("sell_during_growth") and self.market is not None:
+            if cfg.get("sell_during_growth") and self.market is not None \
+                    and self.config.get("market", {}).get("enabled"):
                 self.log(f"[farming] Chờ {shortest}s - tranh thủ bán hàng ở chợ...")
                 try:
                     self.market.sell_items(cycle)
@@ -57,6 +58,22 @@ class FarmingModule(BaseModule):
                     self.log(f"[farming] Bán hàng khi chờ bị lỗi: {exc}")
             self.log(f"[farming] Chờ cây lớn...")
             self._sleep_interruptible(max(5, shortest - 20))
+
+    def _find_seed(self, crop_name: str):
+        """Tìm hạt trên thanh giống, lật tối đa 3 trang nếu chưa thấy."""
+        for page in range(3):
+            seed = self.find_one(self.shot(), f"seed_{crop_name}", 0.80, "seed_bar")
+            if seed:
+                return seed
+            self.adb.tap(int(0.2625 * self._w()), int(0.7685 * self._h()))
+            time.sleep(0.9)
+        return None
+
+    def _w(self) -> int:
+        return int(self.adb.size[0]) if hasattr(self.adb, "size") else 2400
+
+    def _h(self) -> int:
+        return int(self.adb.size[1]) if hasattr(self.adb, "size") else 1080
 
     # ------------------------------------------------------------------ #
     # Chiến lược drag (InfiniFarm)
@@ -84,6 +101,9 @@ class FarmingModule(BaseModule):
             if m:
                 start = center(m)
                 break
+        if start is None and rows:
+            ry, rx1, rx2 = rows[len(rows) // 2]
+            start = ((rx1 + rx2) // 2, ry)
         if start is None:
             start = (cx, cy)
         self.adb.tap(*start)
@@ -91,9 +111,19 @@ class FarmingModule(BaseModule):
         self.adb.drag_rows(rows, ms=sweep_ms, jiggle_px=jiggle)
         self.log("[farming] Đã kéo thu hoạch toàn ruộng.")
 
-        # 2) GIEO HẠT: chọn hạt trên thanh giống -> tap tâm ruộng -> kéo qua ruộng
+        # 2) GIEO HẠT: phát hiện lại ruộng (camera có thể đã trôi sau khi kéo),
+        #    tap một ô TRỐNG để mở thanh giống -> chọn hạt -> kéo qua ruộng
         crop = crops[0]
-        seed = self.find_one(self.shot(), f"seed_{crop['name']}", 0.80, "seed_bar")
+        img2 = self.shot()
+        soil2 = self.soil.detect(img2)
+        if soil2:
+            cx, cy = soil2["centroid"]
+            self.log(f"[farming] Ruộng sau thu hoạch: {soil2['rect']}")
+        empties = self.find(img2, "field_empty", 0.80, "field_area")
+        spot = center(empties[0]) if empties else (cx, cy)
+        self.adb.tap(*spot)                  # mở thanh chọn hạt
+        time.sleep(1.0)
+        seed = self._find_seed(crop["name"])
         if not seed:
             self.log(f"[farming] Không tìm thấy hạt {crop['name']} trên thanh chọn.")
             return True
@@ -138,7 +168,11 @@ class FarmingModule(BaseModule):
             self.log("[farming] Không còn ô ruộng trống.")
             return 0
         crop = crops[0]
-        seed = self.find_one(self.shot(), f"seed_{crop['name']}", 0.80, "seed_bar")
+        # Tap ô trống ĐẦU TIÊN để mở thanh chọn hạt
+        first = center(empty[0])
+        self.adb.tap(*first)
+        time.sleep(1.0)
+        seed = self._find_seed(crop["name"])
         if not seed:
             self.log(f"[farming] Không tìm thấy hạt {crop['name']} trên thanh chọn.")
             return 0

@@ -1,66 +1,129 @@
 {
   "adb": {
     "adb_path": "adb",
-    "serial": null,
+    "serial": "75ad28c1",
     "package": "com.supercell.hayday",
     "activity": null
   },
-
   "templates_dir": "templates",
-
   "regions": {
     "_comment": "Mọi vùng tính theo TỈ LỆ khung hình [x1, y1, x2, y2] với giá trị 0.0-1.0 => độc lập độ phân giải.",
-    "field_area":    [0.05, 0.40, 0.95, 0.95],
-    "seed_bar":      [0.25, 0.80, 0.75, 1.00],
-    "animal_area":   [0.05, 0.35, 0.95, 0.95],
-    "machine_area":  [0.05, 0.35, 0.95, 0.95],
-    "shop_area":     [0.10, 0.10, 0.90, 0.90]
+    "field_area": [
+      0.06,
+      0.03,
+      0.99,
+      0.99
+    ],
+    "seed_bar": [
+      0.09,
+      0.15,
+      0.41,
+      0.85
+    ],
+    "animal_area": [
+      0.05,
+      0.35,
+      0.95,
+      0.95
+    ],
+    "machine_area": [
+      0.05,
+      0.35,
+      0.95,
+      0.95
+    ],
+    "shop_area": [
+      0.1,
+      0.1,
+      0.9,
+      0.9
+    ]
   },
-
   "general": {
-    "cycle_interval_seconds": 30,
-    "max_cycles": 0,
+    "cycle_interval_seconds": 60,
+    "max_cycles": 2,
     "random_delay_max_ms": 250,
     "screenshot_debug_dir": "debug",
-    "save_debug_screens": false
+    "save_debug_screens": true
   },
-
   "soil_detection": {
     "enabled": true,
     "template": "soil.jpg",
-    "color_threshold": 18,
+    "color_threshold": 26,
     "min_area_ratio": 0.01,
     "row_sweep_duration_ms": 700,
     "sweep_step_ratio": 0.12,
     "jiggle_pixels": 15
   },
-
   "plant_rotation": {
     "enabled": true,
-    "strategy": "drag",
+    "strategy": "tap",
     "wait_for_crop_growth": true,
     "sell_during_growth": true,
     "quit_feature": false,
     "crops": [
-      { "name": "wheat",     "enabled": true,  "grow_seconds": 120,  "count": 1 },
-      { "name": "corn",      "enabled": false, "grow_seconds": 300,  "count": 1 },
-      { "name": "carrot",    "enabled": false, "grow_seconds": 600,  "count": 1 },
-      { "name": "soybean",   "enabled": false, "grow_seconds": 1200, "count": 1 },
-      { "name": "sugarcane", "enabled": false, "grow_seconds": 1800, "count": 1 }
+      {
+        "name": "wheat",
+        "enabled": true,
+        "grow_seconds": 120,
+        "count": 1
+      },
+      {
+        "name": "corn",
+        "enabled": false,
+        "grow_seconds": 300,
+        "count": 1
+      },
+      {
+        "name": "carrot",
+        "enabled": true,
+        "grow_seconds": 600,
+        "count": 1
+      },
+      {
+        "name": "soybean",
+        "enabled": false,
+        "grow_seconds": 1200,
+        "count": 1
+      },
+      {
+        "name": "sugarcane",
+        "enabled": false,
+        "grow_seconds": 1800,
+        "count": 1
+      }
     ]
   },
-
   "animals": {
     "enabled": true,
     "run_every_cycles": 5,
     "types": [
-      { "name": "chicken", "enabled": false, "run_every_cycles": 5, "feed_count": 2 },
-      { "name": "cow",     "enabled": false, "run_every_cycles": 5, "feed_count": 0 },
-      { "name": "pig",     "enabled": false, "run_every_cycles": 5, "feed_count": 0 },
-      { "name": "sheep",   "enabled": false, "run_every_cycles": 5, "feed_count": 0 }
+      {
+        "name": "chicken",
+        "enabled": false,
+        "run_every_cycles": 5,
+        "feed_count": 2
+      },
+      {
+        "name": "cow",
+        "enabled": false,
+        "run_every_cycles": 5,
+        "feed_count": 0
+      },
+      {
+        "name": "pig",
+        "enabled": false,
+        "run_every_cycles": 5,
+        "feed_count": 0
+      },
+      {
+        "name": "sheep",
+        "enabled": false,
+        "run_every_cycles": 5,
+        "feed_count": 0
+      }
     ]
   },
-
   "production": {
     "enabled": true,
     "run_every_cycles": 5,
@@ -70,9 +133,18 @@
         "enabled": false,
         "run_every_cycles": 5,
         "recipes": [
-          { "name": "bread",     "count": 2 },
-          { "name": "corn_bread","count": 0 },
-          { "name": "cookie",    "count": 0 }
+          {
+            "name": "bread",
+            "count": 2
+          },
+          {
+            "name": "corn_bread",
+            "count": 0
+          },
+          {
+            "name": "cookie",
+            "count": 0
+          }
         ]
       },
       {
@@ -80,10 +152,22 @@
         "enabled": false,
         "run_every_cycles": 5,
         "recipes": [
-          { "name": "cream",     "count": 2 },
-          { "name": "butter",    "count": 0 },
-          { "name": "cheese",    "count": 0 },
-          { "name": "goat_cheese","count": 0 }
+          {
+            "name": "cream",
+            "count": 2
+          },
+          {
+            "name": "butter",
+            "count": 0
+          },
+          {
+            "name": "cheese",
+            "count": 0
+          },
+          {
+            "name": "goat_cheese",
+            "count": 0
+          }
         ]
       },
       {
@@ -91,16 +175,24 @@
         "enabled": false,
         "run_every_cycles": 5,
         "recipes": [
-          { "name": "brown_sugar", "count": 2 },
-          { "name": "white_sugar", "count": 0 },
-          { "name": "syrup",       "count": 0 }
+          {
+            "name": "brown_sugar",
+            "count": 2
+          },
+          {
+            "name": "white_sugar",
+            "count": 0
+          },
+          {
+            "name": "syrup",
+            "count": 0
+          }
         ]
       }
     ]
   },
-
   "market": {
-    "enabled": true,
+    "enabled": false,
     "price_option": "low",
     "sell_every_cycles": 1,
     "force_last_plant_sell": false,
@@ -111,65 +203,110 @@
     "periodic_market_check": true,
     "slots_per_cycle": 10,
     "sell_items": [
-      { "name": "wheat",     "enabled": true },
-      { "name": "corn",      "enabled": false },
-      { "name": "carrot",    "enabled": false },
-      { "name": "soybean",   "enabled": false },
-      { "name": "sugarcane", "enabled": false },
-      { "name": "bread",     "enabled": false },
-      { "name": "cream",     "enabled": false },
-      { "name": "brown_sugar","enabled": false }
+      {
+        "name": "wheat",
+        "enabled": true
+      },
+      {
+        "name": "corn",
+        "enabled": false
+      },
+      {
+        "name": "carrot",
+        "enabled": false
+      },
+      {
+        "name": "soybean",
+        "enabled": false
+      },
+      {
+        "name": "sugarcane",
+        "enabled": false
+      },
+      {
+        "name": "bread",
+        "enabled": false
+      },
+      {
+        "name": "cream",
+        "enabled": false
+      },
+      {
+        "name": "brown_sugar",
+        "enabled": false
+      }
     ],
     "material_selling": {
       "enabled": false,
       "price_option": "high",
       "sell_every_cycles": 10,
       "materials": [
-        { "name": "bolt",       "enabled": false },
-        { "name": "plank",      "enabled": false },
-        { "name": "duct_tape",  "enabled": false },
-        { "name": "nail",       "enabled": false },
-        { "name": "screws",     "enabled": false },
-        { "name": "wood_panel", "enabled": false },
-        { "name": "land_deed",  "enabled": false },
-        { "name": "mallet",     "enabled": false },
-        { "name": "marker_stake","enabled": false }
+        {
+          "name": "bolt",
+          "enabled": false
+        },
+        {
+          "name": "plank",
+          "enabled": false
+        },
+        {
+          "name": "duct_tape",
+          "enabled": false
+        },
+        {
+          "name": "nail",
+          "enabled": false
+        },
+        {
+          "name": "screws",
+          "enabled": false
+        },
+        {
+          "name": "wood_panel",
+          "enabled": false
+        },
+        {
+          "name": "land_deed",
+          "enabled": false
+        },
+        {
+          "name": "mallet",
+          "enabled": false
+        },
+        {
+          "name": "marker_stake",
+          "enabled": false
+        }
       ]
     }
   },
-
   "advanced": {
     "game_off_wait_seconds": 10,
     "market_retries": 3,
     "market_cycle_seconds": 30,
     "game_open_wait_seconds": 120
   },
-
   "achievements": {
-    "enabled": true,
+    "enabled": false,
     "collect_every_cycles": 5
   },
-
   "orders": {
-    "enabled": true,
+    "enabled": false,
     "run_every_cycles": 5,
     "send_orders": true,
     "del_orders": false,
     "ask_for_help": false
   },
-
   "miner": {
     "enabled": false,
     "run_every_cycles": 10,
     "dynamite": true,
     "tnt_barrel": false
   },
-
   "followers": {
     "enabled": false,
     "run_every_cycles": 20
   },
-
   "sim": {
     "cook_seconds": 6,
     "animal_product_seconds": 6,
